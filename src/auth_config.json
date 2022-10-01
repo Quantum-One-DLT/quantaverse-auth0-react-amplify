@@ -1,6 +1,6 @@
 {
-    "domain": "{quantaverseid-cd-efq9fjd0bz5gnfcj.edge.tenants.us.auth0.com}",
-    "clientId": "{UT4va78PNUUantuN57ZrOG518DfGlfQi}",
+    "domain": "auth.quantaverseid.io",
+    "clientId": "UT4va78PNUUantuN57ZrOG518DfGlfQi",
     "scope": "openid profile email"
 }
   
