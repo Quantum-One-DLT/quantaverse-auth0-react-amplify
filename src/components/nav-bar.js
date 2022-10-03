@@ -5,7 +5,7 @@ import MainNav from "./main-nav";
 const NavBar = () => {
   return (
     <div className="nav-container mb-3">
-      <nav className="navbar navbar-expand-md navbar-light bg-light">
+      <nav className="navbar navbar-expand-md navbar-dark bg-light">
         <div className="container">
           <div className="navbar-brand logo" />
           <MainNav />
