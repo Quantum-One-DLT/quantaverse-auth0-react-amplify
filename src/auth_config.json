@@ -1,6 +1,6 @@
 {
-    "domain": "login.quantumone.network",
-    "clientId": "jC2Jwb5ebKMHg1Joyv0jvq8bXBlA6r9I",
+    "domain": "quantaverseid.us.auth0.com",
+    "clientId": "dfXej15R6t7Idq9a1y2cXyIacg43fPsq",
     "scope": "openid profile email"
 }
   
