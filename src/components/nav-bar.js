@@ -1,6 +1,7 @@
 import React from "react";
 
 import MainNav from "./main-nav";
+import logo from "./logo.svg";
 
 const NavBar = () => {
   return (
@@ -9,7 +10,7 @@ const NavBar = () => {
        <div className="container">
         <a clasName = "navbar-brand" href="#">
          <img src="./logo.svg" width="28" height="28" alt=""/>
-          <div className="navbar-brand logo" href="#"/>
+          <div className="logo" href="#"/>
           </a>
     <MainNav />
          </div>
