@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
 
-import { NavBar, Footer } from "./components";
+import { NavBar, Footer, Logo } from "./components";
 import { Home, Profile, ExternalApi } from "./views";
 
 import "./app.css";
@@ -11,6 +11,7 @@ const App = () => {
     <div id="app" className="d-flex flex-column h-100">
       <NavBar />
       <div className="container flex-grow-1">
+       <Logo />
         <div className="mt-5">
           <Switch>
             <Route path="/" exact component={Home} />
