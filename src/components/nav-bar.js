@@ -6,17 +6,14 @@ import Logo from "./logo";
 
 const NavBar = () => {
   return (
-    <div className="nav-container mb-3">
-      <nav className="navbar navbar-expand-md navbar-light bg-light">
-       <div className="container">
-        <a clasName = "logo" href="#">
-         <img src="./logo.svg" alt="quantumOne-logo"/>
+    <nav className="navbar navbar-expand-md navbar-light bg-light">
+      <div className="container-fluid mb-3">
+        <a clasName = "navbar-brand" href="#">
           <Logo />
           </a>   
     <MainNav />
          </div>
       </nav>
-    </div>
   );
 };
 
