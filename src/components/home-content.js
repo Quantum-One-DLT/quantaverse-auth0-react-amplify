@@ -17,7 +17,7 @@ const HomeContent = () => (
           </a>
         </h6>
         <p>
-         Quantum One
+         Quantum One DAO is eliminating blockchain investment risk, archaic web2 inefficiencies, and capable of almost any use case - such as a Healthcare ecosystem. 
         </p>
       </div>
 
@@ -53,7 +53,7 @@ const HomeContent = () => (
           </a>
         </h6>
         <p>
-         Test the prototype Node and CLI 
+         Contribute to development or simply test the prototype Node and CLI 
         </p>
       </div>
 
