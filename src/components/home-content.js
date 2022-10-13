@@ -2,7 +2,7 @@ import React from "react";
 
 const HomeContent = () => (
   <div className="next-steps">
-    <h2 className="my-5 text-center">What can I do next?</h2>
+    <h2 className="my-5 text-center">What is Quantaverse ID? Have a pitch paper?</h2>
 
     <div className="row">
       <div className="col-md-5 mb-4">
@@ -10,16 +10,14 @@ const HomeContent = () => (
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://auth0.com/docs/connections"
+            href="https://www.notion.so/quantumone/Quantum-One-Whitepaper-7df3771e24184020b3ffbf808d140ae6"
           >
             <i className="fas fa-link mr-2" />
-            Configure other identity providers
+            Live Testing
           </a>
         </h6>
         <p>
-          Auth0 supports social providers as Facebook, Twitter, Instagram and
-          100+, Enterprise providers as Microsoft Office 365, Google Apps,
-          Azure, and more. You can also use any OAuth2 Authorization Server.
+          We're dropping 100 of our testnet ERC20 DA-FI token to the first 3500 people who verify their identity or prove a previous KYC verification through our web app.  
         </p>
       </div>
 
@@ -30,17 +28,14 @@ const HomeContent = () => (
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://auth0.com/docs/multifactor-authentication"
+
           >
             <i className="fas fa-link mr-2" />
-            Enable Multi-Factor Authentication
+            When will you start the airdrop?
           </a>
         </h6>
         <p>
-          Add an extra layer of security by enabling Multi-factor
-          Authentication, requiring your users to provide more than one piece of
-          identifying information. Push notifications, authenticator apps, SMS,
-          and DUO Security are supported.
+          The airdrop has already begun to previous YFI holders!
         </p>
       </div>
     </div>
@@ -54,13 +49,11 @@ const HomeContent = () => (
             href="https://auth0.com/docs/anomaly-detection"
           >
             <i className="fas fa-link mr-2" />
-            Anomaly Detection
+            Prototype API 
           </a>
         </h6>
         <p>
-          Auth0 can detect anomalies and stop malicious attempts to access your
-          application. Anomaly detection can alert you and your users of
-          suspicious activity, as well as block further login attempts.
+          
         </p>
       </div>
 
