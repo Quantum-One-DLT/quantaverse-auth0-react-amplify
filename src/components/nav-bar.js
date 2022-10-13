@@ -2,7 +2,7 @@ import React from "react";
 
 import MainNav from "./main-nav";
 import logo from "./logo.svg";
-import Logo from "./Logo";
+import Logo from "./logo";
 
 const NavBar = () => {
   return (
