@@ -56,6 +56,10 @@ code {
   align-items: center;
   justify-content: center;
 }
+.logo { 
+  display: flex;
+  min-width: 28px;
+}
 
 .userImg {
   border-radius: 100px;
