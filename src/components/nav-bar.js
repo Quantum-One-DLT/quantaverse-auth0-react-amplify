@@ -9,9 +9,11 @@ const NavBar = () => {
         <a clasName = "navbar-brand" href="#">
            <img src="./logo.svg" width="28" height="28" alt="">
     <div className="container">
-          <div className="navbar-brand logo"/>
+          <div className="navbar-brand logo">
     <MainNav />
+         </div>
         </div>
+        </img>
         </a>
       </nav>
     </div>
