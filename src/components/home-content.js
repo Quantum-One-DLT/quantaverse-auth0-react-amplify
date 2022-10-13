@@ -31,7 +31,7 @@ const HomeContent = () => (
             href="https://etherscan.io/token/0xeaad65885fea47a3b1258935f4ce83aab06fdd3a"
           >
             <i className="fas fa-link mr-2" />
-            Etherscan Token Data
+            View DA-FI token info on Etherscan 
           </a>
         </h6>
         <p>
@@ -49,11 +49,11 @@ const HomeContent = () => (
             href="https://the-blockchain-company.github.io"
           >
             <i className="fas fa-link mr-2" />
-            Prototype Quantum One API 
+            Prototype API 
           </a>
         </h6>
         <p>
-         Build the prototype Node and CLI 
+         Test the prototype Node and CLI 
         </p>
       </div>
 
@@ -64,14 +64,14 @@ const HomeContent = () => (
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://github.com/quantum-one-dlt/"
+            href="https://www.crunchbase.com/organization/quantum-one-dao"
           >
             <i className="fas fa-link mr-2" />
-            GitHub
+            Quantum One's Crunchbase profile
           </a>
         </h6>
         <p>
-          Quantaverse ID is humanity's optimal digital trust paradigm."   
+          Quantaverse ID is humanity's optimal digital trust paradigm. We're contributors to the Decentralized Identity Foundation. All DA-FI holders must verify their identity before claiming their mainnet Quantum One coin.
         </p>
       </div>
     </div>
