@@ -17,7 +17,8 @@ const HomeContent = () => (
           </a>
         </h6>
         <p>
-          
+         Quantum One
+        </p>
       </div>
 
       <div className="col-md" />
