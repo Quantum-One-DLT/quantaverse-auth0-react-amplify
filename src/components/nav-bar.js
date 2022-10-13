@@ -10,7 +10,7 @@ const NavBar = () => {
       <nav className="navbar navbar-expand-md navbar-light bg-light">
        <div className="container">
         <a clasName = "logo" href="#">
-         <img src="./logo.svg" width="28" height="28" alt=""/>
+         <img src="./logo.svg" alt="quantumOne-logo"/>
            < Logo />
            </div>
           </a>
