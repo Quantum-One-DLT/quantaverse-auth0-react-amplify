@@ -7,7 +7,7 @@ const NavBar = () => {
     <div className="nav-container mb-3">
       <nav className="navbar navbar-expand-md navbar-light bg-light">
         <div className="container">
-          <div className="navbar-brand logo" <img src="/images/logo.svg" width="30" height="30/>
+          <div className="navbar-brand logo" <img src="./logo.svg" width="30" height="30/>
           <MainNav />
         </div>
       </nav>
