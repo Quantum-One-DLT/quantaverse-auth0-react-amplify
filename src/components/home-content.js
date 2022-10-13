@@ -2,7 +2,7 @@ import React from "react";
 
 const HomeContent = () => (
   <div className="next-steps">
-    <h2 className="my-5 text-center">What is Quantaverse ID? Have a pitch paper?</h2>
+    <h2 className="my-5 text-center">What is Quantaverse ID?</h2>
 
     <div className="row">
       <div className="col-md-5 mb-4">
@@ -13,7 +13,7 @@ const HomeContent = () => (
             href="https://www.notion.so/quantumone/Quantum-One-Whitepaper-7df3771e24184020b3ffbf808d140ae6"
           >
             <i className="fas fa-link mr-2" />
-            Live Testing
+            Whitepaper
           </a>
         </h6>
         <p>
@@ -28,14 +28,14 @@ const HomeContent = () => (
           <a
             target="_blank"
             rel="noopener noreferrer"
-
+            href="https://etherscan.io/token/0xeaad65885fea47a3b1258935f4ce83aab06fdd3a"
           >
             <i className="fas fa-link mr-2" />
-            When will you start the airdrop?
+            Etherscan token summary
           </a>
         </h6>
         <p>
-          The airdrop has already begun to previous YFI holders!
+          What can I do with DA-FI token?
         </p>
       </div>
     </div>
@@ -46,10 +46,10 @@ const HomeContent = () => (
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://auth0.com/docs/anomaly-detection"
+            href="https://the-blockchain-company.github.io"
           >
             <i className="fas fa-link mr-2" />
-            Prototype API 
+            Prototype Quantum One API 
           </a>
         </h6>
         <p>
@@ -64,17 +64,14 @@ const HomeContent = () => (
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://auth0.com/docs/rules"
+            href="https://github.com/quantum-one-dlt/"
           >
             <i className="fas fa-link mr-2" />
-            Learn About Rules
+            GitHub
           </a>
         </h6>
         <p>
-          Rules are JavaScript functions that execute when a user authenticates
-          to your application. They run once the authentication process is
-          complete, and you can use them to customize and extend Auth0's
-          capabilities.
+          We're contributors to the Decentralized Identity Foundation, a member of Pledge 1% and Dun & Bradstreet, and love to give back to the community. DA-FI token is registered with the state of Wyoming as an open blockchain registered token. All DA-FI holders must verifiy their identity to receive our mainnet Quantum One Roton coin immediately following mainnet launch.   
         </p>
       </div>
     </div>
