@@ -17,8 +17,7 @@ const HomeContent = () => (
           </a>
         </h6>
         <p>
-          We're dropping 100 of our testnet ERC20 DA-FI token to the first 3500 people who verify their identity or prove a previous KYC verification through our web app.  
-        </p>
+          
       </div>
 
       <div className="col-md" />
@@ -31,11 +30,12 @@ const HomeContent = () => (
             href="https://etherscan.io/token/0xeaad65885fea47a3b1258935f4ce83aab06fdd3a"
           >
             <i className="fas fa-link mr-2" />
-            Etherscan token summary
+            Etherscan Token Data
           </a>
         </h6>
         <p>
-          What can I do with DA-FI token?
+         We're dropping 100 of our testnet ERC20 DA-FI token to the first 3500 people who verify their identity or prove a previous KYC verification through our web app.  
+        </p>
         </p>
       </div>
     </div>
@@ -71,7 +71,7 @@ const HomeContent = () => (
           </a>
         </h6>
         <p>
-          We're contributors to the Decentralized Identity Foundation, a member of Pledge 1% and Dun & Bradstreet, and love to give back to the community. DA-FI token is registered with the state of Wyoming as an open blockchain registered token. All DA-FI holders must verifiy their identity to receive our mainnet Quantum One Roton coin immediately following mainnet launch.   
+          Quantaverse ID is humanity's optimal digital trust paradigm."   
         </p>
       </div>
     </div>
