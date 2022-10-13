@@ -35,7 +35,7 @@ const HomeContent = () => (
           </a>
         </h6>
         <p>
-         We're dropping 100 of our testnet ERC20 DA-FI token to the first 3500 people who verify their identity or prove a previous KYC verification through our web app.  
+         We're dropping 100 of our testnet ERC20 DA-FI token to the first 3500 people who verify their identity or prove a previous KYC verification through our web app. DA-FI holders must verify their identity to exchange DA-FI for our mainnet coin referred to as the 'Roton'.
         </p>
       </div>
     </div>
@@ -71,7 +71,7 @@ const HomeContent = () => (
           </a>
         </h6>
         <p>
-          Quantaverse ID is humanity's optimal digital trust paradigm. We're contributors to the Decentralized Identity Foundation. All DA-FI holders must verify their identity before claiming their mainnet Quantum One coin.
+          Quantaverse ID is humanity's optimal digital trust paradigm. We're contributors to the Decentralized Identity Foundation, a member Dun and Bradstreet as well as Pledge 1%. 
         </p>
       </div>
     </div>
