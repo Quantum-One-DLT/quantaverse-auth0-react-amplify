@@ -37,7 +37,6 @@ const HomeContent = () => (
         <p>
          We're dropping 100 of our testnet ERC20 DA-FI token to the first 3500 people who verify their identity or prove a previous KYC verification through our web app.  
         </p>
-        </p>
       </div>
     </div>
 
@@ -54,7 +53,7 @@ const HomeContent = () => (
           </a>
         </h6>
         <p>
-          
+         Build the prototype Node and CLI 
         </p>
       </div>
 
