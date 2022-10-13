@@ -11,9 +11,8 @@ const NavBar = () => {
        <div className="container">
         <a clasName = "logo" href="#">
          <img src="./logo.svg" alt="quantumOne-logo"/>
-           < Logo />
-           </div>
-          </a>
+          <Logo />
+          </a>   
     <MainNav />
          </div>
       </nav>
