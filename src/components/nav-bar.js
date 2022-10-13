@@ -6,12 +6,12 @@ import Logo from "./logo";
 
 const NavBar = () => {
   return (
-    <nav className="navbar navbar-expand-md navbar-light bg-light">
+    <nav className="navbar" style="background-color: #03fff6;">
       <div className="container-fluid mb-3">
         <a clasName = "navbar-brand" href="#">
           <Logo />
           </a>   
-    <MainNav />
+       <MainNav />
          </div>
       </nav>
   );

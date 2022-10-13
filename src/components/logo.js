@@ -1,14 +1,12 @@
 import React from "react";
-import logo from "./logo.svg";
+import logo from "./assets/logo.png";
 
-const logoImg = {logo};
+const logoImg = logo;
 
 const Logo = () => (
 
   <div className="logo">
-
-    <img src={logoImg} alt="quantumone-logo" />
-
+    logoImg={Logo}
   </div>
 
 );
