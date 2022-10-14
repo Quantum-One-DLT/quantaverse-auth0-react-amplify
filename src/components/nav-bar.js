@@ -6,7 +6,7 @@ const NavBar = () => {
    <div className="nav-container mb3">
     <nav className="navbar navbar-expand-lg navbar-dark bg-light">
      <div className="container">
-      <a className="navbar-brand" href="#">Quantum One DAOr</a>
+      <a className="navbar-brand" href="%PUBLIC_URL%/logo.svg">Quantum One DAO</a>
       </div>
      <MainNav/>
    </nav>
