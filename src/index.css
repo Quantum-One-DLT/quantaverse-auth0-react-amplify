@@ -67,6 +67,7 @@ code {
 
     background-color: cyan;
 }
+
 .userImg {
   border-radius: 100px;
   display: block;
@@ -77,4 +78,14 @@ code {
 
 .hero .app-logo {
   max-width: 10.5rem;
+}
+
+.navbar-brand {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  text-align: center;
+  margin: auto;
+  padding:0;
 }
