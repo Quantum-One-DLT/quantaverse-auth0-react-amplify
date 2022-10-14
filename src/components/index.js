@@ -3,5 +3,7 @@ import Footer from "./footer";
 import Hero from "./hero";
 import Loading from "./loading";
 import NavBar from "./nav-bar";
+import LoginButton from "./loginButton";
+import LogoutButton from "./logoutButton";
 
-export { HomeContent, Footer, Hero, Loading, NavBar };
+export { HomeContent, Footer, Hero, Loading, LoginButton, LogoutButton, NavBar };
