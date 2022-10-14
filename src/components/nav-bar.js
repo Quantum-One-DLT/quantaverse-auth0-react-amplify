@@ -3,10 +3,10 @@ import MainNav from "./main-nav";
 
 const NavBar = () => {
   return (
-    <nav className="navbar" style={{"background-color": "#1e2022"}}>
+    <nav className="navbar navbar-custom">
       <div className="container-fluid mb-3">
-        <a class="navbar-brand" href="https://quantaverseid.io">
-          <img src="/src/assets/logo.svg" width="30" height="30" class="d-inline-block align-top" alt=""/>
+        <a className="navbar-brand" href="%PUBLIC_URL%/logo.png">
+          <img src="/src/assets/logo.png" width="30" height="30" class="d-inline-block align-top" alt=""/>
           </a>
     QuantaVerse ID
        <MainNav />
