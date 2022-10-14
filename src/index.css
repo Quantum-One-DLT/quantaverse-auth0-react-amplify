@@ -62,7 +62,11 @@ code {
   display: flex;
   min-width: 28px;
 }
+/* Modify the background color */
+.navbar-custom {
 
+    background-color: cyan;
+}
 .userImg {
   border-radius: 100px;
   display: block;
