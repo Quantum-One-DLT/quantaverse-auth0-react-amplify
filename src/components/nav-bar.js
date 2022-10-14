@@ -1,7 +1,7 @@
 import React from "react";
 import MainNav from "./main-nav";
 import {NavbarBrand, Navbar} from "reactstrap";
-
+let Logo = require("../assets/logo.png");
 
 const NavBar = () => {
   return (
@@ -12,8 +12,8 @@ const NavBar = () => {
      >
       <NavbarBrand  href="/">
       <img
-        alt="quantum-one-logo"
-        src={require("../assets/logo.svg")}
+        alt="quantumOne-logo"
+        src={Logo}
         style={{
           height: 32,
           width: 32
