@@ -1,12 +1,11 @@
 import React from "react";
-import logo from "../assets/logo.svg";
+const logo = "src/assets/logo.svg";
 
-const logoImg = logo;
 
 const Logo = () => (
 
   <div className="logo">
-    logoImg={Logo}
+    logo={Logo}
   </div>
 
 );
