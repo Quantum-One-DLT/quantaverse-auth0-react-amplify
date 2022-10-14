@@ -41,6 +41,6 @@ const NavBar = () => {
   <MainNav />
 </nav>
  }
-};
+}
 
 export default NavBar;
