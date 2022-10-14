@@ -5,8 +5,9 @@ let Logo = require("../assets/NavLogo.png");
 
 const NavBar = () => {
   return (
+  <div>
    <Navbar
-    className="my-2"
+    className="my-0"
     color="dark"
     dark
      >
@@ -24,6 +25,7 @@ const NavBar = () => {
 
      <MainNav/>
    </Navbar>
+   </div>
   );
 };
 

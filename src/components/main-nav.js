@@ -1,11 +1,11 @@
 import { NavLink } from "react-router-dom";
-import React from "react";
+import React, { useState } from "react";
 import LoginButton from './loginButton';
 import LogoutButton from './logoutButton';
 import { useAuth0 } from "@auth0/auth0-react";
 
 import {
-  NavItem
+  NavItem, Collapse, NavbarToggler, Nav
 } from "reactstrap";
 
 const MainNav = () => {
@@ -14,9 +14,15 @@ const MainNav = () => {
     isAuthenticated
   } = useAuth0();
 
+  const [isOpen, setIsOpen] = useState(false);
 
+  const toggle = () => setIsOpen(!isOpen);
   return (
-    <div className="navbar-nav mr-auto">
+    <div>
+    <NavbarToggler onClick={toggle}/>
+    <Collapse isOpen={isOpen} navbar>
+    <Nav className="me-auto" navbar>
+    <NavItem>
       <NavLink
         to="/"
         exact
@@ -25,6 +31,8 @@ const MainNav = () => {
       >
         Home
     </NavLink>
+    </NavItem>
+    <NavItem>
       {isAuthenticated && (
         <NavLink
           to="/profile"
@@ -35,6 +43,7 @@ const MainNav = () => {
           Profile
         </NavLink>
       )}
+    </NavItem>
 
       {!isAuthenticated && (
 
@@ -48,6 +57,8 @@ const MainNav = () => {
           <LogoutButton />
         </NavItem>
       )}
+      </Nav>
+      </Collapse>
     </div>
   );
 }
