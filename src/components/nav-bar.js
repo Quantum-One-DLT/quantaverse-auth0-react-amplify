@@ -13,7 +13,7 @@ const NavBar = () => {
       <NavbarBrand  href="/">
       <img
         alt="quantum-one-logo"
-        src={require("src/assets/logo.svg")}
+        src={require("../assets/logo.svg")}
         style={{
           height: 32,
           width: 32
