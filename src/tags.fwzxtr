@@ -1,3 +1,0 @@
-domain	index.js	/^  domain: config.domain,$/;"	p	class:const
-clientId	index.js	/^  clientId: config.clientId,$/;"	p	class:const
-redirectUri	index.js	/^  redirectUri: window.location.origin,$/;"	p	class:const

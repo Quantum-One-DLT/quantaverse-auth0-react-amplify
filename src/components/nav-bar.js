@@ -16,8 +16,8 @@ const NavBar = () => {
         alt="quantumOne-logo"
         src={Logo}
         style={{
-          height: 40,
-          width: 256,
+          height: 36,
+          width: 204,
         }}
         QuantaVerse ID
       />
