@@ -335,7 +335,7 @@ ehthumbs_vista.db
 
 # Dump file
 *.stackdump
- tags.*
+tags.*
 
 # Folder config file
 [Dd]esktop.ini
