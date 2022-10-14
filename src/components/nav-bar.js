@@ -40,7 +40,7 @@ const NavBar = () => {
      <MainNav/>
     </div>
    </nav>
-  };
+  );
 );
 
 export default NavBar;
