@@ -4,15 +4,15 @@ const logo = "https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.c
 
 const Hero = () => (
   <div className="text-center hero">
-    <img className="mb-3 app-logo" src={logo} alt="quantumOne-logo" width="72" />
-    <h1 className="mb-4">Create your QuantaVerse account and</h1>
+    <img className="mb-3 app-logo" src={logo} alt="quantumOne-logo" width="96" />
+    <h1 className="mb-4"> Humanity's optimal digital paradigm airrop </h1>
     <p className="lead">
-      and become eligible for Quantum One DAO's airdrop campaign!{" "}
+       The 1st 3500 users who verify their ID or prove prior KYC will become one of the earliest members of {" "}
       <a
         target="_blank"
         rel="noopener noreferrer"
         href="https://quantumone.network"
-      > 
+      >Quantum One DAO
       </a>
     </p>
   </div>
