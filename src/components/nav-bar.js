@@ -1,16 +1,28 @@
 import React from "react";
 import MainNav from "./main-nav";
+import {NavbarBrand, Navbar} from "reactstrap";
 
 const NavBar = () => {
   return (
-   <div className="nav-container mb-3">
-    <nav className="navbar navbar-expand-lg navbar-dark bg-light">
-     <div className="container">
-      <a className="navbar-brand" href="%PUBLIC_URL%/logo.svg">Quantum One DAO</a>
-      </div>
+   <Navbar
+    className="my-2"
+    color="dark"
+    dark
+     >
+      <NavbarBrand  href="/">
+      <img
+        alt="logo"
+        src="/src/assets/logo.svg"
+        style={{
+          height: 40,
+          width: 40
+        }}
+        QuantaVerse ID
+      />
+    </NavbarBrand>
+
      <MainNav/>
-   </nav>
-  </div>
+   </Navbar>
   );
 };
 
