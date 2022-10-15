@@ -1,10 +1,10 @@
 import React from "react";
 
-let Logo = require("../assets/logo.png");
+let Logo = require("../assets/logo-black.png");
 
 const Hero = () => (
   <div className="text-center hero">
-    <img width="100%" className="mb-3 logo" src={Logo} alt="space-background" />
+    <img width="100%" className="mb-3 logo" src={Logo} alt="quantum-one-logo" />
     <h1 className="mb-4"> Humanity's optimal digital trust paradigm airdrop </h1>
     <p className="lead">
        The 1st 3500 users who verify their ID or prove prior KYC will become one of the earliest members of Quantum One DAO. {" "}
