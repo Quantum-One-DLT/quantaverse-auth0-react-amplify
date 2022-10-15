@@ -6,12 +6,12 @@ import { Home, Profile, ExternalApi } from "./views";
 
 import "./app.css";
 
-const styles={{  
+const styles={  
   backgroundImage: 'url(" + "https://quantumone.b-cdn.net/Untitled%20Design_2-6.jpg" + ")',
   backgroundPosition: 'center',
   backgroundSize: 'cover',
   backgroundRepeat: 'no-repeat'
-}};
+};
 
 const App = () => {
   return (
