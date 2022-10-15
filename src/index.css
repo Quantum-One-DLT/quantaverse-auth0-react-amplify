@@ -1,4 +1,4 @@
-$enable-container-classes
+2$enable-container-classes
 
 body {
   --blue: #007bff;
@@ -103,8 +103,8 @@ code {
 }
 
 .hero .logo {
-  max-width: 120rem;
-  max-height: 100vh;
+  max-width: 10.5rem;
+  height: 100vh;
 }
 
 
