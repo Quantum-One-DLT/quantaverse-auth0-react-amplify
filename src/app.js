@@ -7,7 +7,7 @@ import { Home, Profile, ExternalApi } from "./views";
 import "./app.css";
 
 const styles={{  
-  backgroundImage: "url(" + "https://quantumone.b-cdn.net/Untitled%20Design_2-6.jpg" + ")",
+  backgroundImage: 'url(" + "https://quantumone.b-cdn.net/Untitled%20Design_2-6.jpg" + ")',
   backgroundPosition: 'center',
   backgroundSize: 'cover',
   backgroundRepeat: 'no-repeat'
@@ -15,7 +15,7 @@ const styles={{
 
 const App = () => {
   return (
-    <div id="app" className="d-flex flex-column h-100" style={{styles}}>
+    <div id="app" className="d-flex flex-column h-100" style={styles}>
       <NavBar />}}>
       <NavBar />
       <div className="container flex-grow-1">
