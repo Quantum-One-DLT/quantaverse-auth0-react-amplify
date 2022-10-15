@@ -16,7 +16,6 @@ const styles={
 const App = () => {
   return (
     <div id="app" className="d-flex flex-column h-100" style={styles}>
-      <NavBar />}}>
       <NavBar />
       <div className="container flex-grow-1">
         <div className="mt-5">
