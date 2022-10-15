@@ -73,6 +73,10 @@ code {
   opacity: 1;
 }
 
+.btn {
+  color: cyan;
+
+}
 .loading {
   display: flex;
   min-height: 500px;
