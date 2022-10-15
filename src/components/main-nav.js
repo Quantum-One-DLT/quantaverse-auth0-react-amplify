@@ -48,7 +48,7 @@ const MainNav = () => {
       {!isAuthenticated && (
 
         <NavItem>
-          <LoginButton style={{color: "#03fff6"}}/>
+          <LoginButton style={{color: "#03fff6", outline: "none"}}/>
         </NavItem>
 
       )}
