@@ -1,6 +1,6 @@
 import React from "react";
 
-let Logo = require("../assets/7upguw.jpg");
+let Logo = require('url("https://quantumone.b-cdn.net/Color%20logo%20with%20background.svg")';
 
 const Hero = () => (
   <div className="text-center hero">
