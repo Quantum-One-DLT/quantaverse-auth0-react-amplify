@@ -11,7 +11,7 @@ const styles={{
   backgroundPosition: 'center',
   backgroundSize: 'cover',
   backgroundRepeat: 'no-repeat'
-}}
+}};
 
 const App = () => {
   return (
