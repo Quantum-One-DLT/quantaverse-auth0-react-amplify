@@ -33,3 +33,14 @@
 .result-block-container .result-block {
   opacity: 1;
 }
+
+.SpaceBackground {
+ background-image:
+  url(
+"https://quantumone.b-cdn.net/Untitled%20Design_2-6.jpg");
+  background-size: "cover";
+  height: 100vh;
+  margin-top: -70px;
+  font-size:50px;
+  background-repeat:no-repeat;
+}
