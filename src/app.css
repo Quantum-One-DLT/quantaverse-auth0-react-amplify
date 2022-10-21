@@ -44,3 +44,8 @@
   font-size:50px;
   background-repeat:no-repeat;
 }
+
+.lgrad {
+  background-image: linear-gradient(to right top, #1e2022, #2d424f, #316a7c, #2794a8, #06c1ce, #04cede, #02dcee, #00e9ff, #00d7ff, #00c3ff, #00aeff, #0096ff);
+  height: 100vh;
+}
