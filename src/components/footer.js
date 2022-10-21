@@ -1,7 +1,7 @@
 import React from "react";
 
 const Footer = () => (
-  <footer className="bg-dark p-3 variant-light text-center">
+  <footer className="bg-dark p-3 text-center color-white">
     <div>
     <p>
       Quantaverse ID is a registered trademark of{" "}
