@@ -17,7 +17,7 @@ const HomeContent = () => (
           </a>
         </h6>
         <p>
-         Quantum One DAO is eliminating blockchain investment risk, archaic web2 inefficiencies, and capable of almost any use case - such as a Healthcare ecosystem. 
+         QuantaVerse and QuantaVerse ID was created by Quantum One DAO. We are eliminating blockchain investment risk, archaic web2 inefficiencies of which lock $400B annually in the US Banking sector alone, and enabling the creation of legal, compliant organizations, software, applications, networks, and ecosystems. Learn more in our Whitepaper which contains information directly from trusted sources to save readers time verifying our claims.
         </p>
       </div>
 
