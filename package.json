@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "@auth0/auth0-react": "^1.4.0",
+    "@web3-onboard/core": "^2.9.0",
+    "@web3-onboard/injected-wallets": "^2.2.4",
     "css-select": "^5.1.0",
     "nth-check": "^2.1.1",
     "react": "^16.14.0",
