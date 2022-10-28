@@ -1,1 +1,1 @@
-#TODO privacy terms page
+#TODO privacy terms page from quantaverse-nextjs
