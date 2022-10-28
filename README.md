@@ -1,6 +1,8 @@
-# Easy User Authentication for React Apps using AWS Amplify
-
-This repository hosts a React project that defines a Single-Page Application (SPA). You'll secure access to some of its routes using Auth0 User Authentication. You'll deploy it using AWS Amplify
+# QuantaVerse ID is Quantum One DAO's web-agnostic ID/KYC/AML product that includes - 
+>- Easy Web3 & DID integrated ID/KYC/AML verification web-app built for all devices. 
+>- Auth0 Open-ID connect user authentication including Unstoppable NFT Domains, Github, and FitBit - for our HealthOne product. 
+>- SAML, Federated, SSO 
+>- Proof of prior KYC and our Blocknative integration (presently at da-fi.io) coming soon.
 
 ## Get Started
 
