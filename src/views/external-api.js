@@ -1,7 +1,9 @@
 import React, { useState } from "react";
+import { useAuth0} from "@auth0/auth0-react";
 
 const ExternalApi = () => {
-  const [message, setMessage] = useState("");
+  const { user } = useAuth0();
+  const [message, setMessage] = user.useState("");
 
   return (
     <div>
