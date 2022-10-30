@@ -103,8 +103,8 @@ code {
 }
 
 .hero .logo {
-  max-width: 21rem;
-  height: 17rem;
+  max-width: 75rem;
+  max-height: 50rem;
 }
 
 
