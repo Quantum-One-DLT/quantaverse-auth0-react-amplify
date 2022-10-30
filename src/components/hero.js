@@ -1,6 +1,6 @@
 import React from "react";
 
-let Logo = require("../assets/logo-black.png");
+let Logo = require("../assets/quantumone-home.jpg");
 
 const Hero = () => (
   <div className="text-center hero">
