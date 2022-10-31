@@ -14,7 +14,7 @@ const Hero = () => (
       >Verify ID/KYC 
      </a> 
     </p>
-   <p className="lead" Once complete with verification, create or link your account using the login button found in the menu at the top right of the page. />
+   <p className="paragraph"> Once complete with verification, create or link your account using the login button found in the menu at the top right of the page. />
     <figure className='figure'>
       <img width="100%"
         src={Logo}
