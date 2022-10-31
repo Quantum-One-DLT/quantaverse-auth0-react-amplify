@@ -4,7 +4,6 @@ const Logo = require("../assets/quantumone-home.jpg");
 
 const Hero = () => (
   <div className="text-center hero">
-    <img width="100%" className="mb-3 logo" src={Logo} alt="new-website-preview" />
     <h1 className="mb-4"> Quantum One DAO's QuantaVerse AirDrop </h1>
     <p className="lead">
        The 1st 3500 users who verify their ID or prove prior KYC will become one of the earliest members of Quantum One DAO. To get started, {" "}
@@ -16,6 +15,14 @@ const Hero = () => (
       </a>
        and then return here to create a QuantaVerse ID account or link another.
     </p>
+    <figure className='figure'>
+      <img width="100%"
+        src={Logo}
+        className="figure-img img-fluid rounded shadow-3 mb-3"
+        alt="new-website-preview"
+      />
+      <figcaption className="figure-caption">New website preview.</figcaption>
+    </figure>
   </div>
 );
 
