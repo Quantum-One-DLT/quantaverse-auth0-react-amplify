@@ -62,8 +62,7 @@ const HomeContent = () => (
       </div>
 
       <div className="col-md" />
-
-      <div className="col-md-5 mb-4">
+       <div className="col-md-5 mb-4">
         <h6 className="mb-3">
           <a
             target="_blank"
@@ -77,25 +76,25 @@ const HomeContent = () => (
         <p>
           Quantaverse ID is humanity's optimal digital trust paradigm. We're contributors to the Decentralized Identity Foundation, a member Dun and Bradstreet as well as Pledge 1%. 
         </p>
-      </div>
-      <div className="col-md" />
-
-      <div className="col-md-5 mb-4">
-        <h6 className="mb-3">
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://github.com/quantum-one-dlt"
-          >
+        </div>
+       </div>
+      <div className="row">
+        <div className="col-md-5 mb-4">
+          <h6 className="mb-3">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/quantum-one-dlt"
+            >
             <i className="fas fa-link mr-2" />
             GitHub
-          </a>
-        </h6>
-        <p>
+            </a>
+          </h6>
+          <p>
           Take a look at what we've been up to and where we may be headed.   
-        </p>
+          </p>
+        </div>
       </div>
-    </div>
   </div>
 );
 
