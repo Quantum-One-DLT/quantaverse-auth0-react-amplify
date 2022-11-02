@@ -2,5 +2,6 @@ import ExternalApi from "./external-api";
 import Home from "./home";
 import Profile from "./profile";
 import Flow from "./flow";
+import Privacy from "./privacy";
 
-export { ExternalApi, Home, Profile, Flow };
+export { ExternalApi, Home, Profile, Flow, Privacy };

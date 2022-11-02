@@ -2,7 +2,7 @@ import React from "react";
 import { Route, Switch } from "react-router-dom";
 
 import { NavBar, Footer} from "./components";
-import { Home, Profile, ExternalApi, Flow } from "./views";
+import { Home, Profile, ExternalApi, Flow, Privacy } from "./views";
 
 import "./app.css";
 
@@ -17,6 +17,7 @@ const App = () => {
             <Route path="/profile" component={Profile} />
             <Route path="/external-api" component={ExternalApi} />
             <Route path="/flow" component={Flow} />
+            <Route path="/privacy" component={Privacy} />
           </Switch>
         </div>
       </div>
