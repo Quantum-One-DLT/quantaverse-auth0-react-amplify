@@ -4,7 +4,7 @@ import { ethers } from "ethers";
 import Web3Provider from "./network";
 import CoinSwapper from "./CoinSwapper/CoinSwapper";
 import { SnackbarProvider } from "notistack";
-import Liquidity from "./Liquidity/Liquidity";
+import Liquidity from "./liquidity/Liquidity";
 import { NavBar, Footer} from "./components";
 import { Home, Profile, ExternalApi, Flow, Privacy } from "./views";
 
