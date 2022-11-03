@@ -14,8 +14,7 @@ const onboard = Onboard({
       token: 'ETH',
       label: 'Ethereum Mainnet',
       rpcUrl: MAINNET_RPC_URL
-    }
-
+    },
     {
       id: '0x3',
       token: 'tROP',
@@ -46,7 +45,6 @@ const onboard = Onboard({
       label: 'Fantom Mainnet',
       rpcUrl: 'https://rpc.ftm.tools/'
     }
-  
   ],
   appMetadata: {
     name: 'QuantaVerse ID',
