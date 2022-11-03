@@ -114,14 +114,6 @@ code {
   max-height: 75rem;
 }
 
-.container {
-  width: 80%;
-  margin: auto;
-  border: 5px #333333 solid;
-  padding: 10px;
-  border-radius: 25px;
-}
-
 .input {
   width: 1;
   color: #777;
