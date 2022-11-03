@@ -2,7 +2,7 @@ import { useEffect, useState, useRef } from "react";
 import { Contract, ethers } from "ethers";
 import { createTheme, ThemeProvider } from "@material-ui/core";
 import { SnackbarProvider } from "notistack";
-import ConnectWalletPage from "./components/connectWalletPage";
+import ConnectWalletPage from "./views/connectWalletPage";
 import {
   getAccount,
   getFactory,
