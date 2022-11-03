@@ -26,10 +26,10 @@ const App = () => {
             <Route path="/external-api" component={ExternalApi} />
             <Route path="/flow" component={Flow} />
             <Route path="/privacy" component={Privacy} />
-            <Route exact path="/QuantaVerse-Uniswap-Interface/">
+            <Route exact path="/quantaverse-auth0-react-amplify/">
                   <CoinSwapper network={network} />
                 </Route>
-            <Route exact path="/QuantaVerse-Uniswap-Interface/liquidity">
+            <Route exact path="/quantaverse-auth0-react-amplify/liquidity">
                   <Liquidity network={network} />
                 </Route>
                 <Route>
