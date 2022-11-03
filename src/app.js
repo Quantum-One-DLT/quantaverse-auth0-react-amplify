@@ -9,6 +9,7 @@ import { NavBar, Footer} from "./components";
 import { Home, Profile, ExternalApi, Flow, Privacy } from "./views";
 import { createTheme, ThemeProvider } from "@material-ui/core";
 import "./app.css";
+import ConnectWallet from "./components/connectWallet";
 
 const theme = createTheme({
   palette: {
@@ -31,7 +32,9 @@ const App = () => {
       <Web3Provider
             render={(network) => (
           <div>
-      <NavBar />
+      <NavBar>
+      <ConnectWallet />
+      </NavBar>
       <div className="container flex-grow-1">
         <div className="mt-5">
           <Switch>

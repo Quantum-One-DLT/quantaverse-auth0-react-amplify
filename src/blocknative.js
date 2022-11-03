@@ -15,6 +15,38 @@ const onboard = Onboard({
       label: 'Ethereum Mainnet',
       rpcUrl: MAINNET_RPC_URL
     }
+
+    {
+      id: '0x3',
+      token: 'tROP',
+      label: 'Ethereum Ropsten Testnet',
+      rpcUrl: 'https://ropsten.infura.io/v3/{INFURA_ID}'
+    },
+    {
+      id: '0x4',
+      token: 'rETH',
+      label: 'Ethereum Rinkeby Testnet',
+      rpcUrl: 'https://rinkeby.infura.io/v3/{INFURA_ID}'
+    },
+    {
+      id: '0x38',
+      token: 'BNB',
+      label: 'Binance Smart Chain',
+      rpcUrl: 'https://bsc-dataseed.binance.org/'
+    },
+    {
+      id: '0x89',
+      token: 'MATIC',
+      label: 'Matic Mainnet',
+      rpcUrl: 'https://matic-mainnet.chainstacklabs.com'
+    },
+    {
+      id: '0xfa',
+      token: 'FTM',
+      label: 'Fantom Mainnet',
+      rpcUrl: 'https://rpc.ftm.tools/'
+    }
+  
   ],
   appMetadata: {
     name: 'QuantaVerse ID',
