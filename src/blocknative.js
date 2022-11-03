@@ -15,7 +15,11 @@ const onboard = Onboard({
       label: 'Ethereum Mainnet',
       rpcUrl: MAINNET_RPC_URL
     }
-  ]
+  ],
+  appMetadata: {
+    name: 'QuantaVerse ID',
+    icon: '"%PUBLIC_URL%/share.png"',
+    description: 'QuantaVerse ID Blocknative Onboarding'
 })
 
 const wallets = await onboard.connectWallet()
