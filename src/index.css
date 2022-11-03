@@ -1,4 +1,4 @@
-12$enable-container-classes
+$enable-container-classes
 
 body {
   --blue: #007bff;
@@ -30,11 +30,18 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-y: scroll;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 1em;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.outer {
+  padding: 10px;
 }
 
 .next-steps .fa-link {
@@ -107,4 +114,57 @@ code {
   max-height: 75rem;
 }
 
+.container {
+  width: 80%;
+  margin: auto;
+  border: 5px #333333 solid;
+  padding: 10px;
+  border-radius: 25px;
+}
 
+.input {
+  width: 1;
+  color: #777;
+  padding: 8;
+  margin: 10;
+  width: 200;
+}
+
+.myform {
+  padding: 20px;
+}
+
+.myform input[type="text"],
+.myform textarea {
+  padding: 8px;
+  width: 100%;
+}
+
+.column {
+  padding: 20px;
+  float: left;
+  width: 50%;
+}
+
+.column_aut {
+  padding: 20px;
+  float: left;
+  width: 33%;
+}
+
+.Token_message {
+  display: inline;
+}
+
+.swap {
+  padding: 10px;
+}
+
+.swap_button {
+  float: right;
+}
+
+.markdown {
+  width: 80%;
+  margin: auto;
+}

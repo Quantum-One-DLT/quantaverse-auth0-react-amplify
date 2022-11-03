@@ -7,6 +7,8 @@ import {
   Typography,
 } from "@material-ui/core";
 
+import { useAuth0} from "@auth0/auth0-react";
+
 const styles = (theme) => ({
   paperContainer: {
     borderRadius: theme.spacing(2),
