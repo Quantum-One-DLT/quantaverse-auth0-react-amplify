@@ -76,8 +76,8 @@ function ConnectWalletPage() {
         alignItems="flex-end"
       >
         <p>
-          QuantaVerse Uniswap Interface | Get DA-FI for rewards during Quantum One Testnet{" "}
-          <a href="https://quantumone.network">here</a>
+          QuantaVerse Uniswap Interface, created by Quantum One DAO. {" ."}
+          <a href="https://quantaverseid.io/privacy">Privacy Policy</a>
         </p>
       </Grid>
     </div>
