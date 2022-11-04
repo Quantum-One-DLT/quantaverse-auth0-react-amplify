@@ -1,6 +1,10 @@
 import Onboard from '@web3-onboard/core'
 import injectedModule from '@web3-onboard/injected-wallets'
 import { ethers } from 'ethers'
+import { defaultAbiCoder } from 'ethers/lib/utils'
+import { init } from '@web3-onboard/react'
+
+const INFURA_KEY = "4661d68cbd394dd88899475febf677e9"
 
 const MAINNET_RPC_URL = 'https://mainnet.infura.io/v3/<INFURA_KEY>'
 
@@ -50,7 +54,7 @@ const onboard = Onboard({
     name: 'QuantaVerse ID',
     icon: '"%PUBLIC_URL%/share.png"',
     description: 'QuantaVerse ID Blocknative Onboarding'
-})
+}});
 
 const wallets = await onboard.connectWallet()
 
