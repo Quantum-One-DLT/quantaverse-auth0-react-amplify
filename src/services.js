@@ -1,6 +1,3 @@
-import blocknativeLogo from './icons/blocknative-logo' 
-import blocknativeIcon from './icons/blocknative-icon' 
-  
 import { init } from '@web3-onboard/react' 
 import injectedModule from '@web3-onboard/injected-wallets' 
 import trezorModule from '@web3-onboard/trezor' 
@@ -143,10 +140,10 @@ import gas from '@web3-onboard/gas'
      } 
    ], 
    appMetadata: { 
-     name: 'QuantaVerse ID, 
+     name: 'QuantaVerse ID',
      icon: "%PUBLIC_URL%/favicon.ico", 
      logo: "%PUBLIC_URL%/logo.png",
-     description: 'QuantaVerse ID Web3 Connect, 
+     description: 'QuantaVerse ID Web3 Connect', 
      recommendedInjectedWallets: [ 
        { name: 'Coinbase', url: 'https://wallet.coinbase.com/' }, 
        { name: 'MetaMask', url: 'https://metamask.io' } 
@@ -221,4 +218,4 @@ import gas from '@web3-onboard/gas'
    chains: ['0x1'], 
    apiKey: dappId, 
    endpoint: 'blockPrices' 
- })
+ });
