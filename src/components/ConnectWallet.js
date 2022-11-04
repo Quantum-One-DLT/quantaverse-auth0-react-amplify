@@ -1,10 +1,10 @@
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 import { useConnectWallet } from "@web3-onboard/react"
 import { ethers } from "ethers"
 
 const ConnectWallet = () => {
   const [{ wallet, connecting }, connect, disconnect] = useConnectWallet()
-  const [ethersProvider, setProvider] = useState()
+  const [ethersProvider, setProvider] = useState(ethers.providers.Web3Provider | null)()
 
   useEffect(() => {
     // If the wallet has a provider than the wallet is connected
