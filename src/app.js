@@ -34,11 +34,9 @@ const App = () => {
     <div id="app" className="d-flex flex-column h-100" style={{background: "linear-gradient(to right top, #03fff6, #00cfc8, #02dcee, #02dcee, #06c1ce, #04cede, #02dcee, #00e9ff, #00d7ff, #00c3ff, #00aeff, #0096ff)"}}>
       <SnackbarProvider maxSnack={3}>
       <ThemeProvider theme={theme}>
-      <Web3OnboardProvider render={(web3Onboard) => (
-         <div>
-        <ConnectWallet />
-         
-      <NavBar />
+      <NavBar> 
+        <ConnectWallet/>
+       </NavBar>
       <div className="container flex-grow-1">
         <div className="mt-5">
           <Switch>
@@ -59,9 +57,6 @@ const App = () => {
         </div>
       </div>
       <Footer />
-      </div>
-      )}
-      ></Web3OnboardProvider>
       </ThemeProvider>
       </SnackbarProvider>
     </div>
