@@ -33,9 +33,10 @@ const App = () => {
     <div id="app" className="d-flex flex-column h-100" style={{background: "linear-gradient(to right top, #03fff6, #00cfc8, #02dcee, #02dcee, #06c1ce, #04cede, #02dcee, #00e9ff, #00d7ff, #00c3ff, #00aeff, #0096ff)"}}>
       <SnackbarProvider maxSnack={3}>
       <ThemeProvider theme={theme}>
-      <NavBar> 
-        <ConnectWallet/>
-       </NavBar>
+      <Web3Provider
+            render={(network) => (
+              <div>
+      <NavBar /> 
       <div className="container flex-grow-1">
         <div className="mt-5">
           <Switch>
@@ -45,10 +46,10 @@ const App = () => {
             <Route path="/flow" component={Flow} />
             <Route path="/privacy" component={Privacy} />
             <Route exact path="/quantaverse-auth0-react-amplify/">
-                  <CoinSwapper Web3Provider={Web3OnboardProvider} />
+                  <CoinSwapper network={network} />
                 </Route>
             <Route exact path="/quantaverse-auth0-react-amplify/liquidity">
-                  <Liquidity Web3Provider={Web3OnboardProvider} />
+                  <Liquidity network={network} />
                 </Route>
                 <Route>
                </Route>
@@ -56,6 +57,8 @@ const App = () => {
         </div>
       </div>
       <Footer />
+      </div>
+      ></Web3Provider>
       </ThemeProvider>
       </SnackbarProvider>
     </div>
