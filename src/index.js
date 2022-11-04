@@ -6,7 +6,6 @@ import { Auth0Provider } from "@auth0/auth0-react";
 import { BrowserRouter as Router } from "react-router-dom";
 import { getConfig } from "./config";
 import history from "./utils/history";
-import web3Onboard from './web3-onboard'
 import { Web3OnboardProvider } from '@web3-onboard/react'
 import { init } from '@web3-onboard/react';
 import injectedModule from '@web3-onboard/injected-wallets'
