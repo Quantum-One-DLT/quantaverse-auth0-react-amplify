@@ -12,7 +12,6 @@ import "./app.css";
 import ConnectWallet from "./components/ConnectWallet";
 import { Web3OnboardProvider, init } from '@web3-onboard/react'
 import injectedModule from '@web3-onboard/injected-wallets'
-import web3Onboard from "./index.js"
 
 const INFURA_KEY = "4661d68cbd394dd88899475febf677e9";
 
@@ -46,10 +45,10 @@ const App = () => {
             <Route path="/flow" component={Flow} />
             <Route path="/privacy" component={Privacy} />
             <Route exact path="/quantaverse-auth0-react-amplify/">
-                  <CoinSwapper web3Onboard={web3Onboard} />
+                  <CoinSwapper Web3Provider={Web3OnboardProvider} />
                 </Route>
             <Route exact path="/quantaverse-auth0-react-amplify/liquidity">
-                  <Liquidity web3Onboard={web3Onboard} />
+                  <Liquidity Web3Provider={Web3OnboardProvider} />
                 </Route>
                 <Route>
                </Route>
