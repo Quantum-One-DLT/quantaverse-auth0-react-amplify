@@ -34,8 +34,8 @@ const App = () => {
       <SnackbarProvider maxSnack={3}>
       <ThemeProvider theme={theme}>
       <Web3Provider
-            render={(network) => (
-              <div>
+         render={(network) => (
+         <div>
       <NavBar /> 
       <div className="container flex-grow-1">
         <div className="mt-5">
@@ -58,6 +58,7 @@ const App = () => {
       </div>
       <Footer />
       </div>
+      )}
       ></Web3Provider>
       </ThemeProvider>
       </SnackbarProvider>
