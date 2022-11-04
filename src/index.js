@@ -10,8 +10,6 @@ import { Web3OnboardProvider } from '@web3-onboard/react'
 import { init } from '@web3-onboard/react';
 import injectedModule from '@web3-onboard/injected-wallets'
 
-const INFURA_KEY = "4661d68cbd394dd88899475febf677e9"
-
 const ethereumRopsten = {
   id: '0x3',
   token: 'rETH',
@@ -63,11 +61,9 @@ const providerConfig = {
 
 ReactDOM.render(
   <Auth0Provider {...providerConfig}>
-    <Web3OnboardProvider web3Onboard={web3Onboard}>
     <Router>
       <App />
     </Router>
-    </Web3OnboardProvider>
   </Auth0Provider>,
   document.getElementById("root")
 );
