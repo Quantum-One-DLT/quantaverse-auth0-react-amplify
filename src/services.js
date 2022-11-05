@@ -1,6 +1,5 @@
 import { init } from '@web3-onboard/react' 
 import injectedModule from '@web3-onboard/injected-wallets' 
-import ledgerModule from '@web3-onboard/ledger' 
 import walletConnectModule from '@web3-onboard/walletconnect' 
 import coinbaseModule from '@web3-onboard/coinbase' 
 import portisModule from '@web3-onboard/portis' 
@@ -33,8 +32,7 @@ import gas from '@web3-onboard/gas'
    apiKey: 'pk_live_ABD29B8F212A94C2' 
  }) 
   
- const torus = torusModule() 
- const ledger = ledgerModule() 
+ const torus = torusModule()  
  const keepkey = keepkeyModule() 
  const gnosis = gnosisModule() 
  const sequence = sequenceModule() 
@@ -55,8 +53,7 @@ import gas from '@web3-onboard/gas'
  export const initWeb3Onboard = init({ 
    wallets: [ 
      injected, 
-     tally, 
-     ledger, 
+     tally,  
      coinbase, 
      walletConnect, 
      web3auth, 
