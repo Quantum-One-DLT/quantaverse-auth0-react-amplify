@@ -5,5 +5,6 @@ import Loading from "./loading";
 import NavBar from "./nav-bar";
 import LoginButton from "./loginButton";
 import LogoutButton from "./logoutButton";
+import ConnectWallet from "./ConnectWallet";
 
-export { HomeContent, Footer, Hero, Loading, LoginButton, LogoutButton, NavBar };
+export { HomeContent, Footer, Hero, Loading, LoginButton, LogoutButton, NavBar, ConnectWallet };

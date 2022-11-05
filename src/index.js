@@ -6,6 +6,7 @@ import { Auth0Provider } from "@auth0/auth0-react";
 import { BrowserRouter as Router } from "react-router-dom";
 import { getConfig } from "./config";
 import history from "./utils/history";
+import { initWeb3Onboard } from "./services";
 
 const onRedirectCallback = (appState) => {
   history.push(
@@ -25,7 +26,9 @@ const providerConfig = {
 ReactDOM.render(
   <Auth0Provider {...providerConfig}>
     <Router>
+      <initWeb3Onboard>
       <App />
+      </initWeb3Onboard>
     </Router>
   </Auth0Provider>,
   document.getElementById("root")
