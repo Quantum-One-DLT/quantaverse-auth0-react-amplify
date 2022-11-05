@@ -1,6 +1,5 @@
 import { init } from '@web3-onboard/react' 
 import injectedModule from '@web3-onboard/injected-wallets' 
-import trezorModule from '@web3-onboard/trezor' 
 import ledgerModule from '@web3-onboard/ledger' 
 import walletConnectModule from '@web3-onboard/walletconnect' 
 import coinbaseModule from '@web3-onboard/coinbase' 
@@ -40,13 +39,6 @@ import gas from '@web3-onboard/gas'
  const gnosis = gnosisModule() 
  const sequence = sequenceModule() 
  const tally = tallyModule() 
-  
- const trezorOptions = { 
-   email: 'test@test.com', 
-   appUrl: 'https://www.blocknative.com' 
- } 
-  
- const trezor = trezorModule(trezorOptions) 
   
  const magic = magicModule({ 
    // Example api key, may need to be updated when max hits reached 
