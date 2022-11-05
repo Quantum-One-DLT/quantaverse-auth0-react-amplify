@@ -49,3 +49,32 @@
   background-image: linear-gradient(to right top, #1e2022, #2d424f, #316a7c, #2794a8, #06c1ce, #04cede, #02dcee, #00e9ff, #00d7ff, #00c3ff, #00aeff, #0096ff);
   height: 100vh;
 }
+ 
+.button {
+   background: #ffffffee; 
+   font-size: 0.889rem; 
+   border: 1px solid #eeeeee; 
+   border-radius: 8px; 
+   padding: 0.55rem 1.4rem; 
+   color: #6370e5; 
+   margin: 0.4rem 0.75rem; 
+   transition: background 200ms ease-in-out, color 200ms ease-in-out; 
+ } 
+  
+ .button:focus { 
+   outline: none; 
+ } 
+  
+ .button:hover { 
+   cursor: pointer; 
+ } 
+  
+ .selected-toggle-btn { 
+   background: #6370e5; 
+   color: white; 
+ } 
+  
+ .unselected-toggle-btn { 
+   color: #6370e5; 
+   background: #ffffffee; 
+ }
