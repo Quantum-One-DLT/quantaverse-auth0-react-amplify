@@ -4,8 +4,7 @@ import walletConnectModule from '@web3-onboard/walletconnect'
 import coinbaseModule from '@web3-onboard/coinbase' 
 import portisModule from '@web3-onboard/portis' 
 import fortmaticModule from '@web3-onboard/fortmatic' 
-import torusModule from '@web3-onboard/torus' 
-import keepkeyModule from '@web3-onboard/keepkey' 
+import torusModule from '@web3-onboard/torus'  
 import gnosisModule from '@web3-onboard/gnosis' 
 import web3authModule from '@web3-onboard/web3auth' 
 import sequenceModule from '@web3-onboard/sequence' 
@@ -31,8 +30,7 @@ import gas from '@web3-onboard/gas'
    apiKey: 'pk_live_ABD29B8F212A94C2' 
  }) 
   
- const torus = torusModule()  
- const keepkey = keepkeyModule() 
+ const torus = torusModule()   
  const gnosis = gnosisModule() 
  const sequence = sequenceModule() 
  const tally = tallyModule() 
@@ -50,8 +48,7 @@ import gas from '@web3-onboard/gas'
      walletConnect, 
      web3auth, 
      gnosis, 
-     fortmatic, 
-     keepkey, 
+     fortmatic,  
      portis, 
      torus, 
      sequence 
