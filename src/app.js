@@ -52,10 +52,10 @@ const App = () => {
             <Route path="/external-api" component={ExternalApi} />
             <Route path="/flow" component={Flow} />
             <Route path="/privacy" component={Privacy} />
-            <Route exact path="/DA-FI-swap" component={ConnectWallet}>
+            <Route exact path="/DA-FI-swap">
                   <CoinSwapper/>
                 </Route>
-            <Route exact path="/DA-FI-swap/liquidity"compnent={ConnectWallet}>
+            <Route exact path="/DA-FI-swap/liquidity">
                   <Liquidity/>
                 </Route>
                 <Route>
