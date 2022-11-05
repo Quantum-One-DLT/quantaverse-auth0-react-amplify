@@ -10,12 +10,28 @@ import { Home, Profile, ExternalApi, Flow, Privacy } from "./views";
 import { createTheme, ThemeProvider } from "@material-ui/core";
 import "./app.css";
 import ConnectWallet from "./components/ConnectWallet";
-import { Web3OnboardProvider, init } from '@web3-onboard/react'
+import { useConnectWallet, init } from '@web3-onboard/react'
 import injectedModule from '@web3-onboard/injected-wallets'
 
 //#TODO ADD BACK WEB3 TO VPN at subdomain (must add) app.quantaverseid.io
 
 const INFURA_KEY = "4661d68cbd394dd88899475febf677e9";
+
+const rpcAPIKey = "<INFURA_KEY>" || "<ALCHEMY_KEY>";
+const rpcUrl = `https://eth-mainnet.g.alchemy.com/v2/${rpcAPIKey}` || `https://mainnet.infura.io/v3/${rpcAPIKey}`
+
+// initialize Onboard
+init({
+  wallets: [injected],
+  chains: [
+    {
+      id: '0x1',
+      token: 'ETH',
+      label: 'Ethereum Mainnet',
+      rpcUrl
+    }
+  ]
+});
 
 const theme = createTheme({
   palette: {
@@ -31,11 +47,28 @@ const theme = createTheme({
 });
 
 const App = () => {
+const [{ wallet, connecting }, connect, disconnect] = useConnectWallet()
+
+  // create an ethers provider
+  let ethersProvider
+
+  if (wallet) {
+    ethersProvider = new ethers.providers.Web3Provider(wallet.provider, 'any')
+  }
   return (
     <div id="app" className="d-flex flex-column h-100" style={{background: "linear-gradient(to right top, #03fff6, #00cfc8, #02dcee, #02dcee, #06c1ce, #04cede, #02dcee, #00e9ff, #00d7ff, #00c3ff, #00aeff, #0096ff)"}}>
       <SnackbarProvider maxSnack={3}>
       <ThemeProvider theme={theme}>
-      <NavBar /> 
+      <NavBar>
+      <div>
+      <button
+        disabled={connecting}
+        onClick={() => (wallet ? disconnect(wallet) : connect())}
+      >
+        {connecting ? 'connecting' : wallet ? 'disconnect' : 'connect'}
+      </button>
+    </div>
+    </NavBar> 
       <div className="container flex-grow-1">
         <div className="mt-5">
           <Switch>
@@ -45,10 +78,10 @@ const App = () => {
             <Route path="/flow" component={Flow} />
             <Route path="/privacy" component={Privacy} />
             <Route exact path="/DA-FI-swap/">
-                  <CoinSwapper network={network} />
+                  <CoinSwapper/>
                 </Route>
             <Route exact path="/DA-FI-swap/liquidity">
-                  <Liquidity network={network} />
+                  <Liquidity/>
                 </Route>
                 <Route>
                </Route>
