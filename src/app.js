@@ -9,6 +9,7 @@ import { NavBar, Footer} from "./components";
 import { Home, Profile, ExternalApi, Flow, Privacy } from "./views";
 import { createTheme, ThemeProvider } from "@material-ui/core";
 import "./app.css";
+import { Button } from '@mui/material';
 import ConnectWallet from "./components/ConnectWallet";
 import { useConnectWallet, init } from '@web3-onboard/react'
 import injectedModule from '@web3-onboard/injected-wallets'
@@ -62,12 +63,12 @@ const [{ wallet, connecting }, connect, disconnect] = useConnectWallet()
       <ThemeProvider theme={theme}>
       <NavBar>
       <div>
-      <button
+      <Button
         disabled={connecting}
         onClick={() => (wallet ? disconnect(wallet) : connect())}
       >
         {connecting ? 'connecting' : wallet ? 'disconnect' : 'connect'}
-      </button>
+      </Button>
     </div>
     </NavBar> 
       <div className="container flex-grow-1">
