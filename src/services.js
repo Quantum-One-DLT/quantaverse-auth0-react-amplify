@@ -3,12 +3,8 @@ import injectedModule from '@web3-onboard/injected-wallets'
 import walletConnectModule from '@web3-onboard/walletconnect' 
 import coinbaseModule from '@web3-onboard/coinbase' 
 import portisModule from '@web3-onboard/portis' 
-import fortmaticModule from '@web3-onboard/fortmatic' 
-import torusModule from '@web3-onboard/torus'  
+import fortmaticModule from '@web3-onboard/fortmatic'   
 import gnosisModule from '@web3-onboard/gnosis' 
-import web3authModule from '@web3-onboard/web3auth' 
-import sequenceModule from '@web3-onboard/sequence' 
-import tallyModule from '@web3-onboard/tallyho' 
 import gas from '@web3-onboard/gas' 
   
  // Replace with your DApp's Infura ID 
@@ -29,29 +25,17 @@ import gas from '@web3-onboard/gas'
  const fortmatic = fortmaticModule({ 
    apiKey: 'pk_live_ABD29B8F212A94C2' 
  }) 
-  
- const torus = torusModule()   
- const gnosis = gnosisModule() 
- const sequence = sequenceModule() 
- const tally = tallyModule() 
-    
- const web3auth = web3authModule({ 
-   clientId: 
-     'DJuUOKvmNnlzy6ruVgeWYWIMKLRyYtjYa9Y10VCeJzWZcygDlrYLyXsBQjpJ2hxlBO9dnl8t9GmAC2qOP5vnIGo' 
- }) 
+     
+ const gnosis = gnosisModule()
   
  export const initWeb3Onboard = init({ 
    wallets: [ 
      injected, 
-     tally,  
      coinbase, 
      walletConnect, 
-     web3auth, 
      gnosis, 
      fortmatic,  
-     portis, 
-     torus, 
-     sequence 
+     portis 
    ], 
    chains: [ 
      { 
