@@ -15,8 +15,9 @@ import injectedModule from '@web3-onboard/injected-wallets'
 
 //#TODO ADD BACK WEB3 TO VPN at subdomain (must add) app.quantaverseid.io
 
+const dappID = "7813493a-da4d-4d5a-9a8e-fcc7f6b499ea";
 const INFURA_KEY = "4661d68cbd394dd88899475febf677e9";
-
+const injected = injectedModule();
 const rpcAPIKey = "<INFURA_KEY>" || "<ALCHEMY_KEY>";
 const rpcUrl = `https://eth-mainnet.g.alchemy.com/v2/${rpcAPIKey}` || `https://mainnet.infura.io/v3/${rpcAPIKey}`
 
