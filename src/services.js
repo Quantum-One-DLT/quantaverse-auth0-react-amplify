@@ -58,7 +58,6 @@ import gas from '@web3-onboard/gas'
      tally, 
      ledger, 
      coinbase, 
-     trezor, 
      walletConnect, 
      web3auth, 
      gnosis, 
