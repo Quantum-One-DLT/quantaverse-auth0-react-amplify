@@ -3,7 +3,6 @@ import injectedModule from '@web3-onboard/injected-wallets'
 import walletConnectModule from '@web3-onboard/walletconnect' 
 import coinbaseModule from '@web3-onboard/coinbase' 
 import portisModule from '@web3-onboard/portis' 
-import magicModule from '@web3-onboard/magic' 
 import fortmaticModule from '@web3-onboard/fortmatic' 
 import torusModule from '@web3-onboard/torus' 
 import keepkeyModule from '@web3-onboard/keepkey' 
@@ -37,14 +36,7 @@ import gas from '@web3-onboard/gas'
  const gnosis = gnosisModule() 
  const sequence = sequenceModule() 
  const tally = tallyModule() 
-  
- const magic = magicModule({ 
-   // Example api key, may need to be updated when max hits reached 
-   // Get one to test with for free from https://magic.link/ 
-   apiKey: 'pk_live_ABD29B8F212A94C2', 
-   userEmail: localStorage.getItem('magicUserEmail') 
- }) 
-  
+    
  const web3auth = web3authModule({ 
    clientId: 
      'DJuUOKvmNnlzy6ruVgeWYWIMKLRyYtjYa9Y10VCeJzWZcygDlrYLyXsBQjpJ2hxlBO9dnl8t9GmAC2qOP5vnIGo' 
@@ -58,7 +50,6 @@ import gas from '@web3-onboard/gas'
      walletConnect, 
      web3auth, 
      gnosis, 
-     magic, 
      fortmatic, 
      keepkey, 
      portis, 
