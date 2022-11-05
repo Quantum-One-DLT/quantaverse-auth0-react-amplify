@@ -32,7 +32,12 @@ const theme = createTheme({
       main: "#1e2022",
       contrastText: "#ffffff",
     }, 
+  button: { 
+     width:  72px,
+     height: 28px,
+     color:  blue
   },
+},
 });
 
 const App = () => {
