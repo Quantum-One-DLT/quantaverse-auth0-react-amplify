@@ -1,10 +1,7 @@
 import React from "react";
 import MainNav from "./main-nav";
 import {NavbarBrand, Navbar} from "reactstrap";
-import {initWeb3Onboard} from "../services";
 let Logo = require("../assets/NavLogo.png");
-
-const BN = initWeb3Onboard;
 
 const NavBar = () => {
   return (
@@ -24,7 +21,6 @@ const NavBar = () => {
         }}
       />
     </NavbarBrand>
-     <BN/>
      <MainNav/>
    </Navbar>
    </div>
