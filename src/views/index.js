@@ -5,4 +5,4 @@ import Flow from "./flow";
 import Privacy from "./privacy";
 import ConnectWalletPage from "./connectWalletPage";
 
-export { ExternalApi, Home, Profile, Flow, ConnectWalletPage, Privacy };
+export { ExternalApi, Home, Profile, Flow, Privacy, ConnectWalletPage };

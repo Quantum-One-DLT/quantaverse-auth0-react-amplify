@@ -6,7 +6,7 @@ import CoinSwapper from "./CoinSwapper/CoinSwapper";
 import { SnackbarProvider } from "notistack";
 import Liquidity from "./liquidity/Liquidity";
 import { NavBar, Footer} from "./components";
-import { Home, Profile, ExternalApi, Flow, Privacy, ConnectWallet } from "./views";
+import { Home, Profile, ExternalApi, Flow, Privacy, ConnectWallet, ConnectWalletPage } from "./views";
 import { createTheme, ThemeProvider } from "@material-ui/core";
 import "./app.css";
 import injectedModule from '@web3-onboard/injected-wallets'
@@ -52,6 +52,7 @@ const App = () => {
             <Route path="/external-api" component={ExternalApi} />
             <Route path="/flow" component={Flow} />
             <Route path="/privacy" component={Privacy} />
+            <Route path="/connectWalletPage" component={ConnectWalletPage} />
             <Route exact path="/DA-FI-swap">
                   <CoinSwapper  network={network}/>
                 </Route>
