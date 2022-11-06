@@ -58,16 +58,6 @@ const MainNav = () => {
           <LogoutButton style={{color: "#f10034"}} />
         </NavItem>
       )}
-      {!isAuthenticated && (
-        <NavItem>
-          <ConnectWallet/>
-        </NavItem>
-      )}
-      {isAuthenticated && (
-        <NavItem>
-          <ConnectWallet />
-        </NavItem>
-      )}
       </Nav>
       </Collapse>
     </div>
