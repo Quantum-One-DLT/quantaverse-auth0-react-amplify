@@ -44,12 +44,7 @@ export default function EntropyXGrid() {
 
   return (
     <div className="root" style={{
-      paddingLeft: '4rem',
-      height: 520,width: '94%',background: colors.dafident,[theme.breakpoints.down('md')]: {
-        height: 475,
-        width: '80%'
-      }
-    }}>
+      height: 520,width: '94%'}}>
 
       <XGrid className={classes.content}
         {...data}
