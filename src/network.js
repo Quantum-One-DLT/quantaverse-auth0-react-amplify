@@ -33,7 +33,7 @@ const autoReconnectDelay = 5000;
 
 const Web3Provider = (props) => {
   const [isConnected, setConnected] = useState(true);
-  let network = initWeb3Onboard(Object.create( {} ))
+  let network = (Object.create( {} ))
   network.provider = useRef(null);
   network.signer = useRef(null);
   network.account = useRef(null);
