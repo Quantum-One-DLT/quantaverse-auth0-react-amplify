@@ -62,10 +62,6 @@ function Liquidity(props) {
         justifyContent="center"
         alignItems="flex-end"
       >
-        <p>
-          QuantaVerse Uniswap Interface | Get DA-FI for rewards during Quantum One Testnet{" "}
-          <a href="https://quantumone.network">here</a>
-        </p>
       </Grid>
     </div>
   );

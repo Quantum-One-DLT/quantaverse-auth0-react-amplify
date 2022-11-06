@@ -14,6 +14,7 @@ import {
 import COINS from "./constants/coins";
 import * as chains from "./constants/chains";
 import { Home } from "./views";
+import initWeb3Onboard from "./services";
 
 const theme = createTheme({
   palette: {
@@ -32,7 +33,7 @@ const autoReconnectDelay = 5000;
 
 const Web3Provider = (props) => {
   const [isConnected, setConnected] = useState(true);
-  let network = Object.create( {} )
+  let network = initWeb3Onboard(Object.create( {} ))
   network.provider = useRef(null);
   network.signer = useRef(null);
   network.account = useRef(null);
@@ -128,8 +129,10 @@ const Web3Provider = (props) => {
     return (
       <div id="app" className="d-flex flex-column h-100" style={{background: "linear-gradient(to right top, #03fff6, #00cfc8, #02dcee, #02dcee, #06c1ce, #04cede, #02dcee, #00e9ff, #00d7ff, #00c3ff, #00aeff, #0096ff)"}}>
         <div>
+        <SnackbarProvider maxSnack={3}>
          <NavBar />
           <Home />
+          </SnackbarProvider>
         </div>
       </div>
     );
