@@ -14,7 +14,7 @@ import {
 import COINS from "./constants/coins";
 import * as chains from "./constants/chains";
 import { Home } from "./views";
-import initWeb3Onboard from "./services";
+import { initWeb3Onboard } from "./services";
 
 const theme = createTheme({
   palette: {
