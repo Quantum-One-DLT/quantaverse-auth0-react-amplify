@@ -6,12 +6,9 @@ import CoinSwapper from "./CoinSwapper/CoinSwapper";
 import { SnackbarProvider } from "notistack";
 import Liquidity from "./liquidity/Liquidity";
 import { NavBar, Footer} from "./components";
-import { Home, Profile, ExternalApi, Flow, Privacy } from "./views";
+import { Home, Profile, ExternalApi, Flow, Privacy, ConnectWallet } from "./views";
 import { createTheme, ThemeProvider } from "@material-ui/core";
 import "./app.css";
-import { Button } from '@mui/material';
-import ConnectWallet from "./components/ConnectWallet";
-import { useConnectWallet, init } from '@web3-onboard/react'
 import injectedModule from '@web3-onboard/injected-wallets'
 
 //#TODO ADD BACK WEB3 TO VPN at subdomain (must add) app.quantaverseid.io
@@ -43,6 +40,9 @@ const App = () => {
     <div id="app" className="d-flex flex-column h-100" style={{background: "linear-gradient(to right top, #03fff6, #00cfc8, #02dcee, #02dcee, #06c1ce, #04cede, #02dcee, #00e9ff, #00d7ff, #00c3ff, #00aeff, #0096ff)"}}>
       <SnackbarProvider maxSnack={3}>
       <ThemeProvider theme={theme}>
+      <Web3Provider
+            render={(network) => (
+              <div>
       <NavBar />
       <div className="container flex-grow-1">
         <div className="mt-5">
@@ -53,10 +53,10 @@ const App = () => {
             <Route path="/flow" component={Flow} />
             <Route path="/privacy" component={Privacy} />
             <Route exact path="/DA-FI-swap">
-                  <CoinSwapper/>
+                  <CoinSwapper  network={network}/>
                 </Route>
             <Route exact path="/DA-FI-swap/liquidity">
-                  <Liquidity/>
+                  <Liquidity  network={network}/>
                 </Route>
                 <Route>
                </Route>
@@ -64,6 +64,9 @@ const App = () => {
         </div>
       </div>
       <Footer />
+      </div>
+      )}
+      ></Web3Provider>
       </ThemeProvider>
       </SnackbarProvider>
     </div>

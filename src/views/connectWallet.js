@@ -1,6 +1,7 @@
+import React from "react";
 import { useEffect, useState } from "react"
 import { useConnectWallet } from "@web3-onboard/react"
-import { ethers } from "ethers"
+import { ethers, ethersProvider } from "ethers"
 
 const ConnectWallet = () => {
   const [{ wallet, connecting }, connect, disconnect] = useConnectWallet()
@@ -15,7 +16,7 @@ const ConnectWallet = () => {
 
   return (
     <div>
-      <button disabled={connecting} onClick={connect}>
+      <button className="btn" disabled={connecting} onClick={connect}>
         Connect
       </button>
     </div>

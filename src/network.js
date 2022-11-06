@@ -12,6 +12,7 @@ import {
 } from "./ethereumFunctions";
 import COINS from "./constants/coins";
 import * as chains from "./constants/chains";
+import { Home } from "./views";
 
 const theme = createTheme({
   palette: {
@@ -126,7 +127,7 @@ const Web3Provider = (props) => {
     return (
       <div className="App">
         <div>
-          <ConnectWalletPage />
+          <Home />
         </div>
       </div>
     );

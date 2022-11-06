@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import LoginButton from './loginButton';
 import LogoutButton from './logoutButton';
 import { useAuth0 } from "@auth0/auth0-react";
-import ConnectWallet from "./ConnectWallet";
 
 import {
   NavItem, Collapse, NavbarToggler, Nav
@@ -47,11 +46,9 @@ const MainNav = () => {
     </NavItem>
 
       {!isAuthenticated && (
-
         <NavItem>
           <LoginButton style={{color: "#03fff6"}}/>
         </NavItem>
-
       )}
       {isAuthenticated && (
         <NavItem>

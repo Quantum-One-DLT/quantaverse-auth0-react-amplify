@@ -85,10 +85,6 @@ code {
 
 }
 
-.button {
-  color:#007bff
-}
-
 .loading {
   display: flex;
   min-height: 500px;
