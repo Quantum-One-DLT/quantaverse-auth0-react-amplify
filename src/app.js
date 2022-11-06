@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Routes, Redirect, Link } from "react-router-dom";
+import { Route, Switch, Redirect, Link } from "react-router-dom";
 import { ethers } from "ethers";
 import Web3Provider from "./network";
 import CoinSwapper from "./CoinSwapper/CoinSwapper";
@@ -46,7 +46,7 @@ const App = () => {
       <NavBar />
       <div className="container flex-grow-1">
         <div className="mt-5">
-          <Routes>
+          <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/profile" component={Profile} />
             <Route path="/external-api" component={ExternalApi} />
@@ -61,7 +61,7 @@ const App = () => {
                 </Route>
                 <Route>
                </Route>
-          </Routes>
+          </Switch>
         </div>
       </div>
       <Footer />

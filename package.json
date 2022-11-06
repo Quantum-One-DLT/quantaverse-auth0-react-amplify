@@ -32,7 +32,7 @@
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-markdown": "^8.0.3",
-    "react-router-dom": "^6.4.3",
+    "react-router-dom": "^5.3.4",
     "react-scripts": "^5.0.1",
     "reactstrap": "9.1.5",
     "remark-gfm": "^3.0.1",
