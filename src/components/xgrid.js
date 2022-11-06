@@ -56,9 +56,7 @@ export default function EntropyXGrid() {
         loading={data.rows.length===0}
         rowHeight={38}
         checkboxSelection
-
-
-      />
+        />
     </div>
   );
 }
