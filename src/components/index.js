@@ -5,5 +5,6 @@ import Loading from "./loading";
 import NavBar from "./nav-bar";
 import LoginButton from "./loginButton";
 import LogoutButton from "./logoutButton";
+import EntropyXGrid from "./xgrid"
 
-export { HomeContent, Footer, Hero, Loading, LoginButton, LogoutButton, NavBar };
+export { HomeContent, Footer, Hero, Loading, LoginButton, LogoutButton, NavBar, EntropyXGrid };
