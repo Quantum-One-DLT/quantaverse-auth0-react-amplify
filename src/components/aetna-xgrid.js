@@ -59,12 +59,12 @@ export default function AetnaXGrid() {
             <div className="root"style={{
               height: 900, width: '100%'}}> 
               <div>
-             <h4>HealthONE Incentivized HealthCare</h4>
+             <h4 className="text-center"> "HealthONE Incentivized HealthCare</h4>
              </div>
              <div>
-             <p> HealthONE rewards consumers, providers, and insurers for making lifestyle and business decisions that result in a significant reduction in the total cost of care. Features include future proof post quantum cryptography, mobile remote patient and machine management, and composable compliance helps you spend more time with those who matter most.</p> 
+             <p className="text-center"> HealthONE rewards consumers, providers, and insurers for making lifestyle and business decisions that result in a significant reduction in the total cost of care. Features include future proof post quantum cryptography, mobile remote patient and machine management, and composable compliance helps you spend more time with those who matter most.</p> 
              </div>
-             <p>The table below demonstrates how Aetna complies with the recent CMS mandate - effective 7/1/2022 - requiring insurance companies to make the data available to the public in a consumer friendly format . Once consumers figure out how to handle "gunzip/gz" files, they realize they must download an extract additional "gz" files to only run into a 30GB+ JSON files that often requires the user to modify their computers file system configuration. We're in the process of making the data easy to read and analyze for the public - not just plan members.</p>
+             <p className="text-center">The table below demonstrates how Aetna complies with the recent CMS mandate - effective 7/1/2022 - requiring insurance companies to make the data available to the public in a consumer friendly format . Once consumers figure out how to handle "gunzip/gz" files, they realize they must download an extract additional "gz" files to only run into a 30GB+ JSON files that often requires the user to modify their computers file system configuration. We're in the process of making the data easy to read and analyze for the public - not just plan members.</p>
              <XGrid className="content" rows={rows} columns={columns} rowHeight={38} checkboxSelection />
             </div>
           );
