@@ -1,5 +1,4 @@
-import * as React from "react";
-import { useState } from "react"; 
+import * as React from "react"; 
 import { XGrid } from '@material-ui/x-grid';
 import {LicenseInfo} from '@material-ui/x-grid';
 import {makeStyles} from '@material-ui/core/styles'
@@ -24,7 +23,6 @@ const useStyles=makeStyles((theme) => ({
 )); 
 
 export default function AetnaXGrid() {
-  const [cols, setCols] = useState([]);
   const classes=useStyles();
   const [width,setWidth]=React.useState(window.innerWidth);
   const [height,setHeight]=React.useState(window.innerHeight);
@@ -37,8 +35,8 @@ export default function AetnaXGrid() {
     window.addEventListener("resize",updateWidthAndHeight);
     return () => window.removeEventListener("resize",updateWidthAndHeight);
   });
-   data = {columns: cols, rows: rws(props)};
-  const cols = [
+   
+  const columns = [
     { field: 'id', headerName: 'ID', width: "32" },
     { field: "plan_name", headerName: "PLAN NAME", width: "120" },
     { field: "plan_id_type", headerName: "PLAN ID TYPE", width: "32" },
@@ -48,7 +46,7 @@ export default function AetnaXGrid() {
     { field: "allowed_amount_files", headerName: "ALLOWED AMOUNT FILES", width: "256" },
   ];
 
-  const rws = [
+  const rows = [
     {id: 1, plan_name: "MIDDLESEX HEALTH SYSTEM INC. Aetna Choice POS IIA", plan_id_type: "EIN", plan_id: "060646718", plan_market_type: "Group", in_network_files: "https://mrf.healthsparq.com/aetnacvs-egress.nophi.kyruushsq.com/prd/mrf/AETNACVS_I/ALICSI/2022-10-05/inNetworkRates/2022-10-05_f783e744-b9f6-4ff2-a688-460bbbe2d155_Aetna-Life-Insurance-Company.json.gz", allowed_amount_files: "https://mrf.healthsparq.com/aetnacvs-egress.nophi.kyruushsq.com/prd/mrf/AETNACVS_I/ALICSI/2022-10-05/allowedAmounts/2022-10-05_f783e744-b9f6-4ff2-a688-460bbbe2d155_Aetna-Life-Insurance-Company.json.gz"},
     {id: 2, plan_name: "MIDDLESEX HEALTH SYSTEM INC. Open Access Aetna SelectAA", plan_id_type: "EIN", plan_id: "060646718", plan_market_type: "Group", in_network_files: "https://mrf.healthsparq.com/aetnacvs-egress.nophi.kyruushsq.com/prd/mrf/AETNACVS_I/ALICSI/2022-10-05/inNetworkRates/2022-10-05_26af32c5-74e3-45d6-961a-04fda4e6ed9a_Aetna-Life-Insurance-Company.json.gz", allowed_amount_files: "https://mrf.healthsparq.com/aetnacvs-egress.nophi.kyruushsq.com/prd/mrf/AETNACVS_I/ALICSI/2022-10-05/allowedAmounts/2022-10-05_26af32c5-74e3-45d6-961a-04fda4e6ed9a_Aetna-Life-Insurance-Company.json.gz"},
     {id: 3, plan_name: "MIDDLESEX HEALTH SYSTEM INC. Managed Behavioral HealthAA", plan_id_type: "EIN", plan_id: "060646718", plan_market_type:"Group", in_network_files: "https://mrf.healthsparq.com/aetnacvs-egress.nophi.kyruushsq.com/prd/mrf/AETNACVS_I/ALICSI/2022-10-05/inNetworkRates/2022-10-05_2e4463c3-10b6-47bd-8037-164ce2aee6d7_Aetna-Life-Insurance-Company.json.gz", allowed_amount_files: "https://mrf.healthsparq.com/aetnacvs-egress.nophi.kyruushsq.com/prd/mrf/AETNACVS_I/ALICSI/2022-10-05/allowedAmounts/2022-10-05_2e4463c3-10b6-47bd-8037-164ce2aee6d7_Aetna-Life-Insurance-Company.json.gz"},
@@ -57,23 +55,24 @@ export default function AetnaXGrid() {
     {id: 6, plan_name: "MIDDLESEX HEALTH SYSTEM INC. Open Access Aetna SelectLT", plan_id_type: "EIN", plan_id: "060646718", plan_market_type: "Group", in_network_files: "https://mrf.healthsparq.com/aetnacvs-egress.nophi.kyruushsq.com/prd/mrf/AETNACVS_I/ALICSI/2022-10-05/inNetworkRates/2022-10-05_773a4563-879c-4bd7-babf-e668bf072774_Aetna-Life-Insurance-Company.json.gz", allowed_amount_files: "https://mrf.healthsparq.com/aetnacvs-egress.nophi.kyruushsq.com/prd/mrf/AETNACVS_I/ALICSI/2022-10-05/allowedAmounts/2022-10-05_773a4563-879c-4bd7-babf-e668bf072774_Aetna-Life-Insurance-Company.json.gz"},
   ];
 
-content = <div className="root data-table contents">
-            <XGrid
-                {...data}
-                loading={data.rows.length === 0}
-                rowHeight={30}
-                autoHeight={true}
-                disableColumnMenu={true}
-                density={"compact"}
-                components={{
-                    Toolbar: GridToolbar,
+  data = {columns: columns, rows: rows};
+
+  content = <div className="root data-table contents">
+              <XGrid
+                  {...data}
+                  loading={data.rows.length === 0}
+                  rowHeight={30}
+                  autoHeight={true}
+                  disableColumnMenu={true}
+                  density={"compact"}
+                  components={{
+                      Toolbar: GridToolbar,
                   }}
-            />
-        </div>
- };
+              />
+          </div>
+   };
 
  return content;
-  
 
 LicenseInfo.setLicenseKey(
   '19494f35107113d0c813dfab75b058b4T1JERVI6MjQzODgsRVhQSVJZPTE2NTE1MDQzNDkwMDAsS0VZVkVSU0lPTj0x'
