@@ -1,8 +1,8 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
 
-import { NavBar, Footer, EntropyXGrid, AetnaXGrid } from "./components";
-import { Home, Profile, ExternalApi, Flow, Privacy } from "./views";
+import { NavBar, Footer, EntropyXGrid } from "./components";
+import { Home, Profile, ExternalApi, Flow, Privacy, AetnaRates } from "./views";
 
 import "./app.css";
 
@@ -19,7 +19,7 @@ const App = () => {
             <Route path="/flow" component={Flow} />
             <Route path="/privacy" component={Privacy} />
             <Route path="/entropy" component={EntropyXGrid} />
-            <Route path="/aetna-rates" component={AetnaXGrid} />
+            <Route path="/aetna-rates" component={AetnaRates} />
           </Switch>
         </div>
       </div>
