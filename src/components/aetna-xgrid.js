@@ -2,34 +2,6 @@ import * as React from "react";
 import { XGrid } from '@material-ui/x-grid';
 import {LicenseInfo} from '@material-ui/x-grid';
 import { useAuth0 } from "@auth0/auth0-react";
-import PropTypes from "prop-types";
-
-const propTypes = {
-    reporting_entity_name: PropTypes.string,
-    reporting_entity_type: PropTypes.string,
-    reporting_structure: PropTypes.arrayOf(
-      PropTypes.shape({
-        reporting_plans: PropTypes.arrayOf(
-          PropTypes.shape({
-            plan_name: PropTypes.string,
-            plan_id_type: PropTypes.string,
-            plan_id: PropTypes.string,
-            plan_market_type: PropTypes.string
-          })
-        ),
-        in_network_files: PropTypes.arrayOf(
-          PropTypes.shape({
-            description: PropTypes.string,
-            location: PropTypes.string
-          })
-        ),
-        allowed_amount_file: PropTypes.shape({
-          description: PropTypes.string,
-          location: PropTypes.string
-        })
-      })
-    )
-};
   
 const columns = [
   { field: "plan_name", headerName: "PLAN NAME", width: 170 },
@@ -65,9 +37,9 @@ export default function AetnaXGrid() {
   });
 
     return (
-            <div>
+            <div class="root">
             {isAuthenticated && (
-            <div style={{ height: 500, width: '80%' }}>
+            <div style={{ height: 500, width: "80%" }}>
          
             <h4>HealthONE incentivized healthcare platform</h4>
             <p> HealthONE rewards consumers, providers, and insurers for making lifestyle and business decisions that result in a significant reduction in the cost of care and better quality of life. 
