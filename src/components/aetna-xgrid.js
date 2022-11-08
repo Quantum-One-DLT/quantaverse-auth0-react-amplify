@@ -2,6 +2,26 @@ import * as React from "react";
 import { XGrid } from '@material-ui/x-grid';
 import {LicenseInfo} from '@material-ui/x-grid';
 import { useAuth0 } from "@auth0/auth0-react";
+import {makeStyles} from '@material-ui/core/styles'
+
+const useStyles=makeStyles((theme) => ({
+
+  root: {
+    display: 'flex',
+    flexGrow: 1,
+    flexShrink: 1,
+    minWidth: '0',
+    maxWidth: '100%'
+  },
+  content: {
+    flexGrow: 1,
+    flexShrink: 1,
+    padding: theme.spacing(3),
+    persistentBehavior: 'fit'
+  },
+}
+
+));
   
 const columns = [
   { field: "plan_name", headerName: "PLAN NAME", width: 170 },
@@ -36,7 +56,7 @@ export default function AetnaXGrid() {
     return () => window.removeEventListener("resize",updateWidthAndHeight);
   });
 
-    return (
+  return (
             <div class="root">
             {isAuthenticated && (
             <div style={{ height: 500, width: "80%" }}>
@@ -53,10 +73,9 @@ export default function AetnaXGrid() {
               <p>Please login to view this page.</p>
              </div>
             )}
-      
             </div>
-          )
-  };
+        )
+};
 
 LicenseInfo.setLicenseKey(
   '19494f35107113d0c813dfab75b058b4T1JERVI6MjQzODgsRVhQSVJZPTE2NTE1MDQzNDkwMDAsS0VZVkVSU0lPTj0x'
