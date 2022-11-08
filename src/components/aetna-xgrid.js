@@ -1,6 +1,7 @@
 import React from "react";
 import { XGrid } from "@material-ui/XGrid";
 import { useAuth0 } from "@auth0/auth0-react";
+import PropTypes from "prop-types";
 
 const propTypes = {
     reporting_entity_name: PropTypes.string,
@@ -48,6 +49,8 @@ const propTypes = {
   ];
 
   export default function AetnaXGrid() {
+
+    const {xGrid} = useAuth0 ();
     
     const [width,setWidth]=React.useState(window.innerWidth);
     const [height,setHeight]=React.useState(window.innerHeight);
@@ -67,7 +70,7 @@ const propTypes = {
             <p> HealthONE rewards consumers, providers, and insurers for making lifestyle and business decisions that result in a significant reduction in the cost of care and better quality of life. 
                 HealthONE includes future proof post quantum cryptography, mobile remote patient and machine management, and composable compliance that ensures you're spending time with those that matter most, not paperwork.</p> 
           <p>Download at your own discretion - files sizes greater than 30GB are common. We're in the process of making the data easy to read and analyze for the public - not just plan members.</p>
-          <XGrid rows={rows} columns={columns} pageSize={5} 
+          <XGrid rows={xGrid.rows} columns={xGrid.columns} pageSize={5} 
           />
         </div>
       );
