@@ -1,5 +1,6 @@
 import React from "react";
 import { XGrid } from '@material-ui/x-grid';
+import {LicenseInfo} from '@material-ui/x-grid';
 import { useAuth0 } from "@auth0/auth0-react";
 import PropTypes from "prop-types";
 
