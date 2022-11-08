@@ -44,6 +44,18 @@ const MainNav = () => {
         </NavLink>
       )}
     </NavItem>
+    <NavItem>
+      {isAuthenticated && (
+        <NavLink
+          to="/aetna-rates"
+          exact
+          className="nav-link"
+          activeClassName="router-link-exact-active"
+        >
+          HealthONE
+        </NavLink>
+      )}
+    </NavItem>
 
       {!isAuthenticated && (
 
