@@ -57,12 +57,12 @@ export default function AetnaXGrid() {
 
   return (
             <div className="root"> 
-            <div style={{ height: "500", width: "80%" }}>
+            <div style={{ height: "960", width: "90%" }}>
              <h4>HealthONE incentivized healthcare platform</h4>
             <p> HealthONE rewards consumers, providers, and insurers for making lifestyle and business decisions that result in a significant reduction in the cost of care and better quality of life. 
                 HealthONE includes future proof post quantum cryptography, mobile remote patient and machine management, and composable compliance that ensures you're spending time with those that matter most, not paperwork.</p> 
             <p>Download at your own discretion - files sizes greater than 30GB are common. We're in the process of making the data easy to read and analyze for the public - not just plan members.</p>
-            <XGrid className="content" rows={rows} columns={columns} pageSize={5} />
+            <XGrid className="content" rows={rows} columns={columns} rowHeight={38} checkboxSelection />
             </div>
             </div>
         )
