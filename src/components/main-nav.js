@@ -47,12 +47,12 @@ const MainNav = () => {
     <NavItem>
       {isAuthenticated && (
         <NavLink
-          to="/aetna-rates"
+          to="/entropy"
           exact
           className="nav-link"
           activeClassName="router-link-exact-active"
         >
-          HealthONE
+          Exchange Demo
         </NavLink>
       )}
     </NavItem>
