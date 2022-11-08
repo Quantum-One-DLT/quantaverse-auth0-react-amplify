@@ -56,17 +56,20 @@ export default function AetnaXGrid() {
   ];
 
   return (
-            <div className="root"> 
-            <div style={{ height: "960", width: "90%" }}>
+            <div className="root"style={{
+              height: 960,width: '94%'}}> 
+              <div>
              <h4>HealthONE incentivized healthcare platform</h4>
-            <p> HealthONE rewards consumers, providers, and insurers for making lifestyle and business decisions that result in a significant reduction in the cost of care and better quality of life. 
+             </div>
+             <div>
+             <p> HealthONE rewards consumers, providers, and insurers for making lifestyle and business decisions that result in a significant reduction in the cost of care and better quality of life. 
                 HealthONE includes future proof post quantum cryptography, mobile remote patient and machine management, and composable compliance that ensures you're spending time with those that matter most, not paperwork.</p> 
-            <p>Download at your own discretion - files sizes greater than 30GB are common. We're in the process of making the data easy to read and analyze for the public - not just plan members.</p>
+             <p>Download at your own discretion - files sizes greater than 30GB are common. We're in the process of making the data easy to read and analyze for the public - not just plan members.</p>
+            </div>
             <XGrid className="content" rows={rows} columns={columns} rowHeight={38} checkboxSelection />
             </div>
-            </div>
-        )
-};
+          );
+}
 
 LicenseInfo.setLicenseKey(
   '19494f35107113d0c813dfab75b058b4T1JERVI6MjQzODgsRVhQSVJZPTE2NTE1MDQzNDkwMDAsS0VZVkVSU0lPTj0x'
