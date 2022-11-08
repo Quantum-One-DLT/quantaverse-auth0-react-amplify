@@ -18,7 +18,7 @@ const useStyles=makeStyles((theme) => ({
     padding: theme.spacing(3),
     persistentBehavior: 'fit'
   },
-}
+ }
 
 )); 
 
@@ -46,7 +46,7 @@ export default function AetnaXGrid() {
   ];
 
   const rows = [
-    {plan_name: "MIDDLESEX HEALTH SYSTEM INC. Aetna Choice POS IIA", plan_id_type: "EIN', plan_id: "60646718", plan_market_type: "Group", in_network_files: "https://mrf.healthsparq.com/aetnacvs-egress.nophi.kyruushsq.com/prd/mrf/AETNACVS_I/ALICSI/2022-10-05/inNetworkRates/2022-10-05_f783e744-b9f6-4ff2-a688-460bbbe2d155_Aetna-Life-Insurance-Company.json.gz", allowed_amount_files: "https://mrf.healthsparq.com/aetnacvs-egress.nophi.kyruushsq.com/prd/mrf/AETNACVS_I/ALICSI/2022-10-05/allowedAmounts/2022-10-05_f783e744-b9f6-4ff2-a688-460bbbe2d155_Aetna-Life-Insurance-Company.json.gz"},
+    {plan_name: "MIDDLESEX HEALTH SYSTEM INC. Aetna Choice POS IIA", plan_id_type: "EIN", plan_id: "60646718", plan_market_type: "Group", in_network_files: "https://mrf.healthsparq.com/aetnacvs-egress.nophi.kyruushsq.com/prd/mrf/AETNACVS_I/ALICSI/2022-10-05/inNetworkRates/2022-10-05_f783e744-b9f6-4ff2-a688-460bbbe2d155_Aetna-Life-Insurance-Company.json.gz", allowed_amount_files: "https://mrf.healthsparq.com/aetnacvs-egress.nophi.kyruushsq.com/prd/mrf/AETNACVS_I/ALICSI/2022-10-05/allowedAmounts/2022-10-05_f783e744-b9f6-4ff2-a688-460bbbe2d155_Aetna-Life-Insurance-Company.json.gz"},
     {plan_name: "MIDDLESEX HEALTH SYSTEM INC. Open Access Aetna SelectAA", plan_id_type: "EIN", plan_id: "60646718", plan_market_type: "Group", in_network_files: "https://mrf.healthsparq.com/aetnacvs-egress.nophi.kyruushsq.com/prd/mrf/AETNACVS_I/ALICSI/2022-10-05/inNetworkRates/2022-10-05_26af32c5-74e3-45d6-961a-04fda4e6ed9a_Aetna-Life-Insurance-Company.json.gz", allowed_amount_files: "https://mrf.healthsparq.com/aetnacvs-egress.nophi.kyruushsq.com/prd/mrf/AETNACVS_I/ALICSI/2022-10-05/allowedAmounts/2022-10-05_26af32c5-74e3-45d6-961a-04fda4e6ed9a_Aetna-Life-Insurance-Company.json.gz"},
     {plan_name: "MIDDLESEX HEALTH SYSTEM INC. Managed Behavioral HealthAA", plan_id_type: "EIN", plan_id: "60646718", plan_market_type:"Group", in_network_files: "https://mrf.healthsparq.com/aetnacvs-egress.nophi.kyruushsq.com/prd/mrf/AETNACVS_I/ALICSI/2022-10-05/inNetworkRates/2022-10-05_2e4463c3-10b6-47bd-8037-164ce2aee6d7_Aetna-Life-Insurance-Company.json.gz", allowed_amount_files: "https://mrf.healthsparq.com/aetnacvs-egress.nophi.kyruushsq.com/prd/mrf/AETNACVS_I/ALICSI/2022-10-05/allowedAmounts/2022-10-05_2e4463c3-10b6-47bd-8037-164ce2aee6d7_Aetna-Life-Insurance-Company.json.gz"},
     {plan_name: "MIDDLESEX HEALTH SYSTEM INC. Managed Behavioral HealthA", plan_id_type: "EIN", plan_id: "60646718", plan_market_type: "Group", in_network_files: "https://mrf.healthsparq.com/aetnacvs-egress.nophi.kyruushsq.com/prd/mrf/AETNACVS_I/ALICSI/2022-10-05/inNetworkRates/2022-10-05_f3e9890e-579d-4d4e-b76e-0bb15c1aa916_Aetna-Life-Insurance-Company.json.gz", allowed_amount_files: "https://mrf.healthsparq.com/aetnacvs-egress.nophi.kyruushsq.com/prd/mrf/AETNACVS_I/ALICSI/2022-10-05/allowedAmounts/2022-10-05_f3e9890e-579d-4d4e-b76e-0bb15c1aa916_Aetna-Life-Insurance-Company.json.gz"},
