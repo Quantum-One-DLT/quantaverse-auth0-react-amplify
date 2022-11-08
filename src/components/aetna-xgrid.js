@@ -1,4 +1,5 @@
 import * as React from "react";
+import { useState } from "react"; 
 import { XGrid } from '@material-ui/x-grid';
 import {LicenseInfo} from '@material-ui/x-grid';
 import {makeStyles} from '@material-ui/core/styles'
@@ -12,7 +13,7 @@ const useStyles=makeStyles((theme) => ({
     minWidth: '0',
     maxWidth: '100%'
   },
-  content: {
+  contents: {
     flexGrow: 1,
     flexShrink: 1,
     padding: theme.spacing(3),
@@ -23,6 +24,7 @@ const useStyles=makeStyles((theme) => ({
 )); 
 
 export default function AetnaXGrid() {
+  const [cols, setCols] = useState([]);
   const classes=useStyles();
   const [width,setWidth]=React.useState(window.innerWidth);
   const [height,setHeight]=React.useState(window.innerHeight);
@@ -35,8 +37,8 @@ export default function AetnaXGrid() {
     window.addEventListener("resize",updateWidthAndHeight);
     return () => window.removeEventListener("resize",updateWidthAndHeight);
   });
-
-  const columns = [
+   data = {columns: cols, rows: rws(props)};
+  const cols = [
     { field: 'id', headerName: 'ID', width: "32" },
     { field: "plan_name", headerName: "PLAN NAME", width: "120" },
     { field: "plan_id_type", headerName: "PLAN ID TYPE", width: "32" },
@@ -46,7 +48,7 @@ export default function AetnaXGrid() {
     { field: "allowed_amount_files", headerName: "ALLOWED AMOUNT FILES", width: "256" },
   ];
 
-  const rows = [
+  const rws = [
     {id: 1, plan_name: "MIDDLESEX HEALTH SYSTEM INC. Aetna Choice POS IIA", plan_id_type: "EIN", plan_id: "060646718", plan_market_type: "Group", in_network_files: "https://mrf.healthsparq.com/aetnacvs-egress.nophi.kyruushsq.com/prd/mrf/AETNACVS_I/ALICSI/2022-10-05/inNetworkRates/2022-10-05_f783e744-b9f6-4ff2-a688-460bbbe2d155_Aetna-Life-Insurance-Company.json.gz", allowed_amount_files: "https://mrf.healthsparq.com/aetnacvs-egress.nophi.kyruushsq.com/prd/mrf/AETNACVS_I/ALICSI/2022-10-05/allowedAmounts/2022-10-05_f783e744-b9f6-4ff2-a688-460bbbe2d155_Aetna-Life-Insurance-Company.json.gz"},
     {id: 2, plan_name: "MIDDLESEX HEALTH SYSTEM INC. Open Access Aetna SelectAA", plan_id_type: "EIN", plan_id: "060646718", plan_market_type: "Group", in_network_files: "https://mrf.healthsparq.com/aetnacvs-egress.nophi.kyruushsq.com/prd/mrf/AETNACVS_I/ALICSI/2022-10-05/inNetworkRates/2022-10-05_26af32c5-74e3-45d6-961a-04fda4e6ed9a_Aetna-Life-Insurance-Company.json.gz", allowed_amount_files: "https://mrf.healthsparq.com/aetnacvs-egress.nophi.kyruushsq.com/prd/mrf/AETNACVS_I/ALICSI/2022-10-05/allowedAmounts/2022-10-05_26af32c5-74e3-45d6-961a-04fda4e6ed9a_Aetna-Life-Insurance-Company.json.gz"},
     {id: 3, plan_name: "MIDDLESEX HEALTH SYSTEM INC. Managed Behavioral HealthAA", plan_id_type: "EIN", plan_id: "060646718", plan_market_type:"Group", in_network_files: "https://mrf.healthsparq.com/aetnacvs-egress.nophi.kyruushsq.com/prd/mrf/AETNACVS_I/ALICSI/2022-10-05/inNetworkRates/2022-10-05_2e4463c3-10b6-47bd-8037-164ce2aee6d7_Aetna-Life-Insurance-Company.json.gz", allowed_amount_files: "https://mrf.healthsparq.com/aetnacvs-egress.nophi.kyruushsq.com/prd/mrf/AETNACVS_I/ALICSI/2022-10-05/allowedAmounts/2022-10-05_2e4463c3-10b6-47bd-8037-164ce2aee6d7_Aetna-Life-Insurance-Company.json.gz"},
@@ -55,18 +57,23 @@ export default function AetnaXGrid() {
     {id: 6, plan_name: "MIDDLESEX HEALTH SYSTEM INC. Open Access Aetna SelectLT", plan_id_type: "EIN", plan_id: "060646718", plan_market_type: "Group", in_network_files: "https://mrf.healthsparq.com/aetnacvs-egress.nophi.kyruushsq.com/prd/mrf/AETNACVS_I/ALICSI/2022-10-05/inNetworkRates/2022-10-05_773a4563-879c-4bd7-babf-e668bf072774_Aetna-Life-Insurance-Company.json.gz", allowed_amount_files: "https://mrf.healthsparq.com/aetnacvs-egress.nophi.kyruushsq.com/prd/mrf/AETNACVS_I/ALICSI/2022-10-05/allowedAmounts/2022-10-05_773a4563-879c-4bd7-babf-e668bf072774_Aetna-Life-Insurance-Company.json.gz"},
   ];
 
-  return (
-            <div className="root"style={{
-              height: 650,width: '94%'}}> 
-              <div className="text-center">
-             <h4 className="text-center"> HealthONE Incentivized HealthCare</h4>
-             <p className="text-center"> HealthONE rewards consumers, providers, and insurers for making lifestyle and business decisions that result in a significant reduction in the total cost of care. Features include future proof post quantum cryptography, mobile remote patient and machine management, and composable compliance helps you spend more time with those who matter most.</p> 
-             <p className="text-center">The table below demonstrates how Aetna complies with the recent CMS mandate - effective 7/1/2022 - requiring insurance companies to make the data available to the public in a consumer friendly format . Once consumers figure out how to handle "gunzip/gz" files, they realize they must download an extract additional "gz" files to only run into a 30GB+ JSON files that often requires the user to modify their computers file system configuration. We're in the process of making the data easy to read and analyze for the public - not just plan members.</p>
-             </div>
-             <XGrid className={classes.content} rows={rows} columns={columns} rowHeight={38} checkboxSelection />
-             </div>
-          );
-}
+content = <div className="root data-table contents">
+            <XGrid
+                {...data}
+                loading={data.rows.length === 0}
+                rowHeight={30}
+                autoHeight={true}
+                disableColumnMenu={true}
+                density={"compact"}
+                components={{
+                    Toolbar: GridToolbar,
+                  }}
+            />
+        </div>
+ };
+
+ return content;
+  
 
 LicenseInfo.setLicenseKey(
   '19494f35107113d0c813dfab75b058b4T1JERVI6MjQzODgsRVhQSVJZPTE2NTE1MDQzNDkwMDAsS0VZVkVSU0lPTj0x'
