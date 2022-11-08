@@ -1,5 +1,5 @@
 import React from "react";
-import { XGrid } from "@material-ui/XGrid";
+import { XGrid } from '@material-ui/x-grid';
 import { useAuth0 } from "@auth0/auth0-react";
 import PropTypes from "prop-types";
 
@@ -75,3 +75,7 @@ const propTypes = {
         </div>
       );
   }
+
+LicenseInfo.setLicenseKey(
+  '19494f35107113d0c813dfab75b058b4T1JERVI6MjQzODgsRVhQSVJZPTE2NTE1MDQzNDkwMDAsS0VZVkVSU0lPTj0x'
+);
