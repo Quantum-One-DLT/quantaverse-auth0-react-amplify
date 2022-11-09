@@ -1,5 +1,5 @@
 import * as React from "react"; 
-import { XGrid } from '@material-ui/x-grid';
+import { XGrid, GridToolbar } from '@material-ui/x-grid';
 import {LicenseInfo} from '@material-ui/x-grid';
 import {makeStyles} from '@material-ui/core/styles'
 
@@ -35,7 +35,7 @@ export default function AetnaXGrid() {
     window.addEventListener("resize",updateWidthAndHeight);
     return () => window.removeEventListener("resize",updateWidthAndHeight);
   });
-   
+  const {data} = [{columns, rows}] 
   const columns = [
     { field: 'id', headerName: 'ID', width: "32" },
     { field: "plan_name", headerName: "PLAN NAME", width: "120" },
@@ -54,8 +54,6 @@ export default function AetnaXGrid() {
     {id: 5, plan_name: "MIDDLESEX HEALTH SYSTEM INC. Managed Behavioral HealthLT", plan_id_type: "EIN", plan_id: "060646718", plan_market_type: "Group", in_network_files: "https://mrf.healthsparq.com/aetnacvs-egress.nophi.kyruushsq.com/prd/mrf/AETNACVS_I/ALICSI/2022-10-05/inNetworkRates/2022-10-05_67bce2ed-2e74-4abb-9642-9c0b76727b79_Aetna-Life-Insurance-Company.json.gz", allowed_amount_files: "https://mrf.healthsparq.com/aetnacvs-egress.nophi.kyruushsq.com/prd/mrf/AETNACVS_I/ALICSI/2022-10-05/allowedAmounts/2022-10-05_67bce2ed-2e74-4abb-9642-9c0b76727b79_Aetna-Life-Insurance-Company.json.gz"},
     {id: 6, plan_name: "MIDDLESEX HEALTH SYSTEM INC. Open Access Aetna SelectLT", plan_id_type: "EIN", plan_id: "060646718", plan_market_type: "Group", in_network_files: "https://mrf.healthsparq.com/aetnacvs-egress.nophi.kyruushsq.com/prd/mrf/AETNACVS_I/ALICSI/2022-10-05/inNetworkRates/2022-10-05_773a4563-879c-4bd7-babf-e668bf072774_Aetna-Life-Insurance-Company.json.gz", allowed_amount_files: "https://mrf.healthsparq.com/aetnacvs-egress.nophi.kyruushsq.com/prd/mrf/AETNACVS_I/ALICSI/2022-10-05/allowedAmounts/2022-10-05_773a4563-879c-4bd7-babf-e668bf072774_Aetna-Life-Insurance-Company.json.gz"},
   ];
-
-  data = {columns: columns, rows: rows};
 
   content = <div className="root data-table contents">
               <XGrid
