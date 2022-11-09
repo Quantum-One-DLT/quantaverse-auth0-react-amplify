@@ -35,7 +35,7 @@ export default function AetnaXGrid() {
     window.addEventListener("resize",updateWidthAndHeight);
     return () => window.removeEventListener("resize",updateWidthAndHeight);
   });
-  const {data} = [{columns, rows}] 
+  const {data} = [{columns}, {rows}];
   const columns = [
     { field: 'id', headerName: 'ID', width: "32" },
     { field: "plan_name", headerName: "PLAN NAME", width: "120" },
