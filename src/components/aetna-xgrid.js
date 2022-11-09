@@ -58,6 +58,11 @@ export default function AetnaXGrid() {
   
   return  (
     <div className="root contents vh-100">
+      <h4 className="text-center"> "HealthONE Incentivized HealthCare is coming!</h4>
+      <p className="text-center">The table below demonstrates how Aetna complies with the recent CMS mandate - effective 7/1/2022 - requiring insurance companies 
+          to make the data available to the public in a consumer friendly format . Once consumers figure out how to handle "gunzip/gz" files, they realize they 
+          must download an extract additional "gz" files to only run into a 30GB+ JSON files that often requires the user to modify their computers file system 
+          configuration. We're in the process of making the data easy to read and analyze for the public - not just plan members.</p>
        <XGrid
            {...data}
            loading={data.rows.length === 0}
