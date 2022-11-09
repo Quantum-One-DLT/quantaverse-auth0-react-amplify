@@ -57,7 +57,7 @@ export default function AetnaXGrid() {
   ]};
   
   return  (
-    <div className="root contents">
+    <div className="root contents vh-100">
        <XGrid
            {...data}
            loading={data.rows.length === 0}
