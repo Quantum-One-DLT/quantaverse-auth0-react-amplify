@@ -44,8 +44,8 @@ export default function AetnaXGrid() {
     { field: "plan_id_type", headerName: "PLAN ID TYPE", width: "32" },
     { field: "plan_id", headerName: "PLAN ID", width: "72" },
     { field: "plan_market_type", headerName: "MARKET", width: "72" },
-    { field: "in_network_files", headerName: "IN NETWORK FILES", width: "256", renderCell: (params) => (<Link href={params.value}>{params.value}</Link>)},
-    { field: "allowed_amount_files", headerName: "ALLOWED AMOUNT FILES", width: "256", renderCell: (params) => (<Link href={params.value}>{params.value}</Link>)},
+    { field: "in_network_files", headerName: "IN NETWORK FILES", width: "256", renderCell: (params) => (<Link> <a href={params.value}>{params.value}</a></Link>)},
+    { field: "allowed_amount_files", headerName: "ALLOWED AMOUNT FILES", width: "256", renderCell: (params) => (<Link> <a href={params.value}>{params.value}</a></Link>)},
   ],
 
   rows: [
