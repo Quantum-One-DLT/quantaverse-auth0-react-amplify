@@ -57,9 +57,6 @@ const styles = (theme) => ({
     overflow: "wrap",
     textAlign: "center",
   },
-  footer: {
-    marginTop: "285px",
-  },
 });
 
 const useStyles = makeStyles(styles);
@@ -408,19 +405,6 @@ function CoinSwapper(props) {
           </Grid>
         </Paper>
       </Container>
-
-      <Grid
-        container
-        className={classes.footer}
-        direction="row"
-        justifyContent="center"
-        alignItems="flex-end"
-      >
-        <p>
-        QuantaVerse Uniswap Interface | Get Quantum One's Testnet ERC20 Token DA-FI{" "}
-          <a href="https://quantumone.network">here</a>
-        </p>
-      </Grid>
     </div>
   );
 }
