@@ -38,9 +38,6 @@ const styles = (theme) => ({
     marginRight: theme.spacing(1),
     padding: theme.spacing(0.4),
   },
-  footer: {
-    marginTop: "155px",
-  },
 });
 
 const useStyles = makeStyles(styles);
@@ -51,7 +48,7 @@ function ConnectWalletPage() {
     <div>
       <div className="Title">
         <h1 className="navbar-logo">
-          QuantaVerse Uniswap Interface
+          Quantaverse Uniswap Interface
         </h1>
       </div>
 
@@ -70,7 +67,7 @@ function ConnectWalletPage() {
 
       <Grid
         container
-        className={classes.footer}
+        className="bg-dark p-3 text-center" style={{color: "white"}}
         direction="row"
         justifyContent="center"
         alignItems="flex-end"
