@@ -63,7 +63,10 @@ export default function AetnaXGrid() {
       <p className="text-center">The table below demonstrates how Aetna complies with the recent CMS mandate - effective 7/1/2022 - requiring insurance companies 
           to make their rate data available to the public in a consumer friendly format. Once consumers figure out how to handle "gunzip/gz" files, they realize they 
           must download and extract additional "gz" files to only run into 30GB+ JSON files that often requires the user to modify their computers file system 
-          configuration just to read a JSON formatted file. We're in the process of making the data easy to read and analyze for the public - not just plan members.</p>
+          configuration just to read a JSON formatted file. We're changing that by enabling easy viewing and cost of care analysis for the public - not just plan members. We are also incorporating the data into 
+          our blockchain - the QuantaVerse - and HealthONE platform.   
+          
+          </p>
        <XGrid
            {...data}
            loading={data.rows.length === 0}
