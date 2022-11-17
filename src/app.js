@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
 
-import { NavBar, Footer, EntropyXGrid, AetnaXGrid } from "./components";
+import { NavBar, Footer, EntropyXGrid, AetnaXGrid, S3Json } from "./components";
 import { Home, Profile, ExternalApi, Flow, Privacy } from "./views";
 
 import "./app.css";
@@ -20,6 +20,7 @@ const App = () => {
             <Route path="/privacy" component={Privacy} />
             <Route path="/entropy" component={EntropyXGrid} />
             <Route path="/aetna-rates" component={AetnaXGrid} />
+            <Route path="/s3json" component={S3Json} />
           </Switch>
         </div>
       </div>
