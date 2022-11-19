@@ -35,12 +35,20 @@ export default function FSXGrid() {
     window.addEventListener("resize",updateWidthAndHeight);
     return () => window.removeEventListener("resize",updateWidthAndHeight);
   });
+  
+  const checkKeysUnderObject = (obj, result) => {
+    for (let key in obj) {
+      if (key) { // push the value to the result array only if key exists
+        result.push(key + ": " + obj[key]);
+      }
+    }
+  };
 
   const data = {
   columns: [
     { field: 'id', headerName: 'ID', width: "24" },
-    { field: "provider_references", headerName: "PROCEDURE CODE", width: "64" },
-    { field: "negotiated_prices", headerName: "NEGOTIATED PRICES", width: "64" },
+    { field: "provider_references", headerName: "PROCEDURE CODE", width: "64", type: "STRING" },
+    { field: "negotiated_prices", headerName: "NEGOTIATED PRICES", width: "64", valueGetter: (params) => params.row.subcategory.name, type: "string" },
     { field: "negotiated_type", headerName: "TYPE", width: "72" },
     { field: "negotiated_rate", headerName: "RATE", width: "72" },
     { field: "expiration_date", headerName: "EXPIRY", width: "80"},
