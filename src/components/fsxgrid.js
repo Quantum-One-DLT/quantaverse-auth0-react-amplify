@@ -1,5 +1,5 @@
 import * as React from "react"; 
-import { XGrid, GridToolbar, GridColTypeDef, getInitialGridRowState } from '@material-ui/x-grid';
+import { XGrid, GridToolbar, GridColTypeDef, getInitialGridRowState, useGridApiRef, useKeepGroupedColumnsHidden } from '@material-ui/x-grid';
 import {LicenseInfo} from '@material-ui/x-grid';
 import {makeStyles} from '@material-ui/core/styles'
 
