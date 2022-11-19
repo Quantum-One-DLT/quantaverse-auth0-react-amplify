@@ -39,13 +39,13 @@ export default function FSXGrid() {
   const data = {
   columns: [
     { field: 'id', headerName: 'ID', width: "24" },
-    { field: "provider_references", headerName: "PROCEDURE CODE", width: "72" },
-    { field: "negotiated_prices", headerName: "NEGOTIATED PRICES", width: "72" },
+    { field: "provider_references", headerName: "PROCEDURE CODE", width: "64" },
+    { field: "negotiated_prices", headerName: "NEGOTIATED PRICES", width: "64" },
     { field: "negotiated_type", headerName: "TYPE", width: "72" },
     { field: "negotiated_rate", headerName: "RATE", width: "72" },
-    { field: "expiration_date", headerName: "EXPIRY", width: "72"},
-    { field: "service_code", headerName: "SERVICE CODE", width: "72"},
-    { field: "billing_class", headerName: "BILLING CLASS", width: "72"},
+    { field: "expiration_date", headerName: "EXPIRY", width: "80"},
+    { field: "service_code", headerName: "SERVICE CODE", width: "24"},
+    { field: "billing_class", headerName: "BILLING CLASS", width: "96"},
   ],
 
   rows: [
