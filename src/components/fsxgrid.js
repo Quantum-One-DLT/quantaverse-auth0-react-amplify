@@ -47,17 +47,17 @@ export default function FSXGrid() {
   const data = {
   columns: [
     { field: 'id', headerName: 'ID', width: "24" },
-    { field: "provider_references", headerName: "PROCEDURE CODE", width: "64", type: "STRING" },
-    { field: "negotiated_prices", headerName: "NEGOTIATED PRICES", width: "64", valueGetter: (params) => params.row.negotiated_prices.name, type: "string" },
+    { field: "provider_references", headerName: "PROCEDURE CODE", width: "92", type: "string" },
+    { field: "negotiated_prices", headerName: "NEGOTIATED PRICES", width: "92", valueGetter: (params) => params.row.negotiated_prices.name, type: "string" },
     { field: "negotiated_type", headerName: "TYPE", width: "72" },
     { field: "negotiated_rate", headerName: "RATE", width: "72" },
     { field: "expiration_date", headerName: "EXPIRY", width: "80"},
-    { field: "service_code", headerName: "SERVICE CODE", width: "24"},
+    { field: "service_code", headerName: "SERVICE CODE", width: "30"},
     { field: "billing_class", headerName: "BILLING CLASS", width: "96"},
   ],
 
   rows: [
-    {id: 1, provider_references:"715820,negotiated_prices:[{negotiated_type:"fee schedule",negotiated_rate: 2000.00,expiration_date: "9999-12-31",service_code: ["01", "02", "03", "04", "05", "06", "07", "08", "10", "11", "12", "13", "14", "15", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "31", "32", "33", "34", "41", "42", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "60", "61", "62", "65", "71", "72", "81", "99"],billing_class: "professional"}]},
+    {id: 1, provider_references:"715820",negotiated_prices:[{negotiated_type:"fee schedule",negotiated_rate: 2000.00,expiration_date: "9999-12-31",service_code: ["01", "02", "03", "04", "05", "06", "07", "08", "10", "11", "12", "13", "14", "15", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "31", "32", "33", "34", "41", "42", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "60", "61", "62", "65", "71", "72", "81", "99"],billing_class: "professional"}]},
     {id: 2, provider_references:'45265",negotiated_prices:[{negotiated_type:"fee schedule",negotiated_rate: 1650.00,expiration_date: "9999-12-31",service_code: ["01", "02", "03", "04", "05", "06", "07", "08", "10", "11", "12", "13", "14", "15", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "31", "32", "33", "34", "41", "42", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "60", "61", "62", "65", "71", "72", "81", "99"],billing_class: "institutional"}]},
     {id: 3, provider_references:"45265",negotiated_prices:[{negotiated_type:"fee schedule",negotiated_rate: 1650.00,expiration_date: "9999-12-31",service_code: ["01", "02", "03", "04", "05", "06", "07", "08", "10", "11", "12", "13", "14", "15", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "31", "32", "33", "34", "41", "42", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "60", "61", "62", "65", "71", "72", "81", "99"],billing_class: "institutional"}]},
     {id: 4, provider_references:"341826",negotiated_prices:[{negotiated_type:"fee schedule",negotiated_rate: 2000.00,expiration_date: "9999-12-31",service_code: ["01", "02", "03", "04", "05", "06", "07", "08", "10", "11", "12", "13", "14", "15", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "31", "32", "33", "34", "41", "42", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "60", "61", "62", "65", "71", "72", "81", "99"],billing_class: "institutional"}]},
