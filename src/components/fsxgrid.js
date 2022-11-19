@@ -48,7 +48,7 @@ export default function FSXGrid() {
   columns: [
     { field: 'id', headerName: 'ID', width: "24" },
     { field: "provider_references", headerName: "PROCEDURE CODE", width: "92", type: "string" },
-    { field: "negotiated_price_type", headerName: "NEGOTIATED PRICES", width: "92", valueGetter: (params) => params.row.negotiated_prices.name, type: "string" },
+    { field: "negotiated_price_type", headerName: "NEGOTIATED PRICES", width: "92", valueGetter: (params) => params.row.negotiated_price_type.name, type: "string" },
     { field: "negotiated_rate", headerName: "RATE", width: "72" },
     { field: "expiration_date", headerName: "EXPIRY", width: "80"},
     { field: "service_code", headerName: "SERVICE CODE", width: "30"},
