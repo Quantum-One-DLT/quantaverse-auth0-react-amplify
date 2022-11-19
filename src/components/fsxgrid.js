@@ -43,6 +43,22 @@ export default function FSXGrid() {
       }
     }
   };
+  
+  const apiRef = useGridApiRef();
+
+  const initialState = useKeepGroupedColumnsHidden({
+    apiRef,
+    initialState: {
+      ...data.initialState,
+      rowGrouping: {
+        ...data.initialState?.rowGrouping,
+        model: ['commodity'],
+      },
+      sorting: {
+        sortModel: [{ field: '__row_group_by_columns_group__', sort: 'asc' }],
+      },
+    },
+  })
 
   const data = {
   columns: [
@@ -74,7 +90,8 @@ export default function FSXGrid() {
     {id: 10, negotiation_arrangement: "ffs",name: "152/REV & O36.8929/ICD10DX",billing_code_type: "LOCAL",billing_code_type_version: "2021",billing_code: "MATCOP11727",description: "152/REV & O36.8929/ICD10DX",provider_references:[182560],negotiated_price_type: "per diem",negotiated_rate: "1242.33",expiration_date: "9999-12-31",service_code: ["21", "31", "32", "33", "34", "51", "54", "55", "56", "61"],billing_class: "institutional"},
     {id: 11, negotiation_arrangement: "ffs",name: "152/REV & O36.8929/ICD10DX",billing_code_type: "LOCAL",billing_code_type_version: "2021",billing_code: "MATCOP11727",description: "152/REV & O36.8929/ICD10DX",provider_references:[376882],negotiated_price_type: "per diem",negotiated_rate: "3674.01",expiration_date: "9999-12-31",service_code: ["21", "31", "32", "33", "34", "51", "54", "55", "56", "61"],billing_class: "institutional"},
     {id: 12, negotiation_arrangement: "ffs",name: "152/REV & O36.8929/ICD10DX",billing_code_type: "LOCAL",billing_code_type_version: "2021",billing_code: "MATCOP11727",description: "152/REV & O36.8929/ICD10DX",provider_references:[124409],negotiated_price_type: "per diem",negotiated_rate: "5225.00",expiration_date: "9999-12-31",service_code: ["21", "31", "32", "33", "34", "51", "54", "55", "56", "61"],billing_class: "institutional"},
-    {id: 13, negotiation_arrangement: "ffs",name: "152/REV & O36.8929/ICD10DX",billing_code_type: "LOCAL",billing_code_type_version: "2021",billing_code: "MATCOP11727",description: "152/REV & O36.8929/ICD10DX",provider_references:[325431],negotiated_price_type: "per diem",negotiated_rate: "781.00",expiration_date: "9999-12-31",service_code: ["21", "31", "32", "33", "34", "51", "54", "55", "56", "61"],billing_class: "institutional"},   
+    {id: 13, negotiation_arrangement: "ffs",name: "152/REV & O36.8929/ICD10DX",billing_code_type: "LOCAL",billing_code_type_version: "2021",billing_code: "MATCOP11727",description: "152/REV & O36.8929/ICD10DX",provider_references:[325431],negotiated_price_type: "per diem",negotiated_rate: "781.00",expiration_date: "9999-12-31",service_code: ["21", "31", "32", "33", "34", "51", "54", "55", "56", "61"],billing_class: "institutional"},
+    {id: 14, negotiation_arrangement: "ffs",name: "REPAIR RESIN PARTIAL DENTURE BASE, MANDIBULAR",billing_code_type: "CDT",billing_code_type_version: "2021",billing_code: "D5611",description: "REPAIR RESIN PARTIAL DENTURE BASE, MANDIBULAR",provider_references:[741298],negotiated_price_type: "fee schedule",negotiated_rate: "103.58",expiration_date: "9999-12-31",service_code: ["01", "02", "03", "04", "05", "06", "07", "08", "10", "11", "12", "13", "14", "15", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "31", "32", "33", "34", "41", "42", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "60", "61", "62", "65", "71", "72", "81", "99"],billing_class: "institutional"}, {negotiated_rate_type: "fee schedule",negotiated_rate: "103.58",expiration_date: "9999-12-31",service_code: ["01", "02", "03", "04", "05", "06", "07", "08", "10", "11", "12", "13", "14", "15", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "31", "32", "33", "34", "41", "42", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "60", "61", "62", "65", "71", "72", "81", "99"],billing_class: "professional"},   
   ]};
   
   return  (
