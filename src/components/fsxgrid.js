@@ -46,15 +46,6 @@ export default function FSXGrid() {
   
   const apiRef = useGridApiRef();
 
-  const initialState = useKeepGroupedColumnsHidden({
-    apiRef,
-    initialState: {
-      rowGrouping: {
-        model: ['name'],
-      },
-    },
-  });
-
   const onRowClick = React.useCallback(
     (params) => {
       const rowNode = apiRef.current.getRowNode(params.id);
