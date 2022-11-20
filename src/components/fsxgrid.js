@@ -176,8 +176,9 @@ export default function FSXGrid() {
            autoHeight={false}
            disableColumnMenu={false}
            density={"compact"}
+           checkboxSelection
            components={{
-               Toolbar: GridToolbar,
+               Toolbar: GridToolbar
            }}
        />
    </div>
