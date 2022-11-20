@@ -170,11 +170,11 @@ export default function FSXGrid() {
           </p>
        <XGrid
            {...data}
-           className={classes.content}
+           className={classes.contents}
            loading={data.rows.length === 0}
-           rowHeight={30}
-           autoHeight={true}
-           disableColumnMenu={true}
+           rowHeight={32}
+           autoHeight={false}
+           disableColumnMenu={false}
            density={"compact"}
            components={{
                Toolbar: GridToolbar,
