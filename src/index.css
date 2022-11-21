@@ -37,6 +37,10 @@ code {
     monospace;
 }
 
+html {
+  font-size: 62.5%; /* 62.5% of 16px = 10px */
+}
+
 .next-steps .fa-link {
   margin-right: 5px;
 }
@@ -74,7 +78,7 @@ code {
 }
 
 .btn {
-  color: cyan;
+  color: rgb(0, 255, 255);
 
 }
 .loading {

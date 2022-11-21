@@ -2,6 +2,10 @@ import * as React from "react";
 import { XGrid, GridToolbar, GridColDef } from '@material-ui/x-grid';
 import {LicenseInfo} from '@material-ui/x-grid';
 import {makeStyles} from '@material-ui/core/styles'
+import { createTheme, responsiveFontSizes } from '@mui/material/styles';
+
+let theme = createTheme();
+theme = responsiveFontSizes(theme);
 
 const useStyles=makeStyles((theme) => ({
 
@@ -13,7 +17,8 @@ const useStyles=makeStyles((theme) => ({
     flexGrow: 1,
     flexShrink: 1,
     minWidth: '0',
-    maxWidth: '100%'
+    maxWidth: '100%',
+    fontSize: 12
   },
   contents: {
     flexGrow: 1,
@@ -21,6 +26,7 @@ const useStyles=makeStyles((theme) => ({
     padding: theme.spacing(3),
     persistentBehavior: 'fit'
   },
+
  }
 
 )); 
