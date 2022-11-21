@@ -4,9 +4,9 @@ const Logo = require("../assets/quantumone-home.jpg");
 
 const Hero = () => (
   <div className="text-center hero">
-    <h1 className="mb-4"> Quantum One DAO's QuantaVerse AirDrop </h1>
+    <h1 className="mb-4"> QuantaVerse AirDrop </h1>
     <p className="lead">
-       The 1st 3500 users who verify their ID or prove prior KYC will become one of the earliest members of Quantum One DAO. To get started, {" "}
+       The 1st 3500 users who verify their ID or prove prior KYC will become one of the earliest members of Quantum One DAO - creators of the QuantaVerse. Once complete with verification, create or link your account using the login button found in the menu at the top right of the page. Don't forget to check out a sample of Aetna's public insurance rate data at the quantaverseid.io/aetna-rates and quantaverseid.io/aetna-sample. As time progresses, we will continue to accumlumate a compendium of rate data from all providers, hospitalas, and insurance companies to be incorporated into our incentivized healthcare platform - HealthOne. To get started, {" "}
       <a
         target="_blank"
         rel="noopener noreferrer"
@@ -21,7 +21,7 @@ const Hero = () => (
         className="figure-img img-fluid rounded shadow-3 mb-3"
         alt="new-website-preview"
       />
-      <figcaption className="figure-caption">New website preview.</figcaption>
+      <figcaption className="figure-caption"> Preview of new website at quantumone.network. Work should be complete by 11/25/2022.</figcaption>
     </figure>
   </div>
 );
