@@ -20,7 +20,7 @@ const App = () => {
             <Route path="/privacy" component={Privacy} />
             <Route path="/entropy" component={EntropyXGrid} />
             <Route path="/aetna-rates" component={AetnaXGrid} />
-            <Route path="/fsxgrid" component={FSXGrid} />
+            <Route path="/aetna-sample" component={FSXGrid} />
             <Route path="/s3json" component={S3Json} />
           </Switch>
         </div>
