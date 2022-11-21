@@ -177,8 +177,11 @@ export default function FSXGrid() {
   ]};
   
   return  (
-    <div className="root" style={{height: 1010, width: '100%', marginBottom: 52}}>
+    <div className="root" style={{height: 1010, width: '100%', marginBottom: 128}}>
       <h4 className="text-center">Aetna In-Network Rate Sample</h4>
+      <p className="text-center">
+              The data is excerpted from Aetna's public rate disclosure portal. Customize your views and export data with a few clicks. PDF and Excel export will be available in full version.       
+          </p>
        <XGrid
            {...data}
            className={classes.contents}
