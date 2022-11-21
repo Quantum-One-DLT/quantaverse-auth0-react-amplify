@@ -2,10 +2,6 @@ import * as React from "react";
 import { XGrid, GridToolbar, GridColDef } from '@material-ui/x-grid';
 import {LicenseInfo} from '@material-ui/x-grid';
 import {makeStyles} from '@material-ui/core/styles'
-import { createTheme, responsiveFontSizes } from '@mui/material/styles';
-
-let theme = createTheme();
-theme = responsiveFontSizes(theme);
 
 const useStyles=makeStyles((theme) => ({
 
