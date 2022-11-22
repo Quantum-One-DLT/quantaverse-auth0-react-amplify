@@ -182,7 +182,14 @@ export default function FSXGrid() {
     <div className="root" style={{height: 1010, width: '100%', marginBottom: 128}}>
       <h4 className="text-center">Aetna In-Network Rate Sample</h4>
       <p className="text-center">
-              The data is excerpted from Aetna's public rate disclosure portal. Customize your views and export data with a few clicks. PDF and Excel export will be available in full version.       
+              The data is below was parsed from Aetna's public rate disclosure portal. Customize your views and or export to CSV in a few clicks. PDF and Excel export option and analytic tools option will be included in the full version. View the original data here at {''} 
+                 
+              <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://health1.aetna.com/app/public/#/one/insurerCode=AETNACVS_I&brandCode=ALICSI/machine-readable-transparency-in-coverage?reportingEntityType=Third%20Party%20Administrator_93639150&lock=true"
+      >Aetna's portal.
+     </a>     
           </p>
        <XGrid
            {...data}
