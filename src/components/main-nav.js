@@ -45,14 +45,14 @@ const MainNav = () => {
       )}
     </NavItem>
     <NavItem>
-      {isAuthenticated && (
+      {!isAuthenticated && (
         <NavLink
           to="/aetna-rates"
           exact
           className="nav-link"
           activeClassName="router-link-exact-active"
         >
-        Health Insurance Data
+        Aetna Rate Files
         </NavLink>
       )}
     </NavItem>
@@ -69,6 +69,20 @@ const MainNav = () => {
           <LogoutButton style={{color: "#1e2022"}} />
         </NavItem>
       )}
+      {!isAuthenticated && (
+        <NavLink
+          to="/aetna-sample"
+          exact
+          className="nav-link"
+          activeClassName="router-link-exact-active"
+        >
+        Aetna Rate Data
+        </NavLink>
+        
+
+      )}
+
+
       </Nav>
       </Collapse>
     </div>

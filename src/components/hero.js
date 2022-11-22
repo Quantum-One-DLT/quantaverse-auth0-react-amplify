@@ -4,9 +4,10 @@ const Logo = require("../assets/quantumone-home.jpg");
 
 const Hero = () => (
   <div className="text-center hero">
-    <h1 className="mb-4"> QuantaVerse AirDrop </h1>
+    <h1 className="mb-4"> The QuantaVerse Drop </h1>
     <h6 className="lead">
-       The 1st 3500 users who complete our ID/KYC verification process will receive a random amount of our testnet ERC-20 token and, thus, become one of the earliest members of Quantum One DAO - creators of the QuantaVerse and HealthONE. Once complete with verification, create or link your account using the login button found within the menu at the top right of the page. And check out how we're making it easy for everyone to access public insurance and provider rate data at quantaverseid.io/aetna-sample which contains a sample of Aetna's negotiated rates. As time progresses, we will continue to accumlumate a compendium of rate data from all providers, hospitals, and insurance companies and incorporate into our incentivized healthcare platform - HealthOne. More details will be provided once we launch our new website in the next few days at quantumone.network. To get started, {" "}
+       Welcome to the QuantaVerse - created by Quantum One DAO. The 1st 3500 users who complete our ID/KYC verification process are automatically eligible for our ongoing air drop of our testnet ERC-20 token. Once complete with verification, create your QuantaVerse ID account using the login button found in the main menu. 
+       And check out our Aetna rate data demos accesible from the main menu. We're building a compendium of rate data from providers, hospitals, and insurers to make easily available to everyone and incorporate into our proof-of-stake driven incentivized healthcare platform - HealthONE. To get started, {" "}
       <a
         target="_blank"
         rel="noopener noreferrer"
@@ -20,7 +21,7 @@ const Hero = () => (
         className="figure-img img-fluid rounded shadow-3 mb-3"
         alt="new-website-preview"
       />
-      <figcaption className="figure-caption"> Preview of new website at quantumone.network. Work should be complete by 11/25/2022.</figcaption>
+      <figcaption className="figure-caption"> A preview of the homepage of our new website at quantumone.network. Head to https://test.d1zp1gymhbgtxt.amplifyapp.com for a live preview .</figcaption>
     </figure>
   </div>
 );
