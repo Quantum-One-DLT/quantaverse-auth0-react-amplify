@@ -38,7 +38,7 @@ code {
 }
 
 html {
-  font-size: 62.5%; /* 62.5% of 16px = 10px */
+  font-size: 75%; /* 75% of 16px = 12px */
 }
 
 .next-steps .fa-link {
