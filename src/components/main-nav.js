@@ -19,7 +19,7 @@ const MainNav = () => {
   const toggle = () => setIsOpen(!isOpen);
   return (
     <div>
-    <NavbarToggler style={{outline:"none"}} onClick={toggle}/>
+    <NavbarToggler style={{outline:0}} onClick={toggle}/>
     <Collapse isOpen={isOpen} navbar>
     <Nav className="me-auto" navbar>
     <NavItem>
