@@ -179,7 +179,7 @@ export default function FSXGrid() {
   ]};
   
   return  (
-    <div className="root" style={{height: 1010, width: '100%', marginBottom: 128}}>
+    <div className="root" style={{height: 1010, width: '100%', marginBottom: 160}}>
       <h4 className="text-center">Aetna In-Network Rate Sample</h4>
       <p className="text-center">
               The data is below was parsed from Aetna's public rate disclosure portal. Customize your views and or export to CSV in a few clicks. PDF and Excel export option and analytic tools option will be included in the full version. View the original data here at {''} 
