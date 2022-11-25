@@ -24,11 +24,11 @@ function main() {
 
   // Your blocked citizenship country codes go here
   // Leave empty if you don't want to block any countries
-  const citizenshipCountryList = ["RU", "CO", "KP", "LY", "SY", "IQ"];
+  const citizenshipCountryList = ["BY", "CG", "CU", "CD", "ET", "BF", "HK", "RU", "CO", "KP", "LY", "SY", "IQ"];
 
   // Your blocked residency country codes go here
   // Leave empty if you don't want to block any countries
-  const residencyCountryList = ["RU", "CO", "KP", "LY", "SY", "IQ"];
+  const residencyCountryList = ["BY", "CG", "CU", "CD", "ET", "BF", "HK", "RU", "CO", "KP", "LY", "SY", "IQ"];
   
   const lines = [
     `I authorize ${applicationName} (${applicationUID}) to get a proof from Fractal that:`,
