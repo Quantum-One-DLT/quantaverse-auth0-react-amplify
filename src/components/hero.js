@@ -3,11 +3,11 @@ import { LoginButton } from "./loginButton";
 import { useAuth0 } from "@auth0/auth0-react";
 
 const Logo = require("../assets/quantumone-home.jpg");
-
-const Hero = () => (
 const {
     isAuthenticated
   } = useAuth0();
+
+const Hero = () => (
 
   <div className="text-center hero">
     <h1 className="mb-4"> The QuantaVerse Drop </h1>
