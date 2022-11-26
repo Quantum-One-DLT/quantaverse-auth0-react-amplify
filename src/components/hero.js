@@ -1,22 +1,14 @@
 import React from "react";
-import LoginButton from "./loginButton";
-import { useAuth0 } from "@auth0/auth0-react";
 
 const Logo = require("../assets/quantumone-home.jpg");
-const {
-    isAuthenticated
-  } = useAuth0();
 
 const Hero = () => (
 
   <div className="text-center hero">
-    <h1 className="mb-4"> The QuantaVerse Drop </h1>
-    {!isAuthenticated && (
-    <LoginButton style={{color: "#03fff6"}}/>
-    )}
+    <h1 className="mb-4"> It's AirDrop Time </h1>
     <h6 className="lead">
-       Welcome to the QuantaVerse - created by Quantum One DAO. The 1st 3500 users who complete our ID/KYC verification process are automatically eligible for our ongoing air drop of our testnet ERC-20 token. Once complete with verification, create your QuantaVerse ID account using the login button found in the main menu. 
-       And check out our Aetna rate data demos accesible from the main menu. We're building a compendium of rate data from providers, hospitals, and insurers to make easily available to everyone and incorporate into our proof-of-stake driven incentivized healthcare platform - HealthONE. To get started, {" "}
+       Welcome to the home of Quantum One DAO's QuantaVerse, where users are safe from the incompliant policies that brought down FTX, Luna, and others. Celebrate our thesis and join the 1st 3500 users who complete our ID/KYC verification process to become eligible for the ongoing air drop of our testnet ERC-20 token. Be sure to create your QuantaVerse ID account after completing the process. 
+       And check out our demo healthcare rate analysis service and sample data from Aetna. We're building a compendium of rate data from providers, hospitals, and insurers for easy analysis and incorporating it into our proof-of-stake driven incentivized healthcare platform - HealthONE. To get started, {" "}
       <a
         target="_blank"
         rel="noopener noreferrer"
