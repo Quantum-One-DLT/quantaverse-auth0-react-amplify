@@ -92,6 +92,30 @@ const MainNav = () => {
         </NavLink>
       )}
      </NavItem>
+     <NavItem>
+    {!isAuthenticated && (
+        <NavLink
+          to="/privacy"
+          exact
+          className="nav-link"
+          activeClassName="router-link-exact-active"
+        >
+        Privacy
+        </NavLink>
+      )}
+     </NavItem>
+     <NavItem>
+    {isAuthenticated && (
+        <NavLink
+          to="/privacy"
+          exact
+          className="nav-link"
+          activeClassName="router-link-exact-active"
+        >
+        Privacy
+        </NavLink>
+      )}
+     </NavItem>
       {!isAuthenticated && (
 
         <NavItem>

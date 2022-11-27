@@ -38,7 +38,7 @@ const HomeContent = () => (
           </a>
         </h6>
         <p>
-         We're dropping 125 of our testnet ERC20 DA-FI token to the first 3500 people who verify their identity or prove a previous KYC verification through our web app. DA-FI holders must verify their identity to exchange DA-FI for our mainnet coin referred to as the 'Roton'.
+         We're dropping 250 of our testnet ERC20 DA-FI token to the first 3500 people who verify their identity or prove a previous KYC verification through our web app. DA-FI holders must verify their identity to exchange DA-FI for our mainnet coin referred to as the 'Roton'.
         </p>
       </div>
     </div>
@@ -68,14 +68,14 @@ const HomeContent = () => (
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://www.crunchbase.com/organization/quantum-one-dao"
+            href="https://soundcloud.com/user-34457466/quantumone-11-23-2022-wav?si=a55aa222af304b878825c2ee22351024&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
           >
             <i className="fas fa-link mr-2" />
-            Quantum One's Crunchbase profile
+            FTX debacle supports Quantum One DAO thesis SoundCloud podcast. 
           </a>
         </h6>
         <p>
-          Quantaverse ID is humanity's optimal digital trust paradigm. We're contributors to the Decentralized Identity Foundation, a member Dun and Bradstreet as well as Pledge 1%. 
+          Learn more about Quantum One and check out the latest update from our founder and Chief DAO Steward, Robert Mourey Jr 
         </p>
       </div>
     </div>
