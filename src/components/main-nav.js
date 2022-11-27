@@ -56,6 +56,19 @@ const MainNav = () => {
         </NavLink>
       )}
     </NavItem>
+    <NavItem>
+      {isAuthenticated && (
+        <NavLink
+          to="/aetna-rates"
+          exact
+          className="nav-link"
+          activeClassName="router-link-exact-active"
+        >
+        Aetna Rate Files
+        </NavLink>
+      )}
+    </NavItem>
+    <NavItem>
     {!isAuthenticated && (
         <NavLink
           to="/aetna-sample"
@@ -66,7 +79,19 @@ const MainNav = () => {
         Aetna Rate Data
         </NavLink>
       )}
-
+     </NavItem>
+     <NavItem>
+    {isAuthenticated && (
+        <NavLink
+          to="/aetna-sample"
+          exact
+          className="nav-link"
+          activeClassName="router-link-exact-active"
+        >
+        Aetna Rate Data
+        </NavLink>
+      )}
+     </NavItem>
       {!isAuthenticated && (
 
         <NavItem>
