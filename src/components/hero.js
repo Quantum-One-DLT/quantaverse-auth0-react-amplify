@@ -17,14 +17,14 @@ const Hero = () => (
       >Verify ID | Prove Prior KYC.
      </a> 
     </h5>
-    <audio className='audio'>
+    <figure className='audio'>
       <img width="80%"
         src={Logo}
         className="figure-img img-fluid rounded shadow-3 mb-3"
         alt="new-website-preview"
       />
       <figcaption className="figure-caption"> Quantum One Roton Tokenomics. Learn more in the whitepaper .</figcaption>
-    </audio>
+    </figure>
   </div>
 );
 
