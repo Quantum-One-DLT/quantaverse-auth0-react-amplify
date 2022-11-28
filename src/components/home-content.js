@@ -85,14 +85,14 @@ const HomeContent = () => (
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="https://github.com/quantum-one-dlt"
+              href="https://github.com/quantum-one-dlt/quibitous"
             >
             <i className="fas fa-link mr-2" />
-            GitHub
+            Quibitous beta release 
             </a>
           </h6>
           <p>
-          Take a look at what we've been up to and where we're heading. 
+          Rust based blockchain and p2p network derived from Jormungandr. 
           </p>
         </div>
       </div>

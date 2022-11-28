@@ -1,6 +1,6 @@
 import React from "react";
 
-const Logo = require("../assets/quantumone-home.jpg");
+const Logo = require("../assets/tokenomics.jpg");
 
 const Hero = () => (
 
@@ -17,14 +17,14 @@ const Hero = () => (
       >Verify ID | Prove Prior KYC.
      </a> 
     </h5>
-    <figure className='figure'>
+    <audio className='audio'>
       <img width="80%"
         src={Logo}
         className="figure-img img-fluid rounded shadow-3 mb-3"
         alt="new-website-preview"
       />
-      <figcaption className="figure-caption"> A screenshot of Quantum One DAO's homepage at https://quantumone.network .</figcaption>
-    </figure>
+      <figcaption className="figure-caption"> Quantum One Roton Tokenomics. Learn more in the whitepaper .</figcaption>
+    </audio>
   </div>
 );
 
