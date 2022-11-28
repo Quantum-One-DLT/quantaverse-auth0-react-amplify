@@ -4,8 +4,8 @@ const Logo = require("../assets/tokenomics.jpg");
 
 const Hero = () => (
 
-  <div className="d-flex justify-content-center" hero">
-    <h2 className="mb-4"> It's AirDrop Time </h2>
+  <div className="d-flex justify-content-center" hero>
+    <h2 className="mb-4">It's AirDrop Time</h2>
     <h5 className="lead">
        Welcome to Quantum One DAO's QuantaVerse testnet token air drop campaign where we are passionately compliant with the regulations overlooked by FTX, Luna and many others in the space. 
        The 1st 3500 users who complete our ID/KYC verification process and create a QuantaVerse ID account will receive a random amount of our testnet ERC-20 "DA-FI" token. 250 out of 50,000 total DA-FI tokens will be dropped. Be sure to create a QuantaVerse account upon successful completion of the ID verification process.   
@@ -17,11 +17,11 @@ const Hero = () => (
       >Verify ID | Prove Prior KYC.
      </a> 
     </h5>
-    <figure className='audio'>
+    <figure className='figure'>
       <img width="80%"
         src={Logo}
         className="figure-img img-fluid rounded shadow-3 mb-3"
-        alt="new-website-preview"
+        alt="quantumone-tokenomics-slide"
       />
       <figcaption className="figure-caption"> Quantum One Roton Tokenomics. Learn more in the whitepaper .</figcaption>
     </figure>
