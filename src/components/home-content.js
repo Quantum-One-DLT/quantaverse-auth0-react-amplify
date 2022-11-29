@@ -29,7 +29,7 @@ const HomeContent = () => (
             href="https://brocoders.com/blog/auth0-vs-cognito/"
           > Auth0 vs. AWS Cognito 
             <i className="fas fa-link mr-2" />
-            
+         </a>   
         </h6>
         <p>
          Detailed comparison of Auth0 and AWS Cognito. We mesh the two of these together for web2 and are developing a post quantum secure product of our own.
