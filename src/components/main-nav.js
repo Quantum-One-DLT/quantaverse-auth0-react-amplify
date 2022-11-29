@@ -119,13 +119,13 @@ const MainNav = () => {
       {!isAuthenticated && (
 
         <NavItem>
-          <LoginButton style={{color: "#8B0000"}}/>
+          <LoginButton style={{color: "bf0000"}}/>
         </NavItem>
 
       )}
       {isAuthenticated && (
         <NavItem>
-          <LogoutButton style={{color: "#1e2022"}} />
+          <LogoutButton style={{color: "#8b0000"}} />
         </NavItem>
       )}
 
