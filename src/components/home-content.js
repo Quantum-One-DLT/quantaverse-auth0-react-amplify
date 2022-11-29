@@ -45,14 +45,14 @@ const HomeContent = () => (
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://www.coinfirm.com/blockchain-analytics/"
+            href="https://www.prove.com/blog/buyers-guide-how-to-find-the-right-kyc-solution-for-your-company"
           >
             <i className="fas fa-link mr-2" />
-            Coinfirm Web3 Enabled AML Analytics 
+            KYC Buyers Guide 
           </a>
         </h6>
         <p>
-        Optional top tier web3 AML analytics
+        This is a well rounded guide from a third-party source. 
         </p>
       </div>
     </div>
