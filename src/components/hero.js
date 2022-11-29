@@ -7,7 +7,7 @@ const Hero = () => (
   <div className="text-center hero">
     <h2 className="mb-4">It's AirDrop Time</h2>
     <h5 className="lead">
-       Verify your ID, create an account, &mp receive our testnet token - each equivalent to 10M mainnet Roton.  
+       Verify your ID, create an account, &amp receive our testnet token - each equivalent to 10M mainnet Roton.  
        . To get started, {" "}
       <a
         target="_blank"
