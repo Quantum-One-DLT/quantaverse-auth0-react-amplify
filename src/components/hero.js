@@ -7,9 +7,8 @@ const Hero = () => (
   <div className="text-center hero">
     <h2 className="mb-4">It's AirDrop Time</h2>
     <h5 className="lead">
-       Welcome to Quantum One DAO's QuantaVerse testnet token air drop campaign where we are passionately compliant with the regulations overlooked by FTX, Luna and many others in the space. 
-       The 1st 3500 users who complete our ID/KYC verification process and create a QuantaVerse ID account will receive a random amount of our testnet ERC-20 "DA-FI" token. 250 out of 50,000 total DA-FI tokens will be dropped. Be sure to create a QuantaVerse account upon successful completion of the ID verification process.   
-       And check out our demo healthcare rate analysis service and sample data from Aetna. We're building a compendium of rate data from providers, hospitals, and insurers for easy analysis and incorporating it into our proof-of-stake driven incentivized healthcare platform - HealthONE. To get started, {" "}
+       Verify your ID, create an account, &mp receive our testnet token - each equivalent to 10M mainnet Roton.  
+       . To get started, {" "}
       <a
         target="_blank"
         rel="noopener noreferrer"
@@ -18,7 +17,7 @@ const Hero = () => (
      </a> 
     </h5>
     <figure className='figure'>
-      <img width="80%"
+      <img width="100%"
         src={Logo}
         className="figure-img img-fluid rounded shadow-3 mb-3"
         alt="quantumone-tokenomics-slide"
