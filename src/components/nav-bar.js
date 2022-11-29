@@ -1,7 +1,7 @@
 import React from "react";
 import MainNav from "./main-nav";
 import {NavbarBrand, Navbar} from "reactstrap";
-let Logo = require("../assets/NavLogo.png");
+let Logo = require("../assets/cyberwyoming-wide.svg");
 
 const NavBar = () => {
   return (
@@ -13,7 +13,7 @@ const NavBar = () => {
      >
       <NavbarBrand  href="/">
       <img
-        alt="quantumOne-logo"
+        alt="cyberwyoming-logo"
         src={Logo}
         style={{
           height: 45,
