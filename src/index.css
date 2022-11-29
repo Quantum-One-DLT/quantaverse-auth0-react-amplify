@@ -30,6 +30,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-y: scroll;
+  min-height: -webkit-fill-available;
+  color: hsl(0, 0%, 90%); 
 }
 
 code {
@@ -39,6 +41,8 @@ code {
 
 html {
   font-size: 93.75%; /* 93.75% of 16px = 15px */
+  min-height: -webkit-fill-available;
+}
 }
 
 .next-steps .fa-link {
