@@ -4,7 +4,7 @@ const Logo = require("../assets/tokenomics.jpg");
 
 const Hero = () => (
 
-  <div className="d-flex justify-content-center" hero>
+  <div className="text-center hero">
     <h2 className="mb-4">It's AirDrop Time</h2>
     <h5 className="lead">
        Welcome to Quantum One DAO's QuantaVerse testnet token air drop campaign where we are passionately compliant with the regulations overlooked by FTX, Luna and many others in the space. 
