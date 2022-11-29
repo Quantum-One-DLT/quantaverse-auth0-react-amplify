@@ -11,9 +11,9 @@ const HomeContent = () => (
             target="_blank"
             rel="noopener noreferrer"
             href="https://quantumone.network"
-           > What is Quantum One DAO? 
+           >  
             <i className="fas fa-link mr-2" />
-            
+            What is Quantum One DAO?
           </a>
         </h6>
         <p>
@@ -28,8 +28,9 @@ const HomeContent = () => (
             target="_blank"
             rel="noopener noreferrer"
             href="https://brocoders.com/blog/auth0-vs-cognito/"
-          > Auth0 vs. AWS Cognito 
+          >  
             <i className="fas fa-link mr-2" />
+            Auth0 vs. AWS Cognito
          </a>   
         </h6>
         <p>
