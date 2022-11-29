@@ -1,7 +1,7 @@
 import React from "react";
 import MainNav from "./main-nav";
 import {NavbarBrand, Navbar} from "reactstrap";
-let Logo = require("../assets/cyberwyooming-wide.svg");
+let Logo = require("../assets/cyberwyooming-wide.png");
 
 const NavBar = () => {
   return (
