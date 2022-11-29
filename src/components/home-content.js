@@ -20,6 +20,7 @@ const HomeContent = () => (
         Quantum One DAO is engineering an omni-compliant, digital identity driven, post quantum secure web of the future enabling optimal usability trusted by users and regulators alike. 
         </p>
       </div>
+      </div>
     <div className="row">
       <div className="col-md-5 mb-4">
         <h6 className="mb-3">
@@ -33,18 +34,17 @@ const HomeContent = () => (
         </h6>
         <p>
          Detailed comparison of Auth0 and AWS Cognito. We mesh the two of these together for web2 and are developing a post quantum secure product of our own.
-          </a>
         </p>
       </div>
-
-      <div className="col-md" />
+      </div>
+      <div className="col-md">
 
       <div className="col-md-5 mb-4">
         <h6 className="mb-3">
           <a
             target="_blank"
             rel="noopener noreferrer"
-            "https://www.coinfirm.com/blockchain-analytics/"
+            href="https://www.coinfirm.com/blockchain-analytics/"
           >
             <i className="fas fa-link mr-2" />
             Coinfirm Web3 Enabled AML Analytics 
@@ -54,6 +54,7 @@ const HomeContent = () => (
         Optional top tier web3 AML analytics
         </p>
       </div>
+    </div>
     </div>
 );
 
