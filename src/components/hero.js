@@ -4,7 +4,7 @@ const Logo = require("../assets/cwlogpre.jpg");
 
 const Hero = () => (
 
-  <div className="d-flex justify-content-center" hero>
+  <div className="d-flex-column justify-content-center">
     <h2 className="mb-4">Cyber Wyoming Login Demo</h2>
     <h5 className="lead">
        This is a demo React based login app. We can integrate the login process with any website, web-app, native app and most language frameworks. Each can be configured to call additional API's from the client-side and or server-side. The login page itself can be customized as shown in the screen-shot below. To sign up and or login, click the login button within the hamburger menu on the top right side of the page. For ID/KYC verification {" "}
