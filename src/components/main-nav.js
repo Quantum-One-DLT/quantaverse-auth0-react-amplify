@@ -52,7 +52,7 @@ const MainNav = () => {
           className="nav-link"
           activeClassName="router-link-exact-active"
         >
-        Unprotected Aetna Rate Files
+        Unprotected Page
         </NavLink>
       )}
     </NavItem>
@@ -64,7 +64,7 @@ const MainNav = () => {
           className="nav-link"
           activeClassName="router-link-exact-active"
         >
-        Protected Aetna Rate Files
+        Protected Page
         </NavLink>
       )}
     </NavItem>
@@ -76,7 +76,7 @@ const MainNav = () => {
           className="nav-link"
           activeClassName="router-link-exact-active"
         >
-        Unprotected Aetna Rate Data
+        Unprotected Page
         </NavLink>
       )}
      </NavItem>
@@ -88,7 +88,7 @@ const MainNav = () => {
           className="nav-link"
           activeClassName="router-link-exact-active"
         >
-        Protected Aetna Rate Data
+        Protected Page
         </NavLink>
       )}
      </NavItem>
