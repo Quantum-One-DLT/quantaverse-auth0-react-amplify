@@ -31,7 +31,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   overflow-y: scroll;
   min-height: -webkit-fill-available;
-  color: hsl(0, 0%, 90%); 
+  color: light; 
 }
 
 code {
@@ -81,7 +81,7 @@ html {
 }
 
 .btn {
-  color: rgb(0, 255, 255);
+  color: rgb(139, 0, 0);
 
 }
 .loading {
