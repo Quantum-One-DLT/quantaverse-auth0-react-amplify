@@ -1,6 +1,7 @@
-#  ID/KYC/AML Oauth2
+#  ID/KYC/AML Oauth2 identity based authentication 
+>- Enterpise Auth0 × Fractal.ID 
 >- Easy Web3 & DID integrated ID/KYC/AML verification web-app built for all devices. 
->- Auth0 Open-ID connect user authentication 
+>- Open-ID connect user authentication 
 >- Unstoppable NFT Domains, Github, FitBit, and many others
 >- Customizeable Social Integrations 
 >- SAML, Federated, SSO 
@@ -22,4 +23,3 @@ or
 yarn
 ```
 
-Follow the tutorial hosted on the AWS Blog ( URL TO BE PUBLISHED) to configure AWS Amplify and host your application into the AWS Cloud
