@@ -9,7 +9,7 @@ const NavBar = () => {
    <Navbar
     className="my-0"
     color="dark"
-    light
+    dark
      >
       <NavbarBrand  href="/">
       <img
