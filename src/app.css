@@ -46,13 +46,13 @@
 }
 
 .lgrad {
-  background-image: linear-gradient(to right top, #1e2022, #2d424f, #316a7c, #2794a8, #06c1ce, #04cede, #02dcee, #00e9ff, #00d7ff, #00c3ff, #00aeff, #0096ff);
+  background-image: linear-gradient(to right top, #3172b3, #2d424f, #316a7c, #2794a8, #06c1ce, #04cede, #02dcee, #00e9ff, #00d7ff, #00c3ff, #00aeff, #0096ff);
   height: 100vh;
 }
 
 .grad {
   background: #007991;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #78ffd6, #007991);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #78ffd6, #007991); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to right, #78ffd6, #04d2fc);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #78ffd6, #03c8f0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   
 }
