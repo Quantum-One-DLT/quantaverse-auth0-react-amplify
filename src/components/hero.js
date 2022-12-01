@@ -5,10 +5,9 @@ const Logo = require("../assets/tokenomics.jpg");
 const Hero = () => (
 
   <div className="text-center hero">
-    <h2 className="mb-4">It's AirDrop Time</h2>
+    <h2 className="mb-4">We're AirDropping the 1st 3500 new Quantum One DAO users who verify their ID!</h2>
     <h5 className="lead">
-       Verify your ID, create an account, &mp receive our testnet token - each equivalent to 10M mainnet Roton.  
-       . To get started, {" "}
+       Get in on the omni-compliant, post quantum secure, blockchain who's wallets will meet US investment bank account standards. To get started {" "}
       <a
         target="_blank"
         rel="noopener noreferrer"
@@ -16,6 +15,7 @@ const Hero = () => (
       >Verify ID | Prove Prior KYC.
      </a> 
     </h5>
+    <h5 className="text-justified">Be sure to create a Quantum One account upon successful ID verification. Contact us via support message with any questions</h5>
     <figure className='figure'>
       <img width="100%"
         src={Logo}
