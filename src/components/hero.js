@@ -6,8 +6,9 @@ const Hero = () => (
 
   <div className="text-center hero">
     <h2 className="mb-4">We're AirDropping the 1st 3500 new Quantum One DAO users who verify their ID!</h2>
-    <h5 className="lead">
-       Get in on the omni-compliant, post quantum secure, blockchain who's wallets will meet US investment bank account standards. To get started {" "}
+    <h5 className="text-justified">
+       Join the omni-compliant, post quantum secure, identity-centric DAO who's eliminating blockchain investment risk and disrupting the healthcare market with 
+       it's incentivized POS HealthONE platform. To get started {" "}
       <a
         target="_blank"
         rel="noopener noreferrer"
@@ -22,7 +23,14 @@ const Hero = () => (
         className="figure-img img-fluid rounded shadow-3 mb-3"
         alt="quantumone-tokenomics-slide"
       />
-      <figcaption className="figure-caption"> Quantum One Roton Tokenomics. Learn more in the whitepaper .</figcaption>
+      <figcaption className="figure-caption"> Quantum One Roton Tokenomics. Learn more in the {" "}
+      <a 
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://quantumone.notion.site/Quantum-One-Whitepaper-7df3771e24184020b3ffbf808d140ae6"
+        > Whitepaper
+      </a>
+      </figcaption>
     </figure>
   </div>
 );
