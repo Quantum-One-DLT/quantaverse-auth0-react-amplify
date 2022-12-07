@@ -10,7 +10,7 @@ const ConnectWallet = () => {
   useEffect(() => {
     // If the wallet has a provider than the wallet is connected
     if (wallet?.provider) {
-      setProvider(new ethers.providers.Web3Provider(wallet.provider, "any"))
+      setProvider(new ethersProvider.Web3Provider(wallet.provider, "any"))
     }
   }, [wallet])
 

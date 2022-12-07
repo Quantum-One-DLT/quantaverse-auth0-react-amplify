@@ -7,7 +7,7 @@ import {
   Typography,
 } from "@material-ui/core";
 
-import { useAuth0} from "@auth0/auth0-react";
+import { useWeb3Onboard } from "@web3-onboard/react/dist/context";
 
 const styles = (theme) => ({
   paperContainer: {

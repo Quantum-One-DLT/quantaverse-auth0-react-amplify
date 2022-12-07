@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import { useAuth0} from "@auth0/auth0-react";
+import { Web3Auth } from "@web3auth/modal";
+import { useWeb3Onboard } from "@web3-onboard/react/dist/context";
 
 const ExternalApi = () => {
-  const { user } = useAuth0();
+  const { user } = useWeb3Onboard();
   const [message, setMessage] = user.useState("");
 
   return (

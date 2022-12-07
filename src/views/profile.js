@@ -1,10 +1,9 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
-
-import { useAuth0} from "@auth0/auth0-react";
+import { useWeb3Onboard } from "@web3-onboard/react/dist/context";
 
 export const Profile = () => {
-  const { user } = useAuth0();
+  const { user } = useWeb3Onboard;
 
   return (
     <Container className="mb-5">
