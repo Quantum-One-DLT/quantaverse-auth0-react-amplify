@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import React, { useState } from "react";
 import LoginButton from './loginButton';
 import LogoutButton from './logoutButton';
-import { useAuth0 } from "@auth0/auth0-react";
+import { useWeb3Onboard } from "@web3-onboard/react/dist/context";
 
 import {
   NavItem, Collapse, NavbarToggler, Nav
@@ -12,7 +12,7 @@ const MainNav = () => {
 
   const {
     isAuthenticated
-  } = useAuth0();
+  } = useWeb3Onboard();
 
   const [isOpen, setIsOpen] = useState(false);
 
