@@ -58,7 +58,14 @@
 
 .grad {
   background: #007991;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #78ffd6, #04d2fc);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #78ffd6, #03c8f0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to right, #0F5577 0%, 27.35191583633423%, #3AE0FF 54.70383167266846%, 77.35191583633423%, #3CFCFF 100%);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, rgba(15, 85, 119, 1) 0%, 27.35191583633423%, rgba(58, 224, 255, 1) 54.70383167266846%, 77.35191583633423%, rgba(60, 252, 255, 1) 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   
 }
+
+/* Gradient in Hex */
+linear-gradient(to right, #0F5577 0%, 27.35191583633423%, #3AE0FF 54.70383167266846%, 77.35191583633423%, #3CFCFF 100%);
+
+/* Gradient in RGBA */
+linear-gradient(to right, rgba(15, 85, 119, 1) 0%, 27.35191583633423%, rgba(58, 224, 255, 1) 54.70383167266846%, 77.35191583633423%, rgba(60, 252, 255, 1) 100%);
+
