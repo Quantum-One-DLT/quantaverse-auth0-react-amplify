@@ -22,7 +22,7 @@ const Hero = () => (
         href="https://quantumone.network"
       > homepage.</a>
     <figure className='figure'>
-      <img width="50%"
+      <img width="100%"
         src={Logo}
         className="figure-img img-fluid rounded shadow-3 mb-3"
         alt="quantumone-tokenomics-slide"
