@@ -208,7 +208,7 @@ export default function FSXGrid() {
        > Verify ID
       </a> 
       </StyledButton>
-      <Divider variant="middle" />
+      <Divider variant="middle p-3" />
      <div className="root" style={{height: 1010, width: '100%', marginBottom: 160}}>
       <h4 className="text-center">MediClear Demo - Aetna Rate Sample</h4>
       <p className="text-center">
