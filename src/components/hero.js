@@ -1,5 +1,6 @@
 import React from "react";
 import { withStyles } from '@material-ui/core/styles'; 
+import { Button, Divider } from '@material-ui/core';
 
 const Tokenomics = require("../assets/tokenomics.jpg");
 
