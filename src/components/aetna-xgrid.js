@@ -76,8 +76,9 @@ export default function AetnaXGrid() {
   
   return  (
     <div className="text-center hero">
-     <h2 className="mb-4">Verify your ID, create an account and receive Quantum One DAO's testnet token air-drop!</h2>
+     <h2 className="mb-4">Verify ID and receive Quantum One's testnet token!</h2>
       <h6 className="text-center">Limited to the 1st 3500 users </h6>
+      <div>
       <StyledButton>
        <a
         target="_blank"
@@ -86,6 +87,7 @@ export default function AetnaXGrid() {
        > Verify ID
       </a> 
       </StyledButton>
+      </div>
       <Divider variant="middle p-3" />
     <div className="root contents vh-100">
       <h4 className="text-center">HealthONE Incentivized HealthCare is coming!</h4>
