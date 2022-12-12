@@ -76,8 +76,8 @@ export default function AetnaXGrid() {
   
   return  (
     <div className="text-center hero">
-     <h2 className="mb-4">Verify ID and receive Quantum One's testnet token!</h2>
-      <h6 className="text-center">Limited to the 1st 3500 users </h6>
+     <h2 className="mb-0">Verify ID and receive Quantum One's testnet token!</h2>
+      <h6 className="mb-5 text-center">Limited to the 1st 3500 users </h6>
       <div>
       <StyledButton>
        <a
@@ -88,7 +88,7 @@ export default function AetnaXGrid() {
       </a> 
       </StyledButton>
       </div>
-      <Divider variant="middle p-3" />
+      <Divider variant="middle mt-5 mb-5" />
     <div className="root contents vh-100">
       <h4 className="text-center">HealthONE Incentivized HealthCare is coming!</h4>
       <p className="text-center">The table below demonstrates how Aetna complies with the recent CMS mandate - effective 7/1/2022 - requiring insurance companies 
