@@ -58,6 +58,18 @@ export default function AetnaXGrid() {
   ]};
   
   return  (
+    <div className="text-center hero">
+     <h2 className="mb-4">Verify your ID, create an account and receive Quantum One DAO's testnet token air-drop!</h2>
+      <h6 className="text-center">Limited to the 1st 3500 users </h6>
+      <StyledButton>
+       <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://app.fractal.id/authorize?client_id=QHAVw9SmY3f0dkaNB8GLnL8SWlRf_Qk8708qAKHJgkA&redirect_uri=https%3A%2F%2Fapp.quantumone.network%2Fcallback&response_type=code&scope=contact%3Aread%20verification.basic%3Aread%20verification.basic.details%3Aread%20verification.liveness%3Aread%20verification.liveness.details%3Aread"
+       > Verify ID
+      </a> 
+      </StyledButton>
+      <Divider variant="middle p-3" />
     <div className="root contents vh-100">
       <h4 className="text-center">HealthONE Incentivized HealthCare is coming!</h4>
       <p className="text-center">The table below demonstrates how Aetna complies with the recent CMS mandate - effective 7/1/2022 - requiring insurance companies 
@@ -78,6 +90,7 @@ export default function AetnaXGrid() {
                Toolbar: GridToolbar,
            }}
        />
+   </div>
    </div>
 
 );

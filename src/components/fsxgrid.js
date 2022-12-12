@@ -198,8 +198,8 @@ export default function FSXGrid() {
   
   return  (
     <div className="text-center hero">
-     <h2 className="mb-4">Verify your ID, get Quantum One DAO's testnet ERC-20 token!</h2>
-      <h5 className="text-justified">We're dropping a total of 250 DA-FI tokens to the the 1st 3500 who verify their ID and create a Quantum One account.</h5>
+     <h2 className="mb-4">Verify your ID, create an account and receive Quantum One DAO's testnet token air-drop!</h2>
+      <h6 className="text-center">Limited to the 1st 3500 users </h6>
       <StyledButton>
        <a
         target="_blank"

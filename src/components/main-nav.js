@@ -47,7 +47,7 @@ const MainNav = () => {
     <NavItem>
       {!isAuthenticated && (
         <NavLink
-          to="/aetna-rates"
+          to="/aetna-rate-files"
           exact
           className="nav-link"
           activeClassName="router-link-exact-active"
@@ -59,7 +59,7 @@ const MainNav = () => {
     <NavItem>
       {isAuthenticated && (
         <NavLink
-          to="/aetna-rates"
+          to="/aetna-rate-files"
           exact
           className="nav-link"
           activeClassName="router-link-exact-active"
@@ -69,26 +69,50 @@ const MainNav = () => {
       )}
     </NavItem>
     <NavItem>
-    {!isAuthenticated && (
+      {!isAuthenticated && (
         <NavLink
-          to="/aetna-sample"
+          to="/airdrop"
           exact
           className="nav-link"
           activeClassName="router-link-exact-active"
         >
-        Aetna Rate Data
+        AirDrop
+        </NavLink>
+      )}
+    </NavItem>
+    <NavItem>
+      {isAuthenticated && (
+        <NavLink
+          to="/airdrop"
+          exact
+          className="nav-link"
+          activeClassName="router-link-exact-active"
+        >
+        AirDrop
+        </NavLink>
+      )}
+    </NavItem>
+    <NavItem>
+    {!isAuthenticated && (
+        <NavLink
+          to="/mediclear-aetna-demo"
+          exact
+          className="nav-link"
+          activeClassName="router-link-exact-active"
+        >
+        MediClear Aetna Demo
         </NavLink>
       )}
      </NavItem>
      <NavItem>
     {isAuthenticated && (
         <NavLink
-          to="/aetna-sample"
+          to="/mediclear-aetna-demo"
           exact
           className="nav-link"
           activeClassName="router-link-exact-active"
         >
-        Aetna Rate Data
+        MediClear Aetna Demo
         </NavLink>
       )}
      </NavItem>

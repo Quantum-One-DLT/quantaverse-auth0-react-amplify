@@ -1,7 +1,7 @@
 import React from "react";
 import { withStyles } from '@material-ui/core/styles'; 
 
-const Logo = require("../assets/tokenomics.jpg");
+const Tokenomics = require("../assets/tokenomics.jpg");
 
 const StyledButton = withStyles({
   root: {
@@ -33,10 +33,10 @@ const Hero = () => (
       </a> 
      </StyledButton>
     <Divider component="div" className="middle p-3" />
-    <h6 className="text-center">Roton Distribution Plan
+    <h6 className="text-center">Roton Distribution Plan</h6>
     <figure className='figure'>
       <img width="100%"
-        src={Logo}
+        src={Tokenomics}
         className="figure-img img-fluid rounded shadow-3 mb-3"
         alt="quantumone-tokenomics-slide"
       />

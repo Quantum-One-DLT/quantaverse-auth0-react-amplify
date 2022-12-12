@@ -17,28 +17,9 @@ const HomeContent = () => (
           </a>
         </h6>
         <p>
-        QuantaVerse ID is the digital identity framework for the QuantaVerse - the optimally engineered, post quantum secure web framework of the future created by Quantum One DAO. 
-         We at Quantum One DAO are eliminating blockchain investment risk, archaic web2 inefficiencies of which lock $400B annually in the US Banking sector alone, and enabling 
-         the creation of legal, compliant organizations, software, applications, networks, and ecosystems. Learn more in our Whitepaper which contains information directly from 
-         trusted sources to save readers time verifying our claims.
-        </p>
-      </div>
-
-      <div className="col-md" />
-
-      <div className="col-md-5 mb-4">
-        <h6 className="mb-3">
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://etherscan.io/token/0xeaad65885fea47a3b1258935f4ce83aab06fdd3a"
-          >
-            <i className="fas fa-link mr-2" />
-            View DA-FI token info on Etherscan 
-          </a>
-        </h6>
-        <p>
-         We're dropping 250 of our testnet ERC20 DA-FI token to the first 3500 people who verify their identity or prove a previous KYC verification through our web app. DA-FI holders must verify their identity to exchange DA-FI for our mainnet coin referred to as the 'Roton'.
+        QuantaVerse ID is the digital identity framework for the QuantaVerse - the optimally engineered, post quantum secure, omni-compliant, web-agnostic blockchain created by Quantum One DAO. It is with this foundation we're building upon an incentivized HealthCare platform that rewards participants including indviduals, employers, providers, and insurers for actions/decisions conducive to reducing the total
+        cost of care. Not only are we planning to eliminating blockchain investment risk, archaic web2 inefficiencies of which lock $400B annually in the US Banking sector alone, and enabling 
+         the creation of legal, compliant organizations, software, applications, networks, and ecosystems. 
         </p>
       </div>
     </div>
