@@ -1,7 +1,8 @@
 import * as React from "react"; 
 import { XGrid, GridToolbar, GridColDef } from '@material-ui/x-grid';
 import {LicenseInfo} from '@material-ui/x-grid';
-import {makeStyles, withStyles } from '@material-ui/core/styles'
+import {makeStyles, withStyles } from '@material-ui/core/styles';
+import { Button } from '@material-ui/core';
 
 const StyledButton = withStyles({
   root: {
