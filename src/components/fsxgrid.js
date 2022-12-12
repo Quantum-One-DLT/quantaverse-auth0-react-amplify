@@ -197,18 +197,17 @@ export default function FSXGrid() {
   return  (
     <div className="text-center hero">
      <h2 className="mb-4">Verify your ID, get Quantum One DAO's testnet ERC-20 token!</h2>
-      <h5 className="text-justified">
-       We're dropping a total of 250 DA-FI tokens to the the 1st 3500 who verify their ID and create a Quantum One account. To get started {" "}
+      <h5 className="text-justified">We're dropping a total of 250 DA-FI tokens to the the 1st 3500 who verify their ID and create a Quantum One account.</h5>
       <StyledButton>
        <a
         target="_blank"
         rel="noopener noreferrer"
         href="https://app.fractal.id/authorize?client_id=QHAVw9SmY3f0dkaNB8GLnL8SWlRf_Qk8708qAKHJgkA&redirect_uri=https%3A%2F%2Fapp.quantumone.network%2Fcallback&response_type=code&scope=contact%3Aread%20verification.basic%3Aread%20verification.basic.details%3Aread%20verification.liveness%3Aread%20verification.liveness.details%3Aread"
-      >
-     </a> 
-    </h5>
+       > Verify ID
+      </a> 
+      </StyledButton>
     <h5 className="text-justified"> Go to Quantum One {" "}
-    <a
+        <a
         target="_blank"
         rel="noopener noreferrer"
         href="https://quantumone.network"
