@@ -23,17 +23,15 @@ const Hero = () => (
   <div className="text-center hero">
     <h2 className="mb-4">Quantum One DAO Air Drop</h2>
     
-     <h5 className="text-center">
-      
-       We're dropping a total of 250 DA-FI tokens to the the 1st 3500 who verify their ID and create a Quantum One account. To get started {" "}
+     <h6 className="text-center">We're dropping a total of 250 DA-FI tokens to the the 1st 3500 people who verify their ID and create a Quantum One DAO account.</h6>
       <StyledButton>
        <a
         target="_blank"
         rel="noopener noreferrer"
         href="https://app.fractal.id/authorize?client_id=QHAVw9SmY3f0dkaNB8GLnL8SWlRf_Qk8708qAKHJgkA&redirect_uri=https%3A%2F%2Fapp.quantumone.network%2Fcallback&response_type=code&scope=contact%3Aread%20verification.basic%3Aread%20verification.basic.details%3Aread%20verification.liveness%3Aread%20verification.liveness.details%3Aread"
-      >Verify ID
-     </a> 
-    </StyledButton>
+        >Verify ID
+      </a> 
+     </StyledButton>
     <Divider component="div" className="middle p-3" />
     <h6 className="text-center">Roton Distribution Plan
     <figure className='figure'>
