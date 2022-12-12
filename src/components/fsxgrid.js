@@ -1,7 +1,23 @@
 import * as React from "react"; 
 import { XGrid, GridToolbar, GridColDef } from '@material-ui/x-grid';
 import {LicenseInfo} from '@material-ui/x-grid';
-import {makeStyles} from '@material-ui/core/styles'
+import {makeStyles, withStyles } from '@material-ui/core/styles'
+
+const StyledButton = withStyles({
+  root: {
+    background: 'linear-gradient(45deg, #03fff6 30%, #004fhf 90%)',
+    borderRadius: 3,
+    border: 0,
+    color: 'white',
+    height: 48,
+    padding: '0 30px',
+    boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
+  },
+  label: {
+    textTransform: 'capitalize',
+  },
+})(Button);
+
 
 const useStyles=makeStyles((theme) => ({
 
@@ -179,7 +195,27 @@ export default function FSXGrid() {
   ]};
   
   return  (
-    <div className="root" style={{height: 1010, width: '100%', marginBottom: 160}}>
+    <div className="text-center hero">
+     <h2 className="mb-4">Verify your ID, get Quantum One DAO's testnet ERC-20 token!</h2>
+      <h5 className="text-justified">
+       We're dropping a total of 250 DA-FI tokens to the the 1st 3500 who verify their ID and create a Quantum One account. To get started {" "}
+      <StyledButton>
+       <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://app.fractal.id/authorize?client_id=QHAVw9SmY3f0dkaNB8GLnL8SWlRf_Qk8708qAKHJgkA&redirect_uri=https%3A%2F%2Fapp.quantumone.network%2Fcallback&response_type=code&scope=contact%3Aread%20verification.basic%3Aread%20verification.basic.details%3Aread%20verification.liveness%3Aread%20verification.liveness.details%3Aread"
+      >
+     </a> 
+    </h5>
+    <h5 className="text-justified"> Go to Quantum One {" "}
+    <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://quantumone.network"
+      > homepage.
+    </a>
+    </h5> 
+     <div className="root" style={{height: 1010, width: '100%', marginBottom: 160}}>
       <h4 className="text-center">Aetna In-Network Rate Sample</h4>
       <p className="text-center">
               The data is below was parsed from Aetna's public rate disclosure portal. Customize your views and or export to CSV in a few clicks. PDF and Excel export option and analytic tools option will be included in the full version. View the original data here at {''} 
