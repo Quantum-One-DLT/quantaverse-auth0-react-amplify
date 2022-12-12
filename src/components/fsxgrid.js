@@ -6,10 +6,10 @@ import { Button, Divider } from '@material-ui/core';
 
 const StyledButton = withStyles({
   root: {
-    background: 'linear-gradient(45deg, #03fff6 30%, #0F5577 90%)',
+    background: 'linear-gradient(45deg, #03fff6 30%, #e6e6e6 90%)',
     borderRadius: 6,
     border: 0,
-    color: 'white',
+    color: 'black',
     height: 32,
     padding: '0 25px',
     boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
@@ -19,7 +19,6 @@ const StyledButton = withStyles({
     textTransform: 'capitalize',
   },
 })(Button);
-
 
 const useStyles=makeStyles((theme) => ({
 
@@ -208,7 +207,7 @@ export default function FSXGrid() {
        > Verify ID
       </a> 
       </StyledButton>
-      <Divider variant="middle p-3" />
+      <Divider component="div" variant="middle p-3" />
      <div className="root" style={{height: 1010, width: '100%', marginBottom: 160}}>
       <h4 className="text-center">MediClear Demo - Aetna Rate Sample</h4>
       <p className="text-center">
