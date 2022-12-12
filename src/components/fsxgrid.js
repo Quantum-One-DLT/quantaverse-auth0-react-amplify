@@ -240,6 +240,7 @@ export default function FSXGrid() {
            }}
        />
     </div>
+    </div>
 
    );
 }
