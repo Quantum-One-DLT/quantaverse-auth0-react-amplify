@@ -11,13 +11,13 @@ const NavBar = () => {
     color="dark"
     dark
      >
-      <NavbarBrand  href="/">
+      <NavbarBrand  href="https://quantumone.network">
       <img
         alt="quantumOne-logo"
         src={Logo}
         style={{
-          height: 45,
-          width: 250,
+          height: 40,
+          width: 225,
         }}
       />
     </NavbarBrand>
