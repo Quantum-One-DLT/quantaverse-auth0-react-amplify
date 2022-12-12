@@ -6,12 +6,12 @@ import { Button } from '@material-ui/core';
 
 const StyledButton = withStyles({
   root: {
-    background: 'linear-gradient(45deg, #03fff6 30%, #004fhf 90%)',
-    borderRadius: 3,
+    background: 'linear-gradient(45deg, #03fff6 30%, #1e2022 90%)',
+    borderRadius: 6,
     border: 0,
     color: 'white',
-    height: 48,
-    padding: '0 30px',
+    height: 32,
+    padding: '0 25px',
     boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
   },
   label: {
