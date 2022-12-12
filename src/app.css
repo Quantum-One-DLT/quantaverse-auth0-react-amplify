@@ -76,3 +76,12 @@
   
 }
 
+a {
+  color: whitesmoke;
+}
+
+a:hover {
+  color: #1e2022;
+}
+
+
