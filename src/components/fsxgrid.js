@@ -35,7 +35,7 @@ const useStyles=makeStyles((theme) => ({
   contents: {
     flexGrow: 1,
     flexShrink: 1,
-    padding: theme.spacing(3),
+    padding: theme.spacing(0),
     persistentBehavior: 'fit'
   },
 
