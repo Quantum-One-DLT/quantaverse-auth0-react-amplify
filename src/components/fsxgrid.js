@@ -2,7 +2,7 @@ import * as React from "react";
 import { XGrid, GridToolbar, GridColDef } from '@material-ui/x-grid';
 import {LicenseInfo} from '@material-ui/x-grid';
 import {makeStyles, withStyles } from '@material-ui/core/styles';
-import { Button } from '@material-ui/core';
+import { Button, Divider } from '@material-ui/core';
 
 const StyledButton = withStyles({
   root: {
@@ -207,14 +207,7 @@ export default function FSXGrid() {
        > Verify ID
       </a> 
       </StyledButton>
-    <h5 className="text-justified"> Go to Quantum One {" "}
-        <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://quantumone.network"
-      > homepage.
-    </a>
-    </h5> 
+      <Divider variant="middle" />
      <div className="root" style={{height: 1010, width: '100%', marginBottom: 160}}>
       <h4 className="text-center">Aetna In-Network Rate Sample</h4>
       <p className="text-center">
