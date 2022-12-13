@@ -6,7 +6,7 @@ import { Button, Divider } from '@material-ui/core';
 
 const StyledButton = withStyles({
   root: {
-    background: 'linear-gradient(45deg, #03fff6 30%, #e6e6e6 90%)',
+    background: 'linear-gradient(45deg,#183EFA 50%, #e6e6e6 80%)',
     borderRadius: 6,
     border: 0,
     color: 'black',
