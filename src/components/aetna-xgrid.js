@@ -88,7 +88,7 @@ export default function AetnaXGrid() {
       </a> 
       </StyledButton>
       </div>
-      <Divider variant="middle mt-5 mb-5" />
+      <Divider component="div" variant="middle" className="mt-5 mb-5" />
     <div className="root contents vh-100">
       <h4 className="text-center">HealthONE Incentivized HealthCare is coming!</h4>
       <p className="text-center">The table below demonstrates how Aetna complies with the recent CMS mandate - effective 7/1/2022 - requiring insurance companies 
