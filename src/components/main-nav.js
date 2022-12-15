@@ -28,8 +28,8 @@ const MainNav = () => {
         exact
         className="nav-link"
         activeClassName="router-link-exact-active"
-      >
-        Home
+      > Home
+        
     </NavLink>
     </NavItem>
     <NavItem>
@@ -135,8 +135,7 @@ const MainNav = () => {
           exact
           className="nav-link"
           activeClassName="router-link-exact-active"
-        >
-        Privacy
+        > Privacy
         </NavLink>
       )}
      </NavItem>
