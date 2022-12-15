@@ -75,8 +75,7 @@ const MainNav = () => {
           exact
           className="nav-link"
           activeClassName="router-link-exact-active"
-        >
-        AirDrop
+        > Airdrop
         </NavLink>
       )}
     </NavItem>
@@ -87,8 +86,7 @@ const MainNav = () => {
           exact
           className="nav-link"
           activeClassName="router-link-exact-active"
-        >
-        AirDrop
+        > Airdrop
         </NavLink>
       )}
     </NavItem>
