@@ -98,7 +98,7 @@ export default function AetnaXGrid() {
           All healthcare rate data will be added to a QuantaVerse side chain and act as a single point of truth and an integral component of the HealthONE platform. 
           We're also offering insurers and hospitals a 'stake for rate' data management plan where we handle making the data easy to read for the public provided they acquire and stake our mainnet coin - the Roton. 
           Check out our MediClear demo for a sample of Aetna's {" "} 
-          <a> 
+          <a
           target="_blank"
           rel="noopener noreferrer"
           href="/mediclear-aetna-demo"
