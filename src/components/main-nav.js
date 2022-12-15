@@ -44,29 +44,6 @@ const MainNav = () => {
         </NavLink>
       )}
     </NavItem>
-
-    <NavItem>
-      {!isAuthenticated && (
-        <NavLink
-          to="/airdrop"
-          exact
-          className="nav-link"
-          activeClassName="router-link-exact-active"
-        > Airdrop
-        </NavLink>
-      )}
-    </NavItem>
-    <NavItem>
-      {isAuthenticated && (
-        <NavLink
-          to="/airdrop"
-          exact
-          className="nav-link"
-          activeClassName="router-link-exact-active"
-        > Airdrop
-        </NavLink>
-      )}
-    </NavItem>
     <NavItem>
     {!isAuthenticated && (
         <NavLink
