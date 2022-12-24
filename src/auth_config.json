@@ -1,5 +1,5 @@
 {
-    "domain": "dev-ow4wccii.us.auth0.com",
+    "domain": "login.quantumone.network",
     "clientId": "jC2Jwb5ebKMHg1Joyv0jvq8bXBlA6r9I",
     "scope": "openid profile email phone"
 }
