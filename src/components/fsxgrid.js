@@ -197,18 +197,9 @@ export default function FSXGrid() {
   
   return  (
     <div className="text-center hero">
-     <h2 className="mb-4">Verify your ID, create an account and receive Quantum One DAO's testnet token air-drop!</h2>
-      <h6 className="text-center">Limited to the 1st 3500 users </h6>
-      <StyledButton>
-       <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://app.fractal.id/authorize?client_id=QHAVw9SmY3f0dkaNB8GLnL8SWlRf_Qk8708qAKHJgkA&redirect_uri=https%3A%2F%2Fapp.quantumone.network%2Fcallback&response_type=code&scope=contact%3Aread%20verification.basic%3Aread%20verification.basic.details%3Aread%20verification.liveness%3Aread%20verification.liveness.details%3Aread"
-       > Verify ID
-      </a> 
-      </StyledButton>
-      <Divider component="div" variant="middle p-3" />
-     <div className="root" style={{height: 1010, width: '100%', marginBottom: 160}}>
+     <h2 className="mb-0">Verify your ID, create an account and receive Quantum One DAO's testnet token air-drop!</h2>
+      <h6 className="mb-5 text-center">Limited to the 1st 3500 users </h6>
+       <div className="root" style={{height: 1010, width: '100%', marginBottom: 160}}>
       <h4 className="text-center">MediClear Demo - Aetna Rate Sample</h4>
       <p className="text-center">
               The data is below was parsed from Aetna's public rate disclosure portal. Customize your views and or export to CSV in a few clicks. PDF and Excel export option and analytic tools option will be included in the full version. View the original data here at {''} 

@@ -28,8 +28,8 @@ const MainNav = () => {
         exact
         className="nav-link"
         activeClassName="router-link-exact-active"
-      >
-        Home
+      > Home
+        
     </NavLink>
     </NavItem>
     <NavItem>
@@ -45,54 +45,6 @@ const MainNav = () => {
       )}
     </NavItem>
     <NavItem>
-      {!isAuthenticated && (
-        <NavLink
-          to="/aetna-rate-files"
-          exact
-          className="nav-link"
-          activeClassName="router-link-exact-active"
-        >
-        Aetna Rate Files
-        </NavLink>
-      )}
-    </NavItem>
-    <NavItem>
-      {isAuthenticated && (
-        <NavLink
-          to="/aetna-rate-files"
-          exact
-          className="nav-link"
-          activeClassName="router-link-exact-active"
-        >
-        Aetna Rate Files
-        </NavLink>
-      )}
-    </NavItem>
-    <NavItem>
-      {!isAuthenticated && (
-        <NavLink
-          to="/airdrop"
-          exact
-          className="nav-link"
-          activeClassName="router-link-exact-active"
-        >
-        AirDrop
-        </NavLink>
-      )}
-    </NavItem>
-    <NavItem>
-      {isAuthenticated && (
-        <NavLink
-          to="/airdrop"
-          exact
-          className="nav-link"
-          activeClassName="router-link-exact-active"
-        >
-        AirDrop
-        </NavLink>
-      )}
-    </NavItem>
-    <NavItem>
     {!isAuthenticated && (
         <NavLink
           to="/mediclear-aetna-demo"
@@ -135,8 +87,7 @@ const MainNav = () => {
           exact
           className="nav-link"
           activeClassName="router-link-exact-active"
-        >
-        Privacy
+        > Privacy
         </NavLink>
       )}
      </NavItem>

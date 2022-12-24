@@ -13,13 +13,13 @@ const App = () => {
       <div className="container flex-grow-1">
         <div className="mt-5">
           <Switch>
-            <Route path="/" exact component={FSXGrid} />
+            <Route path="/" exact component={AetnaXGrid} />
             <Route path="/profile" component={Profile} />
             <Route path="/external-api" component={ExternalApi} />
             <Route path="/flow" component={Flow} />
             <Route path="/privacy" component={Privacy} />
             <Route path="/entropy" component={EntropyXGrid} />
-            <Route path="/aetna-rate-files" component={AetnaXGrid} />
+            <Route path="/mediclear-aetna-demo" component={FSXGrid} />
             <Route path="/aidrop" component={Home} />
             <Route path="/s3json" component={S3Json} />
           </Switch>
