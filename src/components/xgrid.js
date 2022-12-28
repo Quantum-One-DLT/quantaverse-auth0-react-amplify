@@ -43,7 +43,8 @@ export default function EntropyXGrid() {
   });
 
   return (
-    <div className="root SpaceBackground" style={{
+    <div className = "SpaceBackground">
+    <div className="root" style={{
       height: 960,width: '94%'}}>
 
       <XGrid className={classes.content}
@@ -52,6 +53,7 @@ export default function EntropyXGrid() {
         rowHeight={38}
         checkboxSelection
         />
+    </div>
     </div>
   );
 }
