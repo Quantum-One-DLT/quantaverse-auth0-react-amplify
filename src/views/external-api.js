@@ -6,7 +6,7 @@ const ExternalApi = () => {
   const [message, setMessage] = user.useState("");
 
   return (
-    <div>
+    <div className="SpaceBackground">
       <h1>External API</h1>
       <p>
         You use will use a button to call an external API using an access token,
