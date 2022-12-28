@@ -86,12 +86,14 @@ export default function AetnaXGrid() {
      <h2 className="mb-0">Verify ID and receive Quantum One's testnet token!</h2>
       <h6 className="mb-5 text-center">Limited to the 1st 3500 users </h6>
       <div>
+        <StyledButton>
       {!isAuthenticated && (
       <LoginButton/>
       )}
       {isAuthenticated && (
       <LogoutButton/>
       )}
+      </StyledButton>
       </div>
       <Divider component="div" variant="middle" className="mt-5 mb-5" />
     <div className="root contents vh-100">
