@@ -2,8 +2,7 @@ import * as React from 'react';
 import {XGrid} from '@material-ui/x-grid';
 import {useDemoData} from '@material-ui/x-grid-data-generator';
 import {LicenseInfo} from '@material-ui/x-grid';
-import {makeStyles} from '@material-ui/core/styles'
-import "/app.css";
+import {makeStyles} from '@material-ui/core/styles':
 
 const useStyles=makeStyles((theme) => ({
 
