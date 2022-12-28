@@ -3,6 +3,7 @@ import {XGrid} from '@material-ui/x-grid';
 import {useDemoData} from '@material-ui/x-grid-data-generator';
 import {LicenseInfo} from '@material-ui/x-grid';
 import {makeStyles} from '@material-ui/core/styles'
+import "/app.css";
 
 const useStyles=makeStyles((theme) => ({
 
@@ -43,7 +44,7 @@ export default function EntropyXGrid() {
   });
 
   return (
-    <div className="root" style={{
+    <div className="root SpaceBackground" style={{
       height: 960,width: '94%'}}>
 
       <XGrid className={classes.content}
