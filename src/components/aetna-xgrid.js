@@ -4,6 +4,10 @@ import {LicenseInfo} from '@material-ui/x-grid';
 import {makeStyles, withStyles} from '@material-ui/core/styles';
 import { Button, Divider } from '@material-ui/core';
 import { Link } from "react-router-dom";
+import { useState } from "react";
+import LoginButton from './loginButton';
+import LogoutButton from './logoutButton';
+import { useAuth0 } from "@auth0/auth0-react";
 
 const StyledButton = withStyles({
   root: {
@@ -41,6 +45,9 @@ const useStyles=makeStyles((theme) => ({
 )); 
 
 export default function AetnaXGrid() {
+  const {
+    isAuthenticated
+  } = useAuth0();
   const classes=useStyles();
   const [width,setWidth]=React.useState(window.innerWidth);
   const [height,setHeight]=React.useState(window.innerHeight);
@@ -79,14 +86,12 @@ export default function AetnaXGrid() {
      <h2 className="mb-0">Verify ID and receive Quantum One's testnet token!</h2>
       <h6 className="mb-5 text-center">Limited to the 1st 3500 users </h6>
       <div>
-      <StyledButton>
-       <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://app.fractal.id/authorize?client_id=QHAVw9SmY3f0dkaNB8GLnL8SWlRf_Qk8708qAKHJgkA&redirect_uri=https%3A%2F%2Fapp.quantumone.network%2Fcallback&response_type=code&scope=contact%3Aread%20verification.basic%3Aread%20verification.basic.details%3Aread%20verification.liveness%3Aread%20verification.liveness.details%3Aread"
-       > Verify ID
-      </a> 
-      </StyledButton>
+      {!isAuthenticated && (
+      <LoginButton/>
+      )}
+      {isAuthenticated && (
+      <LogoutButton/>
+      )}
       </div>
       <Divider component="div" variant="middle" className="mt-5 mb-5" />
     <div className="root contents vh-100">
