@@ -80,7 +80,7 @@ html {
 .btn {
   color: rgb(0, 255, 255);
   border-radius: 6;
-  background-color: darkslategray;
+  background-image: linear-gradient(to right top, #3172b3, #2d424f, #316a7c, #2794a8, #06c1ce, #04cede, #02dcee, #00e9ff, #00d7ff, #00c3ff, #00aeff, #0096ff);
   border: 0;
   height: 32;
   padding: '0 25px';
