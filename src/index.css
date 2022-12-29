@@ -78,8 +78,9 @@ html {
 }
 
 .btn {
-  color: rgb(21, 22, 22);
+  color: rgb(0, 225, 255, 0.92);
   border-radius: 6;
+  background-color: darkblue;
   border: 0;
   height: 32;
   padding: '0 25px';
