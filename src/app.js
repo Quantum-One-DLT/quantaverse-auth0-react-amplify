@@ -8,7 +8,7 @@ import "./app.css";
 
 const App = () => {
   return (
-    <div id="app" className="d-flex flex-column h-100 gradlite">
+    <div id="app" className="d-flex flex-column vh-100 gradlite">
       <NavBar />
       <div className="container flex-grow-1">
         <div className="mt-5">
@@ -20,7 +20,7 @@ const App = () => {
             <Route path="/privacy" component={Privacy} />
             <Route path="/entropy" component={EntropyXGrid} />
             <Route path="/mediclear-aetna-demo" component={FSXGrid} />
-            <Route path="/aidrop" component={Home} />
+            <Route path="/airdrop" component={Home} />
             <Route path="/s3json" component={S3Json} />
           </Switch>
         </div>
