@@ -28,7 +28,7 @@ const StyledButton = withStyles({
   label: {
     textTransform: 'capitalize',
   },
-})(Button);
+})(LoginButton);
 
 const useStyles=makeStyles((theme) => ({
 
@@ -92,7 +92,7 @@ export default function AetnaXGrid() {
       <h6 className="mb-5 text-center">Limited to the 1st 3500 users </h6>
       <div>
       {!isAuthenticated && (
-      <LoginButton/>
+      <StyledButton/>
       )}
       {isAuthenticated && (
       <LogoutButton/>
