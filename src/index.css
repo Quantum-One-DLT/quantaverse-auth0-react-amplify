@@ -78,7 +78,7 @@ html {
 }
 
 .btn {
-  color: rgba(0, 255, 255, 0.103);
+  color: rgb(21, 22, 22);
   background: 'linear-gradient(45deg, #03fff6 30%, #0F5577 90%)';
   border-radius: 6;
   border: 0;
