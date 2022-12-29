@@ -13,6 +13,7 @@ import AccordionSummary from '@material-ui/core/AccordionSummary';
 import AccordionDetails from '@material-ui/core/AccordionDetails';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import LoginModal from './loginModal';
 
 const StyledButton = withStyles({
   root: {
@@ -38,6 +39,9 @@ const useStyles=makeStyles((theme) => ({
     flexShrink: 1,
     minWidth: '0',
     maxWidth: '100%'
+  },
+  Accordion: {
+    background: "#363640"
   },
   contents: {
     flexGrow: 1,
@@ -98,22 +102,27 @@ export default function AetnaXGrid() {
       <LogoutButton/>
       )}
       </div>
+      <div>
+      {!isAuthenticated && (
+      <LoginModal/>
+      )}
+      </div>
       <Divider component="div" variant="middle" className="mt-5 mb-5" />
     <div className="root contents vh-100">
-      <h4 className="text-center">HealthONE is incentivized healthcare for all and the single point of truth for all healthcare rate datum.</h4>
+      <h4 className="text-center">HealthONE is incentivized healthcare for all and the single point of truth for all healthcare rate data.</h4>
       <Accordion>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <Typography>What is HealthONE and healthcare rate datum? </Typography>
+          <Typography>What is HealthONE and healthcare rate data? </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
           The table below demonstrates how Aetna complies with the recent CMS mandate - effective 7/1/2022 - requiring insurance companies 
           to make their rate data available to the public in a consumer friendly format. Once consumers figure out how to handle "gunzip/gz" files, they realize they 
-          must download and extract additional "gz" files to only run into 30GB+ JSON files that often requires the user to modify their computers file system 
+          must download and extract additional "gz" files to only run into 30GB+ JSON files that often require the user to modify their computers file system 
           configuration just to read a JSON formatted file. We're changing that by enabling easy viewing and cost of care analysis for the public - not just plan members. 
           All healthcare rate data will be added to a QuantaVerse side chain and act as a single point of truth and an integral component of the HealthONE platform. 
           We're also offering insurers and hospitals a 'stake for rate' data management plan where we handle making the data easy to read for the public provided they acquire and stake our mainnet coin - the Roton. 

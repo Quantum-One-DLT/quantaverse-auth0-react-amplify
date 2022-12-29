@@ -25,14 +25,14 @@ function LoginModal() {
         <div style={{
             display: 'block', width: 700, padding: 30
         }}>
-            <h4>ReactJS Reactstrap Modal Component</h4>
-            <Button color="danger"
-                onClick={toggle}>Click me to open Modal</Button>
+            <h4>QuantaVerse Portal</h4>
+            <Button color="gray-dark"
+                onClick={toggle}>Sign Up | Log In</Button>
             <Modal isOpen={modal} toggle={toggle}>
                 <ModalHeader
-                    toggle={toggle}>Sample Modal Title</ModalHeader>
+                    toggle={toggle}>Did you verify your ID for the airdrop?</ModalHeader>
                 <ModalBody>
-                    Sample Modal Body Text to display...
+                One lucky DAO member will also receive an additional 25 DA-FI equivalent to 250 million Roton. 
                 </ModalBody>
                 <ModalFooter>
                 {!isAuthenticated && (
