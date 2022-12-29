@@ -91,6 +91,7 @@ export default function AetnaXGrid() {
   ]};
   
   return  (
+    <div className = "SpaceBackground">
     <div className="text-center hero">
      <h2 className="mb-0">Verify ID and receive Quantum One's testnet token!</h2>
       <h6 className="mb-5 text-center">Limited to the 1st 3500 users </h6>
@@ -147,6 +148,7 @@ export default function AetnaXGrid() {
                Toolbar: GridToolbar,
            }}
        />
+   </div>
    </div>
    </div>
 
