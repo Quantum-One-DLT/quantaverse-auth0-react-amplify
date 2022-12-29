@@ -8,6 +8,11 @@ import { useState } from "react";
 import LoginButton from './loginButton';
 import LogoutButton from './logoutButton';
 import { useAuth0 } from "@auth0/auth0-react";
+import Accordion from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import Typography from '@mui/material/Typography';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 const StyledButton = withStyles({
   root: {
@@ -86,19 +91,27 @@ export default function AetnaXGrid() {
      <h2 className="mb-0">Verify ID and receive Quantum One's testnet token!</h2>
       <h6 className="mb-5 text-center">Limited to the 1st 3500 users </h6>
       <div>
-        <StyledButton>
       {!isAuthenticated && (
       <LoginButton/>
       )}
       {isAuthenticated && (
       <LogoutButton/>
       )}
-      </StyledButton>
       </div>
       <Divider component="div" variant="middle" className="mt-5 mb-5" />
     <div className="root contents vh-100">
-      <h4 className="text-center">HealthONE Incentivized HealthCare is coming!</h4>
-      <p className="text-center">The table below demonstrates how Aetna complies with the recent CMS mandate - effective 7/1/2022 - requiring insurance companies 
+      <h4 className="text-center">HealthONE is incentivized healthcare for all and the single point of truth for all healthcare rate datum.</h4>
+      <Accordion>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel1a-content"
+          id="panel1a-header"
+        >
+          <Typography>What is HealthONE and healthcare rate datum? </Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography>
+          The table below demonstrates how Aetna complies with the recent CMS mandate - effective 7/1/2022 - requiring insurance companies 
           to make their rate data available to the public in a consumer friendly format. Once consumers figure out how to handle "gunzip/gz" files, they realize they 
           must download and extract additional "gz" files to only run into 30GB+ JSON files that often requires the user to modify their computers file system 
           configuration just to read a JSON formatted file. We're changing that by enabling easy viewing and cost of care analysis for the public - not just plan members. 
@@ -111,7 +124,9 @@ export default function AetnaXGrid() {
           href="/mediclear-aetna-demo"
           > health plan rates
           </a> 
-          </p>
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
        <XGrid
            {...data}
            loading={data.rows.length === 0}

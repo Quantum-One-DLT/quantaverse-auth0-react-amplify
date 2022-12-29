@@ -4,9 +4,17 @@ import {
     Button, Modal, ModalFooter,
     ModalHeader, ModalBody
 } from "reactstrap"
+
+import LoginButton from './loginButton';
+import LogoutButton from './logoutButton';
+import { useAuth0 } from '@auth0/auth0-react';
   
 function LoginModal() {
-  
+    
+    const {
+        isAuthenticated
+      } = useAuth0();
+    
     // Modal open state
     const [modal, setModal] = React.useState(false);
   
@@ -27,7 +35,12 @@ function LoginModal() {
                     Sample Modal Body Text to display...
                 </ModalBody>
                 <ModalFooter>
-                    <Button color="primary" onClick={toggle}>Okay</Button>
+                {!isAuthenticated && (
+                    <LoginButton />
+                )}
+                {isAuthenticated && (
+                    <LogoutButton />
+                )}
                 </ModalFooter>
             </Modal>
         </div >
