@@ -91,7 +91,6 @@ export default function AetnaXGrid() {
   ]};
   
   return  (
-    <div className = "SpaceBackground">
     <div className="text-center hero">
      <h2 className="mb-0">Complete KYC, receive an airdrop and chance at 250 million Roton!</h2>
       <h6 className="mb-5 text-center">Airdrop limited to 1st 3500 users.</h6>
@@ -103,58 +102,8 @@ export default function AetnaXGrid() {
       <LogoutButton/>
       )}
       </div>
-      <div>
-      {!isAuthenticated && (
-      <LoginModal/>
-      )}
-      </div>
       <Divider component="div" variant="middle" className="mt-5 mb-5" />
-    <div className="root contents vh-100">
-      <h4 className="text-center">HealthONE is incentivized healthcare for all and the single point of truth for all healthcare rate data.</h4>
-      <Accordion>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel1a-content"
-          id="panel1a-header"
-        >
-          <Typography>What is HealthONE and healthcare rate data? </Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography>
-          The table below demonstrates how Aetna complies with the recent CMS mandate - effective 7/1/2022 - requiring insurance companies 
-          to make their rate data available to the public in a consumer friendly format. Once consumers figure out how to handle "gunzip/gz" files, they realize they 
-          must download and extract additional "gz" files to only run into 30GB+ JSON files that often require the user to modify their computers file system 
-          configuration just to read a JSON formatted file. We're changing that by enabling easy viewing and cost of care analysis for the public - not just plan members. 
-          All healthcare rate data will be added to a QuantaVerse side chain and act as a single point of truth and an integral component of the HealthONE platform. 
-          We're also offering insurers and hospitals a 'stake for rate' data management plan where we handle making the data easy to read for the public provided they acquire and stake our mainnet coin - the Roton. 
-          Check out our MediClear demo for a sample of Aetna's {" "} 
-          <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="/mediclear-aetna-demo"
-          > health plan rates
-          </a> 
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
-       <XGrid
-           {...data}
-           loading={data.rows.length === 0}
-           rowHeight={30}
-           autoHeight={true}
-           disableColumnMenu={true}
-           density={"compact"}
-           components={{
-               Toolbar: GridToolbar,
-           }}
-       />
-   </div>
-   </div>
-   </div>
+    </div>
 
-);
+  );
 }
-
-LicenseInfo.setLicenseKey(
-  '19494f35107113d0c813dfab75b058b4T1JERVI6MjQzODgsRVhQSVJZPTE2NTE1MDQzNDkwMDAsS0VZVkVSU0lPTj0x'
-);
