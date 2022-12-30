@@ -50,6 +50,10 @@
   height: 100vh;
 }
 
+.dgrad { 
+  background-image: linear-gradient(135deg, rgba(72,84,97,1) 0%, rgba(40,49,59,1) 35%, rgba(30,32,34,1) 100%);
+}
+
 .grad {
   background: #007991;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #0F5577 0%, 27.35191583633423%, #3AE0FF 54.70383167266846%, 77.35191583633423%, #3CFCFF 100%);  /* Chrome 10-25, Safari 5.1-6 */
