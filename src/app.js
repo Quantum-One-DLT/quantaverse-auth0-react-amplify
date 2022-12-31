@@ -3,14 +3,13 @@ import { Route, Switch } from "react-router-dom";
 
 import { NavBar, Footer, EntropyXGrid, AetnaXGrid, S3Json, FSXGrid } from "./components";
 import { Home, Profile, ExternalApi, Flow, Privacy } from "./views";
-
 import "./app.css";
 
 const App = () => {
   return (
-    <div id="app" className="d-flex flex-column flex-grow-1 vh-100 gradlite">
+    <div id="app" className="d-flex flex-column vh-100 gradlite">
       <NavBar />
-      <div className="container flex-grow-1">
+      <div className="container flex-grow-1 gradlite">
         <div className="mt-5">
           <Switch>
             <Route path="/" exact component={AetnaXGrid} />
