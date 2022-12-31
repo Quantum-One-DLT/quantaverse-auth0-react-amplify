@@ -71,6 +71,30 @@ const MainNav = () => {
      <NavItem>
     {!isAuthenticated && (
         <NavLink
+          to="/airdrop"
+          exact
+          className="nav-link"
+          activeClassName="router-link-exact-active"
+        >
+        Airdrop
+        </NavLink>
+      )}
+     </NavItem>
+     <NavItem>
+    {isAuthenticated && (
+        <NavLink
+          to="/airdrop"
+          exact
+          className="nav-link"
+          activeClassName="router-link-exact-active"
+        >
+        Aidrop
+        </NavLink>
+      )}
+     </NavItem>
+     <NavItem>
+    {!isAuthenticated && (
+        <NavLink
           to="/privacy"
           exact
           className="nav-link"
@@ -94,13 +118,13 @@ const MainNav = () => {
       {!isAuthenticated && (
 
         <NavItem>
-          <LoginButton style={{color: "#03fff6"}}/>
+          <LoginButton/>
         </NavItem>
 
       )}
       {isAuthenticated && (
         <NavItem>
-          <LogoutButton style={{color: "#1e2022"}} />
+          <LogoutButton />
         </NavItem>
       )}
 
