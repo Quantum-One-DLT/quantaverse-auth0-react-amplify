@@ -96,7 +96,7 @@ export default function AetnaXGrid() {
       <h6 className="mb-5 text-center">Airdrop limited to 1st 3500 users.</h6>
       <div>
       {!isAuthenticated && (
-      <StyledButton/>
+      <LoginButton/>
       )}
       {isAuthenticated && (
       <LogoutButton/>
