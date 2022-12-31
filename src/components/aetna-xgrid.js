@@ -38,7 +38,8 @@ const useStyles=makeStyles((theme) => ({
     flexGrow: 1,
     flexShrink: 1,
     minWidth: '0',
-    maxWidth: '100%'
+    maxWidth: '100%',
+    minHeight: '100%'
   },
   Accordion: {
     background: "#363640"
@@ -91,7 +92,7 @@ export default function AetnaXGrid() {
   ]};
   
   return  (
-    <div className="vh-100 text-center">
+    <div className="root text-center">
      <h2 className="mb-0">Complete KYC, receive an airdrop and chance at 250 million Roton!</h2>
       <h6 className="mb-5 text-center">Airdrop limited to 1st 3500 users.</h6>
       <div>
@@ -102,7 +103,7 @@ export default function AetnaXGrid() {
       <LogoutButton/>
       )}
       </div>
-      <Divider component="div" variant="middle" className="mt-5 mb-5" />
+      <Divider component="div" variant="middle" className="mt-5" />
     </div>
 
   );
