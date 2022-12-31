@@ -15,9 +15,7 @@ const useStyles=makeStyles((theme) => ({
     flexShrink: 1,
     minWidth: '0',
     maxWidth: '100%',
-    fontSize: 12,
-    backgroundImage: "linear-gradient(to right, #00ffea, #03c8f0)", /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    height: '100vh'
+    fontSize: 12
   },
   contents: {
     flexGrow: 1,
