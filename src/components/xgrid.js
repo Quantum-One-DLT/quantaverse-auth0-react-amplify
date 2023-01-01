@@ -6,7 +6,7 @@ import {makeStyles} from '@material-ui/core/styles';
 
 const useStyles=makeStyles((theme) => ({
 
-  root: {
+  roots: {
     display: 'flex',
     flexGrow: 1,
     flexShrink: 1,
@@ -43,7 +43,7 @@ export default function EntropyXGrid() {
   });
 
   return (
-    <div className="root" style={{
+    <div className="roots" style={{
       height: 960,width: '94%'}}>
 
       <XGrid className={classes.content}

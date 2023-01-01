@@ -6,7 +6,7 @@ import { Button, Divider } from '@material-ui/core';
 
 const useStyles=makeStyles((theme) => ({
 
-  root: {
+  roots: {
     '& .font-tabular-nums': {
       fontVariantNumeric: 'tabular-nums',
     },
@@ -184,7 +184,7 @@ export default function FSXGrid() {
     <div className="text-center hero">
      <h2 className="mb-0">Verify your ID, create an account and receive Quantum One DAO's testnet token air-drop!</h2>
       <h6 className="mb-5 text-center">Limited to the 1st 3500 users </h6>
-       <div className="root" style={{height: 1010, width: '100%', marginBottom: 160}}>
+       <div className="roots" style={{height: 1010, width: '100%', marginBottom: 160}}>
       <h4 className="text-center">MediClear Demo - Aetna Rate Sample</h4>
       <p className="text-center">
               The data is below was parsed from Aetna's public rate disclosure portal. Customize your views and or export to CSV in a few clicks. PDF and Excel export option and analytic tools option will be included in the full version. View the original data here at {''} 

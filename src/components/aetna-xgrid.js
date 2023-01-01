@@ -17,7 +17,7 @@ import LoginModal from './loginModal';
 
 const useStyles=makeStyles((theme) => ({
 
-  root: {
+  roots: {
     display: 'flex',
     flexGrow: 1,
     flexShrink: 1,
