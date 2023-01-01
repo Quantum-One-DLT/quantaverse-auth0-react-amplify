@@ -30,7 +30,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-y: scroll;
-  background-color: #007991;  /* fallback for old browsers */
   background-color: -webkit-linear-gradient(to right, #03fff6, #00d5ff);  /* Chrome 10-25, Safari 5.1-6 */
   background-color: linear-gradient(to right, #03fff6, #00d5ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   height: 100%;
@@ -44,7 +43,6 @@ code {
 html {
   font-size: 93.75%;
   height: 100%; /* 93.75% of 16px = 15px */
-  background-color: #007991;  /* fallback for old browsers */
   background-color: -webkit-linear-gradient(to right, #03fff6, #00d5ff);  /* Chrome 10-25, Safari 5.1-6 */
   background-color: linear-gradient(to right, #03fff6, #00d5ff);
 }
@@ -82,6 +80,8 @@ html {
 }
 
 .result-block-container .result-block {
+  background-color: -webkit-linear-gradient(to right, #00f7ff, #04d2fc);  /* Chrome 10-25, Safari 5.1-6 */
+  background-color: linear-gradient(to right, #00ffea, #03c8f0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   opacity: 1;
 }
 
