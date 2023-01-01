@@ -24,7 +24,7 @@ const providerConfig = {
 };
 
 ReactDOM.render(
-  <Auth0Provider {...providerConfig} className="gradlite">
+  <Auth0Provider {...providerConfig}>
     <Router>
       <App />
     </Router>
