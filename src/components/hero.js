@@ -18,7 +18,7 @@ const Hero = () => (
         >Verify ID
       </a> 
      </div>
-    <Divider component="div" className="middle p-3" />
+    <Divider component="div" className="middle" />
     <h6 className="text-center">Roton Distribution Plan</h6>
     <figure className='figure'>
       <img width="100%"

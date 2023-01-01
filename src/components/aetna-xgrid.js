@@ -74,7 +74,7 @@ export default function AetnaXGrid() {
   ]};
   
   return  (
-    <div className="hero text-center">
+    <div className="h-100 hero text-center">
      <h2 className="mb-0">Complete KYC, receive an airdrop and chance at 250 million Roton!</h2>
       <h6 className="mb-5 text-center">Airdrop limited to 1st 3500 users.</h6>
       <div>
