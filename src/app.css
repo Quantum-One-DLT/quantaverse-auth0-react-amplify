@@ -31,6 +31,10 @@
 }
 
 .result-block-container .result-block {
+  background: #007991;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #00f7ff, #04d2fc);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #00ffea, #03c8f0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 100vh;
   opacity: 1;
 }
 
@@ -81,5 +85,7 @@ a {
 a:hover {
   color: #0048ff;
 }
+
+
 
 

@@ -30,6 +30,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-y: scroll;
+  background: #007991;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #03fff6, #00d5ff);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #03fff6, #00d5ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 100%;
 }
 
 code {
@@ -38,7 +42,8 @@ code {
 }
 
 html {
-  font-size: 93.75%; /* 93.75% of 16px = 15px */
+  font-size: 93.75%;
+  height: 100%; /* 93.75% of 16px = 15px */
 }
 
 .next-steps .fa-link {
@@ -80,7 +85,18 @@ html {
 .btn {
   color: rgb(0, 255, 255);
   border-radius: 6;
-  background-image: linear-gradient(135deg, rgba(72,84,97,1) 0%, rgba(40,49,59,1) 35%, rgb(47, 48, 49) 100%);
+  background-image: linear-gradient(135deg, rgba(72,84,97,1) 0%, rgba(40,49,59,1) 35%, rgb(103, 107, 110) 100%);
+  border: 0;
+  height: 32;
+  padding: '0 25px';
+  box-shadow: '0 3px 5px 2px rgba(255, 105, 135, .3)';
+  font-weight: 600;
+}
+
+.btn-secondary {
+  color: rgb(255, 0, 85);
+  border-radius: 6;
+  background-image: linear-gradient(135deg, rgba(72,84,97,1) 0%, rgba(40,49,59,1) 35%, rgb(103, 107, 110) 100%);
   border: 0;
   height: 32;
   padding: '0 25px';
