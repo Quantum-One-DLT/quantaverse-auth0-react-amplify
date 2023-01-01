@@ -41,7 +41,6 @@ export default function AetnaXGrid() {
   const {
     isAuthenticated
   } = useAuth0();
-  const classes=useStyles();
   const [width,setWidth]=React.useState(window.innerWidth);
   const [height,setHeight]=React.useState(window.innerHeight);
   const updateWidthAndHeight= () => {
@@ -75,7 +74,7 @@ export default function AetnaXGrid() {
   ]};
   
   return  (
-    <div className="text-center">
+    <div className="hero text-center">
      <h2 className="mb-0">Complete KYC, receive an airdrop and chance at 250 million Roton!</h2>
       <h6 className="mb-5 text-center">Airdrop limited to 1st 3500 users.</h6>
       <div>
