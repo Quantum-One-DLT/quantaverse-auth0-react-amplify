@@ -31,10 +31,8 @@
 }
 
 .result-block-container .result-block {
-  background: #007991;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #00f7ff, #04d2fc);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #00ffea, #03c8f0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  height: 100vh;
+  background-color: -webkit-linear-gradient(to right, #00f7ff, #04d2fc);  /* Chrome 10-25, Safari 5.1-6 */
+  background-color: linear-gradient(to right, #00ffea, #03c8f0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   opacity: 1;
 }
 
@@ -72,7 +70,7 @@
 /* linear-gradient(to right, rgba(15, 85, 119, 1) 0%, 27.35191583633423%, rgba(58, 224, 255, 1) 54.70383167266846%, 77.35191583633423%, rgba(60, 252, 255, 1) 100%); */
 
 .gradlite {
-  background: #007991;  /* fallback for old browsers */
+  background-color: #03fff6;  /* fallback for old browsers */
   background-image: -webkit-linear-gradient(to right, #00f7ff, #04d2fc);  /* Chrome 10-25, Safari 5.1-6 */
   background-image: linear-gradient(to right, #00ffea, #03c8f0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
