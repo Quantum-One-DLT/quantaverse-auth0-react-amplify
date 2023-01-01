@@ -16,7 +16,6 @@ const useStyles=makeStyles((theme) => ({
     minWidth: '0',
     maxWidth: '100%',
     fontSize: 12,
-    backgroundImage: "linear-gradient(to right, #00ffea, #03c8f0)"
   },
   contents: {
     flexGrow: 1,
