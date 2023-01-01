@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
+import "./app.css";
 import App from "./app";
 import { Auth0Provider } from "@auth0/auth0-react";
 import { BrowserRouter as Router } from "react-router-dom";
@@ -23,7 +24,7 @@ const providerConfig = {
 };
 
 ReactDOM.render(
-  <Auth0Provider {...providerConfig}>
+  <Auth0Provider {...providerConfig} className="gradlite">
     <Router>
       <App />
     </Router>
