@@ -17,12 +17,32 @@ const HomeContent = () => (
           </a>
         </h6>
         <p>
-        QuantaVerse ID is the digital identity framework for the QuantaVerse - the optimally engineered, post quantum secure, omni-compliant, web-agnostic blockchain created by Quantum One DAO. It is with this foundation we're building upon an incentivized HealthCare platform that rewards participants including indviduals, employers, providers, and insurers for actions/decisions conducive to reducing the total
-        cost of care. Not only are we planning to eliminating blockchain investment risk, archaic web2 inefficiencies of which lock $400B annually in the US Banking sector alone, and enabling 
-         the creation of legal, compliant organizations, software, applications, networks, and ecosystems. 
+        QuantaVerse ID will become the digital identity framework for the QuantaVerse. The QuantaVerse is our post quantum secure, omni-compliant, digital identity driven 
+        blockchain ecosystem. It is with this foundation we're building upon an incentivized healthCare platform called HealthONE that rewards participants for 
+        actions/decisions conducive to reducing the total cost of care. 
         </p>
       </div>
     </div>
+
+    <div className="row">
+      <div className="col-md-5 mb-4">
+        <h6 className="mb-3">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://quantumone.network"
+          >
+            <i className="fas fa-link mr-2" />
+            Quantum One Home
+          </a>
+        </h6>
+        <p>
+        The QuantaVerse eliminates blockchain investment risk and $400 billion in annual value lock within the US banking sector alone. 
+        Learn how it also emables the creation of legal, compliant organizations, software, applications, networks, ecosystems, and new blockchains.  
+        </p>
+      </div>
+    </div>
+      
 
     <div className="row">
       <div className="col-md-5 mb-4">
@@ -52,7 +72,7 @@ const HomeContent = () => (
             href="https://soundcloud.com/user-34457466/quantumone-11-23-2022-wav?si=a55aa222af304b878825c2ee22351024&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
           >
             <i className="fas fa-link mr-2" />
-            FTX debacle supports Quantum One DAO thesis SoundCloud podcast. 
+           FTX debacle, CMS mandates supports Quantum One DAO thesis SoundCloud podcast. 
           </a>
         </h6>
         <p>
