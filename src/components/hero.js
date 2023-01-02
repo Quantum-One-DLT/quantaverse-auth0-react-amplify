@@ -7,10 +7,10 @@ const Tokenomics = require("../assets/tokenomics.jpg");
 const Hero = () => (
 
   <div className="text-center hero">
-    <h2 className="mb-4">Quantum One DAO Air Drop</h2>
+    <h2 className="mb-2">Quantum One DAO Air Drop</h2>
     
-     <h6 className="text-center">We're dropping a total of 250 DA-FI tokens to the the 1st 3500 people who verify their ID and create a Quantum One DAO account.</h6>
-      <div className="btn btn-md mb-5">
+     <h6 className="text-center mb-4">We're dropping a total of 250 DA-FI tokens to the the 1st 3500 people who verify their ID and create a Quantum One DAO account.</h6>
+      <div className="btn btn-md mb-4">
        <a
         target="_blank"
         rel="noopener noreferrer"
@@ -18,8 +18,8 @@ const Hero = () => (
         >Verify ID
       </a> 
      </div>
-    <Divider component="div" className="middle mt-5 mb-5" />
-    <h6 className="text-center">Roton Distribution Plan</h6>
+    <Divider component="div" className="middle mt-4 mb-4" />
+    <h4 className="text-center">Roton Distribution Plan</h4>
     <figure className='figure'>
       <img width="100%"
         src={Tokenomics}
