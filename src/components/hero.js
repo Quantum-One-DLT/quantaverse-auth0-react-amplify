@@ -10,7 +10,7 @@ const Hero = () => (
     <h2 className="mb-4">Quantum One DAO Air Drop</h2>
     
      <h6 className="text-center">We're dropping a total of 250 DA-FI tokens to the the 1st 3500 people who verify their ID and create a Quantum One DAO account.</h6>
-      <div className="btn btn-md">
+      <div className="btn btn-md mb-5">
        <a
         target="_blank"
         rel="noopener noreferrer"
@@ -18,7 +18,7 @@ const Hero = () => (
         >Verify ID
       </a> 
      </div>
-    <Divider component="div" className="middle" />
+    <Divider component="div" className="middle mt-5 mb-5" />
     <h6 className="text-center">Roton Distribution Plan</h6>
     <figure className='figure'>
       <img width="100%"
