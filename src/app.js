@@ -37,7 +37,7 @@ const theme = createTheme({
 const App = () => {
 
   return (
-    <div id="app" className="d-flex flex-column h-100">
+    <div id="app" className="d-flex flex-column lgrad h-100">
       <SnackbarProvider maxSnack={3}>
       <ThemeProvider theme={theme}>
       <Web3Provider
