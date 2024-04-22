@@ -40,7 +40,7 @@
     "remark-gfm": "^3.0.1",
     "styled-components": "^5.3.6",
     "web-vitals": "^3.0.4",
-    "web3": "^1.8.0"
+    "web3": "^4.8.0"
   },
   "scripts": {
     "start": "cross-env PORT=4040 react-scripts start",
